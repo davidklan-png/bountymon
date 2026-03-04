@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Stats from '../components/Stats.astro';
+import BountyTable from '../components/BountyTable.astro';
+import bounties from '../data/bounties.json';
+
+// Calculate stats
+const liveBounties = bounties.filter(b => b.status === 'live');
+const totalBounty = liveBounties.reduce((sum, b) => sum + b.bounty_value, 0);
+const annualSavings = liveBounties.reduce((sum, b) => sum + b.annual_cost, 0);
+const liveCount = liveBounties.length;
+const inProgressCount = bounties.filter(b => b.status === 'in-progress').length;
+const plannedCount = bounties.filter(b => b.status === 'planned').length;
+
+// Sort bounties: live first, then in-progress, then planned
+const sortedBounties = [
+  ...liveBounties,
+  ...bounties.filter(b => b.status === 'in-progress'),
+  ...bounties.filter(b => b.status === 'planned')
+];
+---
+
+<Layout title="Bountymon - Bounty Board">
+  <Header />
+  
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <Stats 
+      totalBounty={totalBounty}
+      liveCount={liveCount}
+      inProgressCount={inProgressCount}
+      plannedCount={plannedCount}
+      annualSavings={annualSavings}
+    />
+    
+    <h2 class="text-xl font-semibold text-white mb-4">
+      Bounty Board
+    </h2>
+    
+    <BountyTable bounties={sortedBounties} />
+    
+    <footer class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+      <p>💰 Track your self-hosted bounties. <a href="https://github.com/davidklan-png/bountymon" class="text-blue-400 hover:underline">Fork on GitHub</a> to create your own.</p>
+    </footer>
+  </main>
+</Layout>

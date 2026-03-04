@@ -1,0 +1,82 @@
+---
+interface Bounty {
+  id: string;
+  app_name: string;
+  replaced_service: string;
+  annual_cost: number;
+  years_of_use: number;
+  bounty_value: number;
+  status: 'live' | 'in-progress' | 'planned';
+  start_date: string;
+  documentation_url?: string;
+  notes?: string;
+}
+
+interface Props {
+  bounties: Bounty[];
+}
+
+const { bounties } = Astro.props;
+
+const statusEmoji = (status: string) => {
+  switch (status) {
+    case 'live': return '✅';
+    case 'in-progress': return '🔄';
+    case 'planned': return '📋';
+    default: return '❓';
+  }
+};
+
+const statusColor = (status: string) => {
+  switch (status) {
+    case 'live': return 'text-green-400';
+    case 'in-progress': return 'text-yellow-400';
+    case 'planned': return 'text-blue-400';
+    default: return 'text-gray-400';
+  }
+};
+---
+
+<div class="overflow-x-auto rounded-lg border border-gray-700">
+  <table class="w-full">
+    <thead class="bg-gray-800/50">
+      <tr>
+        <th class="px-4 py-3 text-left text-sm font-semibold text-gray-300">Status</th>
+        <th class="px-4 py-3 text-left text-sm font-semibold text-gray-300">Self-Hosted App</th>
+        <th class="px-4 py-3 text-left text-sm font-semibold text-gray-300">Replaced Service</th>
+        <th class="px-4 py-3 text-right text-sm font-semibold text-gray-300">Annual Cost</th>
+        <th class="px-4 py-3 text-right text-sm font-semibold text-gray-300">Years</th>
+        <th class="px-4 py-3 text-right text-sm font-semibold text-gray-300">Bounty</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-700">
+      {bounties.map((bounty) => (
+        <tr class="hover:bg-gray-800/30 transition-colors">
+          <td class="px-4 py-3">
+            <span class="text-xl">{statusEmoji(bounty.status)}</span>
+          </td>
+          <td class="px-4 py-3">
+            {bounty.documentation_url ? (
+              <a href={bounty.documentation_url} class="text-white hover:text-blue-400 font-medium" target="_blank" rel="noopener">
+                {bounty.app_name}
+              </a>
+            ) : (
+              <span class="text-white font-medium">{bounty.app_name}</span>
+            )}
+            {bounty.notes && (
+              <p class="text-xs text-gray-500 mt-0.5">{bounty.notes}</p>
+            )}
+          </td>
+          <td class="px-4 py-3 text-gray-400">{bounty.replaced_service}</td>
+          <td class="px-4 py-3 text-right text-gray-300">${bounty.annual_cost}/yr</td>
+          <td class="px-4 py-3 text-right text-gray-300">{bounty.years_of_use}</td>
+          <td class="px-4 py-3 text-right">
+            <span class={`font-bold ${bounty.status === 'live' ? 'text-green-400' : 'text-gray-400'}`}>
+              ${bounty.bounty_value.toLocaleString()}
+            </span>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

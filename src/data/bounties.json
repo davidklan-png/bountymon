@@ -1,0 +1,95 @@
+[
+  {
+    "id": "nextcloud",
+    "app_name": "Nextcloud",
+    "replaced_service": "Dropbox Pro",
+    "annual_cost": 120,
+    "years_of_use": 2,
+    "bounty_value": 240,
+    "status": "live",
+    "start_date": "2024-03-15",
+    "documentation_url": "https://github.com/nextcloud/server",
+    "notes": "Full self-hosted cloud storage with collaboration features"
+  },
+  {
+    "id": "immich",
+    "app_name": "Immich",
+    "replaced_service": "Google Photos",
+    "annual_cost": 150,
+    "years_of_use": 1,
+    "bounty_value": 150,
+    "status": "live",
+    "start_date": "2025-02-01",
+    "documentation_url": "https://immich.app",
+    "notes": "Self-hosted photo and video backup solution"
+  },
+  {
+    "id": "plausible",
+    "app_name": "Plausible",
+    "replaced_service": "Google Analytics",
+    "annual_cost": 90,
+    "years_of_use": 1,
+    "bounty_value": 90,
+    "status": "live",
+    "start_date": "2025-01-10",
+    "documentation_url": "https://plausible.io",
+    "notes": "Privacy-focused web analytics"
+  },
+  {
+    "id": "openclaw",
+    "app_name": "OpenClaw",
+    "replaced_service": "Multiple AI SaaS",
+    "annual_cost": 2400,
+    "years_of_use": 1,
+    "bounty_value": 2400,
+    "status": "live",
+    "start_date": "2025-02-20",
+    "documentation_url": "https://github.com/openclaw/openclaw",
+    "notes": "Personal AI assistant platform"
+  },
+  {
+    "id": "gitea",
+    "app_name": "Gitea",
+    "replaced_service": "GitHub Pro",
+    "annual_cost": 48,
+    "years_of_use": 3,
+    "bounty_value": 144,
+    "status": "live",
+    "start_date": "2023-01-01",
+    "documentation_url": "https://gitea.io",
+    "notes": "Self-hosted Git service"
+  },
+  {
+    "id": "home-assistant",
+    "app_name": "Home Assistant",
+    "replaced_service": "SmartThings Hub",
+    "annual_cost": 120,
+    "years_of_use": 2,
+    "bounty_value": 240,
+    "status": "live",
+    "start_date": "2024-01-15",
+    "documentation_url": "https://home-assistant.io",
+    "notes": "Local smart home automation"
+  },
+  {
+    "id": "notion-clone",
+    "app_name": "Notion Replacement",
+    "replaced_service": "Notion",
+    "annual_cost": 120,
+    "years_of_use": 0,
+    "bounty_value": 120,
+    "status": "in-progress",
+    "start_date": "2026-03-01",
+    "notes": "Building custom knowledge base with Appwrite + custom frontend"
+  },
+  {
+    "id": "linear-clone",
+    "app_name": "Linear Clone",
+    "replaced_service": "Linear",
+    "annual_cost": 96,
+    "years_of_use": 0,
+    "bounty_value": 96,
+    "status": "planned",
+    "notes": "Project management for personal projects"
+  }
+]
