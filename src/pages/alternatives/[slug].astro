@@ -1,0 +1,151 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
+import MaturityBadge from '../../components/MaturityBadge.astro';
+import DifficultyBadge from '../../components/DifficultyBadge.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const alternatives = await getCollection('alternatives');
+  return alternatives.map(alt => ({
+    params: { slug: alt.data.slug },
+    props: { alternative: alt },
+  }));
+}
+
+const { alternative } = Astro.props;
+const { Content } = await render(alternative);
+
+const categories = await getCollection('categories');
+const category = categories.find(c => c.data.slug === alternative.data.category);
+
+const alternatives = await getCollection('alternatives');
+const related = alternatives
+  .filter(a => a.data.category === alternative.data.category && a.data.slug !== alternative.data.slug)
+  .slice(0, 3);
+---
+
+<Layout title={`${alternative.data.name} - Bountymon`}>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+    <!-- Breadcrumb -->
+    <nav class="text-sm mb-8">
+      <a href="/directory" class="text-gray-400 hover:text-white transition-colors">Directory</a>
+      <span class="text-gray-600 mx-2">/</span>
+      {category && (
+        <>
+          <a href={`/directory/${category.data.slug}`} class="text-gray-400 hover:text-white transition-colors">{category.data.name}</a>
+          <span class="text-gray-600 mx-2">/</span>
+        </>
+      )}
+      <span class="text-white">{alternative.data.name}</span>
+    </nav>
+
+    <!-- Header -->
+    <div class="mb-8">
+      <div class="flex flex-wrap items-center gap-3 mb-4">
+        <h1 class="text-3xl sm:text-4xl font-bold text-white">{alternative.data.name}</h1>
+        <StatusBadge status={alternative.data.status} />
+        <MaturityBadge maturity={alternative.data.maturity} />
+        <DifficultyBadge difficulty={alternative.data.deployment_difficulty} />
+        {alternative.data.vibe_coded && (
+          <span class="text-sm font-medium text-purple-400 bg-purple-500/10 border border-purple-500/20 rounded-full px-3 py-1">
+            Vibe-coded
+          </span>
+        )}
+      </div>
+      <p class="text-lg text-gray-400">
+        Replaces <span class="text-white font-medium">{alternative.data.replaces.join(', ')}</span>
+      </p>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 text-center glow-green">
+        <p class="text-2xl font-bold text-green-400">${alternative.data.bounty_value.toLocaleString()}</p>
+        <p class="text-xs text-gray-400">Bounty Value</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-white">${alternative.data.annual_cost_replaced.toLocaleString()}</p>
+        <p class="text-xs text-gray-400">Saves per Year</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-white">{alternative.data.years_tracked}</p>
+        <p class="text-xs text-gray-400">Years Tracked</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-white">{category?.data.name || '-'}</p>
+        <p class="text-xs text-gray-400">Category</p>
+      </div>
+    </div>
+
+    <!-- Enterprise Comparison -->
+    {category && (
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 mb-8">
+        <h2 class="text-lg font-semibold text-white mb-4">Enterprise Pricing Comparison</h2>
+        <div class="space-y-3">
+          {category.data.enterprise_examples.map(ex => (
+            <div class="flex items-center justify-between py-2 border-b border-gray-800 last:border-0">
+              <span class="text-gray-300">{ex.name}</span>
+              <div class="flex items-center gap-4">
+                <span class="text-red-400 font-medium">${ex.annual_cost_per_seat}/seat/yr</span>
+                <span class="text-green-400 text-sm">Save 100%</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Content -->
+    <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 sm:p-8 mb-8 prose prose-invert prose-green max-w-none
+      [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-white [&_h2]:mt-8 [&_h2]:mb-4
+      [&_h3]:text-lg [&_h3]:font-medium [&_h3]:text-white [&_h3]:mt-6 [&_h3]:mb-3
+      [&_p]:text-gray-300 [&_p]:leading-relaxed [&_p]:mb-4
+      [&_ul]:space-y-2 [&_ul]:mb-4 [&_li]:text-gray-300
+      [&_strong]:text-white [&_strong]:font-semibold
+      [&_a]:text-green-400 [&_a:hover]:text-green-300">
+      <Content />
+    </div>
+
+    <!-- Links -->
+    <div class="flex flex-wrap gap-4 mb-8">
+      {alternative.data.project_url && (
+        <a href={alternative.data.project_url} class="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg border border-gray-700 text-sm font-medium transition-colors" target="_blank" rel="noopener">
+          View Project &rarr;
+        </a>
+      )}
+      {alternative.data.documentation_url && (
+        <a href={alternative.data.documentation_url} class="px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg border border-gray-700 text-sm font-medium transition-colors" target="_blank" rel="noopener">
+          Documentation &rarr;
+        </a>
+      )}
+    </div>
+
+    <!-- Tags -->
+    {alternative.data.tags.length > 0 && (
+      <div class="flex flex-wrap gap-2 mb-12">
+        {alternative.data.tags.map(tag => (
+          <span class="text-xs text-gray-400 bg-gray-800 border border-gray-700 rounded-full px-3 py-1">
+            {tag}
+          </span>
+        ))}
+      </div>
+    )}
+
+    <!-- Related -->
+    {related.length > 0 && (
+      <div>
+        <h2 class="text-xl font-semibold text-white mb-4">Related Alternatives</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {related.map(alt => (
+            <a href={`/alternatives/${alt.data.slug}`} class="group bg-gray-900 border border-gray-800 rounded-xl p-4 hover:border-green-500/30 transition-all">
+              <h3 class="font-semibold text-white group-hover:text-green-400 transition-colors mb-1">{alt.data.name}</h3>
+              <p class="text-sm text-gray-400 mb-2">Replaces {alt.data.replaces[0]}</p>
+              <p class="text-green-400 font-bold">${alt.data.bounty_value.toLocaleString()}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+  </div>
+</Layout>

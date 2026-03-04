@@ -1,0 +1,11 @@
+name: AI Tools
+slug: ai-tools
+description: AI assistants, copilots, and machine learning platforms
+icon: "\U0001F916"
+enterprise_examples:
+  - name: ChatGPT Enterprise
+    annual_cost_per_seat: 720
+  - name: GitHub Copilot Business
+    annual_cost_per_seat: 228
+  - name: Jasper AI
+    annual_cost_per_seat: 588

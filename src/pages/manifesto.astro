@@ -1,0 +1,141 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Manifesto - Bountymon">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+    <div class="mb-12 text-center">
+      <img src="/mascot.png" alt="" class="w-16 h-16 object-contain mx-auto mb-6" />
+      <h1 class="text-3xl sm:text-4xl font-bold text-white mb-4">The Bountymon Manifesto</h1>
+      <p class="text-lg text-gray-400">Why we're building open alternatives to moat-driven enterprise software</p>
+    </div>
+
+    <article class="space-y-8 text-gray-300 leading-relaxed">
+      <section>
+        <h2 class="text-2xl font-bold text-white mb-4">The moat problem</h2>
+        <p>
+          Enterprise software companies don't compete on quality — they compete on lock-in.
+          They build moats: proprietary data formats, complex integrations that only work within their ecosystem,
+          multi-year contracts with steep exit costs, and "enterprise features" that exist primarily to justify
+          the price tag.
+        </p>
+        <p class="mt-4">
+          The result? Organizations pay $100/seat/year for project management that a well-designed open tool
+          could handle. They pay $300/seat/year for CRMs where they use 10% of features. They pay per host,
+          per metric, per GB, per user, per everything — and the bill only goes up.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-white mb-4">Enter vibe-coding</h2>
+        <p>
+          Something changed. AI-assisted development — "vibe-coding" — collapsed the time and expertise
+          required to build production software. What used to take a team of ten engineers six months can
+          now be built by a solo developer in a weekend.
+        </p>
+        <p class="mt-4">
+          This isn't about AI replacing programmers. It's about dramatically lowering the barrier to building
+          the specific software you need. When building is cheap, moats crumble. When anyone can stand up
+          a competent alternative in days, the value proposition of $300/seat/year evaporates.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-white mb-4">The bounty model</h2>
+        <p>
+          Bountymon tracks the economic value of replacing enterprise software with open alternatives.
+          Every subscription you cancel is a bounty collected. Every open tool that matches an enterprise
+          one is a moat breached.
+        </p>
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 my-6">
+          <p class="text-white font-semibold mb-2">The cycle:</p>
+          <ol class="space-y-2 text-gray-300 list-decimal list-inside">
+            <li>Identify enterprise software with inflated pricing</li>
+            <li>Post a bounty with requirements and a reward</li>
+            <li>Hunters build open alternatives (vibe-coded or not)</li>
+            <li>Organizations switch. Subscriptions die. Bounties are collected.</li>
+          </ol>
+        </div>
+        <p>
+          The "bounty" isn't just the reward — it's the total economic value freed from rent-seeking.
+          Every dollar saved is a dollar that can go toward building instead of paying tolls.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-white mb-4">Software sovereignty</h2>
+        <p>
+          This isn't anti-business. Great software deserves to be paid for. But there's a difference
+          between paying for value and paying for lock-in.
+        </p>
+        <p class="mt-4">
+          Software sovereignty means owning your tools. It means your data lives on your infrastructure.
+          It means no vendor can triple your pricing, sunset your features, or hold your workflows hostage.
+          It means you choose to pay because the software is good, not because switching costs $200K.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-white mb-4">This site is proof</h2>
+        <p>
+          Bountymon itself is vibe-coded. This entire platform — the directory, the bounty marketplace,
+          the savings calculator, the design — was built with AI assistance. No enterprise CMS.
+          No $500/month hosting. No SaaS subscription.
+        </p>
+        <p class="mt-4">
+          It's an Astro static site with Tailwind CSS, deployed for free on Cloudflare Pages.
+          The content is community-contributed via pull requests. The total running cost is $0/month.
+        </p>
+        <p class="mt-4 text-green-400 font-semibold">
+          If a community directory and bounty marketplace can be vibe-coded to production quality,
+          so can your Jira replacement. So can your CRM. So can anything with a moat.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold text-white mb-4">How to contribute</h2>
+        <div class="space-y-4">
+          <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+            <h3 class="text-white font-semibold mb-2">Add an alternative</h3>
+            <p class="text-sm text-gray-400">
+              Know of an open-source tool that replaces enterprise software? Add it to the directory by
+              creating a markdown file in <code class="text-green-400 bg-gray-800 px-1.5 py-0.5 rounded">src/content/alternatives/</code> and submitting a PR.
+            </p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+            <h3 class="text-white font-semibold mb-2">Post a bounty</h3>
+            <p class="text-sm text-gray-400">
+              Want enterprise software replaced? Create a bounty file in
+              <code class="text-green-400 bg-gray-800 px-1.5 py-0.5 rounded">src/content/bounties/</code> with your requirements and reward.
+            </p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+            <h3 class="text-white font-semibold mb-2">Claim a bounty</h3>
+            <p class="text-sm text-gray-400">
+              Build an alternative that meets the bounty requirements. Submit a PR updating the bounty status
+              and linking to your project.
+            </p>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+            <h3 class="text-white font-semibold mb-2">Improve Bountymon</h3>
+            <p class="text-sm text-gray-400">
+              This site is open source. Fix bugs, add features, improve the design — all contributions welcome.
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <div class="mt-16 text-center border-t border-gray-800 pt-12">
+      <p class="text-xl text-white font-semibold mb-4">Kill subscriptions. Collect bounties. Build sovereignty.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/bounties" class="px-6 py-3 bg-green-500 hover:bg-green-400 text-gray-950 font-semibold rounded-lg transition-colors">
+          View Open Bounties
+        </a>
+        <a href="https://github.com/davidklan-png/bountymon" class="px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg border border-gray-700 transition-colors" target="_blank" rel="noopener">
+          Fork on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>

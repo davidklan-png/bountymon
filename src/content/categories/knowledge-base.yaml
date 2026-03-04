@@ -1,0 +1,11 @@
+name: Knowledge Base
+slug: knowledge-base
+description: Documentation, wikis, and knowledge management systems
+icon: "\U0001F4D6"
+enterprise_examples:
+  - name: Notion Team
+    annual_cost_per_seat: 120
+  - name: Confluence
+    annual_cost_per_seat: 66
+  - name: Slite
+    annual_cost_per_seat: 96

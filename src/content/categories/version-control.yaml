@@ -1,0 +1,11 @@
+name: Version Control
+slug: version-control
+description: Git hosting, code review, and repository management
+icon: "\U0001F500"
+enterprise_examples:
+  - name: GitHub Enterprise
+    annual_cost_per_seat: 252
+  - name: GitLab Ultimate
+    annual_cost_per_seat: 1188
+  - name: Bitbucket Premium
+    annual_cost_per_seat: 120

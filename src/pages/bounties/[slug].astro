@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const bounties = await getCollection('bounties');
+  return bounties.map(bounty => ({
+    params: { slug: bounty.data.slug },
+    props: { bounty },
+  }));
+}
+
+const { bounty } = Astro.props;
+const { Content } = await render(bounty);
+---
+
+<Layout title={`${bounty.data.title} - Bountymon`}>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+    <!-- Breadcrumb -->
+    <nav class="text-sm mb-8">
+      <a href="/bounties" class="text-gray-400 hover:text-white transition-colors">Bounties</a>
+      <span class="text-gray-600 mx-2">/</span>
+      <span class="text-white">{bounty.data.title}</span>
+    </nav>
+
+    <!-- Header -->
+    <div class="mb-8">
+      <div class="flex flex-wrap items-center gap-3 mb-4">
+        <StatusBadge status={bounty.data.status} />
+        <span class="text-sm text-gray-500">Posted {bounty.data.posted_date} by {bounty.data.posted_by}</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-bold text-white mb-3">{bounty.data.title}</h1>
+      <p class="text-lg text-gray-400">{bounty.data.description}</p>
+    </div>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+      <div class="bg-gray-900 border border-amber-500/20 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-amber-400">${bounty.data.reward.toLocaleString()}</p>
+        <p class="text-xs text-gray-400">Reward</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-red-400">${bounty.data.annual_cost.toLocaleString()}</p>
+        <p class="text-xs text-gray-400">Enterprise Cost/yr</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-white">{bounty.data.seats}</p>
+        <p class="text-xs text-gray-400">Seats</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-white">{bounty.data.replaces}</p>
+        <p class="text-xs text-gray-400">Replaces</p>
+      </div>
+    </div>
+
+    <!-- Requirements -->
+    {bounty.data.requirements.length > 0 && (
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 mb-8">
+        <h2 class="text-lg font-semibold text-white mb-4">Requirements</h2>
+        <ul class="space-y-2">
+          {bounty.data.requirements.map(req => (
+            <li class="flex items-start gap-3 text-gray-300">
+              <span class="text-green-400 mt-0.5 shrink-0">&#9744;</span>
+              {req}
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+
+    <!-- Hunter info -->
+    {bounty.data.claimed_by && (
+      <div class="bg-gray-900 border border-yellow-500/20 rounded-xl p-6 mb-8">
+        <h2 class="text-lg font-semibold text-white mb-2">
+          {bounty.data.status === 'verified' ? 'Bounty collected by' : 'Claimed by'}
+        </h2>
+        <p class="text-yellow-400 font-medium text-lg">{bounty.data.claimed_by}</p>
+        {bounty.data.hunter_url && (
+          <a href={bounty.data.hunter_url} class="text-sm text-gray-400 hover:text-white transition-colors mt-2 inline-block" target="_blank" rel="noopener">
+            View project &rarr;
+          </a>
+        )}
+      </div>
+    )}
+
+    <!-- Content -->
+    <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 sm:p-8 mb-8 prose prose-invert prose-green max-w-none
+      [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-white [&_h2]:mt-8 [&_h2]:mb-4
+      [&_p]:text-gray-300 [&_p]:leading-relaxed [&_p]:mb-4
+      [&_strong]:text-white [&_strong]:font-semibold">
+      <Content />
+    </div>
+
+    <!-- CTA -->
+    {bounty.data.status === 'open' && (
+      <div class="bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-xl p-8 text-center">
+        <h2 class="text-xl font-bold text-white mb-3">Ready to claim this bounty?</h2>
+        <p class="text-gray-400 mb-6">Fork the repo, build the alternative, and submit a PR to claim it.</p>
+        <a href="https://github.com/davidklan-png/bountymon" class="px-6 py-3 bg-amber-500 hover:bg-amber-400 text-gray-950 font-semibold rounded-lg transition-colors" target="_blank" rel="noopener">
+          Claim on GitHub
+        </a>
+      </div>
+    )}
+  </div>
+</Layout>

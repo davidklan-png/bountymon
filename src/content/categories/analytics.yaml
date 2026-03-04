@@ -1,0 +1,11 @@
+name: Analytics
+slug: analytics
+description: Web analytics, product analytics, and business intelligence
+icon: "\U0001F4CA"
+enterprise_examples:
+  - name: Google Analytics 360
+    annual_cost_per_seat: 1800
+  - name: Mixpanel
+    annual_cost_per_seat: 300
+  - name: Amplitude
+    annual_cost_per_seat: 600
