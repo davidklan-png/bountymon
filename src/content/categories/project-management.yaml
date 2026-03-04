@@ -1,0 +1,11 @@
+name: Project Management
+slug: project-management
+description: Task tracking, sprint planning, and team coordination
+icon: "\U0001F4CB"
+enterprise_examples:
+  - name: Jira
+    annual_cost_per_seat: 100
+  - name: Linear
+    annual_cost_per_seat: 96
+  - name: Asana Business
+    annual_cost_per_seat: 300

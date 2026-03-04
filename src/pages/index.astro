@@ -1,46 +1,179 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Stats from '../components/Stats.astro';
-import BountyTable from '../components/BountyTable.astro';
-import bounties from '../data/bounties.json';
+import StatusBadge from '../components/StatusBadge.astro';
+import MaturityBadge from '../components/MaturityBadge.astro';
+import { getCollection } from 'astro:content';
 
-// Calculate stats
-const liveBounties = bounties.filter(b => b.status === 'live');
-const totalBounty = liveBounties.reduce((sum, b) => sum + b.bounty_value, 0);
-const annualSavings = liveBounties.reduce((sum, b) => sum + b.annual_cost, 0);
-const liveCount = liveBounties.length;
-const inProgressCount = bounties.filter(b => b.status === 'in-progress').length;
-const plannedCount = bounties.filter(b => b.status === 'planned').length;
+const alternatives = await getCollection('alternatives');
+const categories = await getCollection('categories');
+const bounties = await getCollection('bounties');
 
-// Sort bounties: live first, then in-progress, then planned
-const sortedBounties = [
-  ...liveBounties,
-  ...bounties.filter(b => b.status === 'in-progress'),
-  ...bounties.filter(b => b.status === 'planned')
-];
+const liveAlts = alternatives.filter(a => a.data.status === 'live');
+const totalSavings = liveAlts.reduce((sum, a) => sum + a.data.bounty_value, 0);
+const totalAnnual = liveAlts.reduce((sum, a) => sum + a.data.annual_cost_replaced, 0);
+const openBounties = bounties.filter(b => b.data.status === 'open');
+const totalBountyRewards = openBounties.reduce((sum, b) => sum + b.data.reward, 0);
+
+const featured = alternatives
+  .filter(a => a.data.featured)
+  .sort((a, b) => b.data.bounty_value - a.data.bounty_value);
+
+const topBounties = bounties
+  .filter(b => b.data.status === 'open')
+  .sort((a, b) => b.data.reward - a.data.reward)
+  .slice(0, 3);
 ---
 
-<Layout title="Bountymon - Bounty Board">
-  <Header />
-  
-  <main class="max-w-6xl mx-auto px-4 py-8">
-    <Stats 
-      totalBounty={totalBounty}
-      liveCount={liveCount}
-      inProgressCount={inProgressCount}
-      plannedCount={plannedCount}
-      annualSavings={annualSavings}
-    />
-    
-    <h2 class="text-xl font-semibold text-white mb-4">
-      Bounty Board
-    </h2>
-    
-    <BountyTable bounties={sortedBounties} />
-    
-    <footer class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
-      <p>💰 Track your self-hosted bounties. <a href="https://github.com/davidklan-png/bountymon" class="text-blue-400 hover:underline">Fork on GitHub</a> to create your own.</p>
-    </footer>
-  </main>
+<Layout title="Bountymon - Kill Subscriptions. Collect Bounties.">
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-green-500/5 via-transparent to-transparent"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-20 pb-16 relative">
+      <div class="text-center max-w-4xl mx-auto">
+        <div class="flex justify-center mb-6">
+          <img src="/mascot.png" alt="Bountymon Mascot" class="w-24 h-24 object-contain animate-fade-in-up" />
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-up" style="animation-delay: 0.1s">
+          Kill subscriptions.<br />
+          <span class="text-green-400">Collect bounties.</span><br />
+          Build sovereignty.
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-400 mb-10 max-w-2xl mx-auto animate-fade-in-up" style="animation-delay: 0.2s">
+          A community directory and bounty marketplace for replacing moat-driven enterprise software with vibe-coded alternatives.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style="animation-delay: 0.3s">
+          <a href="/directory" class="px-6 py-3 bg-green-500 hover:bg-green-400 text-gray-950 font-semibold rounded-lg transition-colors">
+            Browse Directory
+          </a>
+          <a href="/bounties" class="px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg border border-gray-700 transition-colors">
+            View Bounties
+          </a>
+          <a href="/calculator" class="px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg border border-gray-700 transition-colors">
+            Calculate Savings
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Stats -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 stagger-children">
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center glow-green">
+        <p class="text-3xl sm:text-4xl font-bold text-green-400">${totalSavings.toLocaleString()}</p>
+        <p class="text-sm text-gray-400 mt-1">Total Bounties Collected</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center">
+        <p class="text-3xl sm:text-4xl font-bold text-white">${totalAnnual.toLocaleString()}</p>
+        <p class="text-sm text-gray-400 mt-1">Annual Savings</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center">
+        <p class="text-3xl sm:text-4xl font-bold text-amber-400">${totalBountyRewards.toLocaleString()}</p>
+        <p class="text-sm text-gray-400 mt-1">Open Bounty Rewards</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center">
+        <p class="text-3xl sm:text-4xl font-bold text-white">{categories.length}</p>
+        <p class="text-sm text-gray-400 mt-1">Categories</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Alternatives -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
+    <div class="flex items-center justify-between mb-8">
+      <div>
+        <h2 class="text-2xl font-bold text-white">Featured Alternatives</h2>
+        <p class="text-gray-400 mt-1">Proven replacements for enterprise software</p>
+      </div>
+      <a href="/directory" class="text-green-400 hover:text-green-300 text-sm font-medium transition-colors">
+        View all &rarr;
+      </a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 stagger-children">
+      {featured.map(alt => {
+        const cat = categories.find(c => c.data.slug === alt.data.category);
+        return (
+          <a href={`/alternatives/${alt.data.slug}`} class="group bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-green-500/30 transition-all hover:bg-gray-900/80">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-semibold text-white group-hover:text-green-400 transition-colors">{alt.data.name}</h3>
+                <p class="text-sm text-gray-500">{cat?.data.name || alt.data.category}</p>
+              </div>
+              <StatusBadge status={alt.data.status} size="sm" />
+            </div>
+            <p class="text-sm text-gray-400 mb-4">
+              Replaces {alt.data.replaces.join(', ')}
+            </p>
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-xs text-gray-500">Bounty</p>
+                <p class="text-lg font-bold text-green-400">${alt.data.bounty_value.toLocaleString()}</p>
+              </div>
+              <div class="text-right">
+                <p class="text-xs text-gray-500">Saves/yr</p>
+                <p class="text-lg font-bold text-white">${alt.data.annual_cost_replaced.toLocaleString()}</p>
+              </div>
+              <MaturityBadge maturity={alt.data.maturity} />
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- Open Bounties Preview -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
+    <div class="flex items-center justify-between mb-8">
+      <div>
+        <h2 class="text-2xl font-bold text-white">Open Bounties</h2>
+        <p class="text-gray-400 mt-1">Enterprise software waiting to be replaced</p>
+      </div>
+      <a href="/bounties" class="text-green-400 hover:text-green-300 text-sm font-medium transition-colors">
+        All bounties &rarr;
+      </a>
+    </div>
+    <div class="space-y-4 stagger-children">
+      {topBounties.map(bounty => (
+        <a href={`/bounties/${bounty.data.slug}`} class="group block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-amber-500/30 transition-all">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div class="flex-1">
+              <div class="flex items-center gap-3 mb-1">
+                <h3 class="text-lg font-semibold text-white group-hover:text-amber-400 transition-colors">{bounty.data.title}</h3>
+                <StatusBadge status={bounty.data.status} size="sm" />
+              </div>
+              <p class="text-sm text-gray-400">{bounty.data.description}</p>
+            </div>
+            <div class="flex items-center gap-6 shrink-0">
+              <div class="text-center">
+                <p class="text-xs text-gray-500">Reward</p>
+                <p class="text-xl font-bold text-amber-400">${bounty.data.reward.toLocaleString()}</p>
+              </div>
+              <div class="text-center">
+                <p class="text-xs text-gray-500">Saves/yr</p>
+                <p class="text-xl font-bold text-white">${bounty.data.annual_cost.toLocaleString()}</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pb-20">
+    <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20 rounded-2xl p-8 sm:p-12 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">This site is vibe-coded</h2>
+      <p class="text-gray-400 max-w-2xl mx-auto mb-6">
+        Bountymon itself is built with AI-assisted development — proof that vibe-coded projects can be professional, fast, and useful. Contribute alternatives, post bounties, or claim one.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/manifesto" class="px-6 py-3 bg-green-500 hover:bg-green-400 text-gray-950 font-semibold rounded-lg transition-colors">
+          Read the Manifesto
+        </a>
+        <a href="https://github.com/davidklan-png/bountymon" class="px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg border border-gray-700 transition-colors" target="_blank" rel="noopener">
+          Contribute on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
 </Layout>

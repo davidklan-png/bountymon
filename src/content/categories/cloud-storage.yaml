@@ -1,0 +1,11 @@
+name: Cloud Storage
+slug: cloud-storage
+description: File sync, backup, and collaboration platforms
+icon: "\U0001F4C1"
+enterprise_examples:
+  - name: Dropbox Business
+    annual_cost_per_seat: 180
+  - name: Google Workspace
+    annual_cost_per_seat: 144
+  - name: OneDrive for Business
+    annual_cost_per_seat: 120

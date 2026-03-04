@@ -1,0 +1,11 @@
+name: Photo Management
+slug: photo-management
+description: Photo backup, organization, and sharing platforms
+icon: "\U0001F4F7"
+enterprise_examples:
+  - name: Google Photos
+    annual_cost_per_seat: 120
+  - name: iCloud+
+    annual_cost_per_seat: 120
+  - name: Adobe Lightroom
+    annual_cost_per_seat: 120

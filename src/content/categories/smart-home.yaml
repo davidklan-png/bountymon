@@ -1,0 +1,11 @@
+name: Smart Home
+slug: smart-home
+description: Home automation, IoT management, and smart device control
+icon: "\U0001F3E0"
+enterprise_examples:
+  - name: SmartThings Hub
+    annual_cost_per_seat: 120
+  - name: Apple HomeKit Accessories
+    annual_cost_per_seat: 200
+  - name: Amazon Alexa Plus
+    annual_cost_per_seat: 240

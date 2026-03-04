@@ -1,0 +1,119 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
+import MaturityBadge from '../../components/MaturityBadge.astro';
+import DifficultyBadge from '../../components/DifficultyBadge.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const categories = await getCollection('categories');
+  return categories.map(cat => ({
+    params: { category: cat.data.slug },
+    props: { category: cat },
+  }));
+}
+
+const { category } = Astro.props;
+const alternatives = await getCollection('alternatives');
+const catAlts = alternatives
+  .filter(a => a.data.category === category.data.slug)
+  .sort((a, b) => b.data.bounty_value - a.data.bounty_value);
+
+const totalSavings = catAlts.reduce((sum, a) => sum + a.data.annual_cost_replaced, 0);
+---
+
+<Layout title={`${category.data.name} - Bountymon Directory`}>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <!-- Breadcrumb -->
+    <nav class="text-sm mb-8">
+      <a href="/directory" class="text-gray-400 hover:text-white transition-colors">Directory</a>
+      <span class="text-gray-600 mx-2">/</span>
+      <span class="text-white">{category.data.name}</span>
+    </nav>
+
+    <!-- Category Header -->
+    <div class="bg-gray-900 border border-gray-800 rounded-xl p-8 mb-8">
+      <div class="flex items-start gap-4 mb-6">
+        <span class="text-4xl">{category.data.icon}</span>
+        <div>
+          <h1 class="text-3xl font-bold text-white">{category.data.name}</h1>
+          <p class="text-gray-400 mt-1">{category.data.description}</p>
+        </div>
+      </div>
+
+      <!-- Enterprise pricing context -->
+      <div class="border-t border-gray-800 pt-6">
+        <h3 class="text-sm font-semibold text-gray-400 mb-3">ENTERPRISE PRICING YOU'RE REPLACING</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {category.data.enterprise_examples.map(ex => (
+            <div class="bg-gray-950 border border-gray-800 rounded-lg p-4">
+              <p class="text-white font-medium">{ex.name}</p>
+              <p class="text-red-400 font-bold text-lg">${ex.annual_cost_per_seat}/seat/yr</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-3 gap-4 mb-8">
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-white">{catAlts.length}</p>
+        <p class="text-xs text-gray-400">Alternatives</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-green-400">${totalSavings.toLocaleString()}</p>
+        <p class="text-xs text-gray-400">Annual Savings</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-white">{catAlts.filter(a => a.data.status === 'live').length}</p>
+        <p class="text-xs text-gray-400">Live Now</p>
+      </div>
+    </div>
+
+    <!-- Alternatives Grid -->
+    {catAlts.length > 0 ? (
+      <div class="space-y-4 stagger-children">
+        {catAlts.map(alt => (
+          <a href={`/alternatives/${alt.data.slug}`} class="group block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-green-500/30 transition-all">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div class="flex-1">
+                <div class="flex items-center gap-3 mb-2">
+                  <h3 class="text-lg font-semibold text-white group-hover:text-green-400 transition-colors">{alt.data.name}</h3>
+                  <StatusBadge status={alt.data.status} size="sm" />
+                  <MaturityBadge maturity={alt.data.maturity} />
+                  <DifficultyBadge difficulty={alt.data.deployment_difficulty} />
+                  {alt.data.vibe_coded && (
+                    <span class="text-xs font-medium text-purple-400 bg-purple-500/10 border border-purple-500/20 rounded-full px-2 py-0.5">
+                      Vibe-coded
+                    </span>
+                  )}
+                </div>
+                <p class="text-sm text-gray-400">
+                  Replaces {alt.data.replaces.join(', ')}
+                </p>
+              </div>
+              <div class="flex items-center gap-6 shrink-0">
+                <div class="text-center">
+                  <p class="text-xs text-gray-500">Bounty</p>
+                  <p class="text-xl font-bold text-green-400">${alt.data.bounty_value.toLocaleString()}</p>
+                </div>
+                <div class="text-center">
+                  <p class="text-xs text-gray-500">Saves/yr</p>
+                  <p class="text-xl font-bold text-white">${alt.data.annual_cost_replaced.toLocaleString()}</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-12 text-center">
+        <p class="text-gray-400 mb-4">No alternatives yet in this category.</p>
+        <a href="https://github.com/davidklan-png/bountymon" class="text-green-400 hover:text-green-300 font-medium" target="_blank" rel="noopener">
+          Be the first to contribute one &rarr;
+        </a>
+      </div>
+    )}
+  </div>
+</Layout>

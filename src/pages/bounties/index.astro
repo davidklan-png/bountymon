@@ -1,0 +1,163 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
+import { getCollection } from 'astro:content';
+
+const bounties = await getCollection('bounties');
+
+const openBounties = bounties.filter(b => b.data.status === 'open').sort((a, b) => b.data.reward - a.data.reward);
+const claimedBounties = bounties.filter(b => b.data.status === 'claimed' || b.data.status === 'in-progress');
+const completedBounties = bounties.filter(b => b.data.status === 'delivered' || b.data.status === 'verified');
+
+const totalOpen = openBounties.reduce((sum, b) => sum + b.data.reward, 0);
+const totalAnnualSavings = bounties.reduce((sum, b) => sum + b.data.annual_cost, 0);
+---
+
+<Layout title="Bounty Board - Bountymon">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <div class="mb-10">
+      <h1 class="text-3xl sm:text-4xl font-bold text-white mb-3">Bounty Board</h1>
+      <p class="text-gray-400 text-lg max-w-2xl">
+        Enterprise software has bounties on its head. Claim one by building an open alternative, or post a bounty for software you want replaced.
+      </p>
+    </div>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center glow-green">
+        <p class="text-3xl font-bold text-amber-400">${totalOpen.toLocaleString()}</p>
+        <p class="text-sm text-gray-400 mt-1">Open Rewards</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center">
+        <p class="text-3xl font-bold text-white">{openBounties.length}</p>
+        <p class="text-sm text-gray-400 mt-1">Open Bounties</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center">
+        <p class="text-3xl font-bold text-yellow-400">{claimedBounties.length}</p>
+        <p class="text-sm text-gray-400 mt-1">In Progress</p>
+      </div>
+      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 text-center">
+        <p class="text-3xl font-bold text-green-400">{completedBounties.length}</p>
+        <p class="text-sm text-gray-400 mt-1">Completed</p>
+      </div>
+    </div>
+
+    <!-- How it works -->
+    <div class="bg-gradient-to-r from-amber-500/5 to-orange-500/5 border border-amber-500/20 rounded-xl p-6 sm:p-8 mb-10">
+      <h2 class="text-xl font-bold text-white mb-4">How Bounties Work</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div>
+          <div class="text-2xl mb-2">1.</div>
+          <h3 class="text-white font-semibold mb-1">Post a Bounty</h3>
+          <p class="text-sm text-gray-400">Identify enterprise software you want replaced. Set a reward and requirements.</p>
+        </div>
+        <div>
+          <div class="text-2xl mb-2">2.</div>
+          <h3 class="text-white font-semibold mb-1">Hunters Build</h3>
+          <p class="text-sm text-gray-400">Developers claim bounties and build open alternatives. Progress tracked publicly.</p>
+        </div>
+        <div>
+          <div class="text-2xl mb-2">3.</div>
+          <h3 class="text-white font-semibold mb-1">Collect the Bounty</h3>
+          <p class="text-sm text-gray-400">When requirements are met and verified, the hunter collects the reward.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Open Bounties -->
+    {openBounties.length > 0 && (
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-white mb-6">Open Bounties</h2>
+        <div class="space-y-4">
+          {openBounties.map(bounty => (
+            <a href={`/bounties/${bounty.data.slug}`} class="group block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-amber-500/30 transition-all">
+              <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                <div class="flex-1">
+                  <div class="flex flex-wrap items-center gap-3 mb-2">
+                    <h3 class="text-lg font-semibold text-white group-hover:text-amber-400 transition-colors">{bounty.data.title}</h3>
+                    <StatusBadge status={bounty.data.status} size="sm" />
+                  </div>
+                  <p class="text-sm text-gray-400 mb-3">{bounty.data.description}</p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="text-xs text-gray-500 bg-gray-800 rounded-full px-2 py-0.5">Replaces {bounty.data.replaces}</span>
+                    <span class="text-xs text-gray-500 bg-gray-800 rounded-full px-2 py-0.5">{bounty.data.seats} seats</span>
+                    <span class="text-xs text-gray-500 bg-gray-800 rounded-full px-2 py-0.5">{bounty.data.requirements.length} requirements</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-8 shrink-0">
+                  <div class="text-center">
+                    <p class="text-xs text-gray-500">Reward</p>
+                    <p class="text-2xl font-bold text-amber-400">${bounty.data.reward.toLocaleString()}</p>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-xs text-gray-500">Enterprise cost</p>
+                    <p class="text-2xl font-bold text-red-400">${bounty.data.annual_cost.toLocaleString()}/yr</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Claimed/In Progress -->
+    {claimedBounties.length > 0 && (
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-white mb-6">In Progress</h2>
+        <div class="space-y-4">
+          {claimedBounties.map(bounty => (
+            <a href={`/bounties/${bounty.data.slug}`} class="group block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-yellow-500/30 transition-all">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                  <div class="flex items-center gap-3 mb-1">
+                    <h3 class="text-lg font-semibold text-white">{bounty.data.title}</h3>
+                    <StatusBadge status={bounty.data.status} size="sm" />
+                  </div>
+                  <p class="text-sm text-gray-400">
+                    Claimed by <span class="text-yellow-400 font-medium">{bounty.data.claimed_by}</span>
+                  </p>
+                </div>
+                <p class="text-xl font-bold text-amber-400">${bounty.data.reward.toLocaleString()}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Completed -->
+    {completedBounties.length > 0 && (
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-white mb-6">Completed</h2>
+        <div class="space-y-4">
+          {completedBounties.map(bounty => (
+            <a href={`/bounties/${bounty.data.slug}`} class="group block bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-green-500/30 transition-all">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                  <div class="flex items-center gap-3 mb-1">
+                    <h3 class="text-lg font-semibold text-white">{bounty.data.title}</h3>
+                    <StatusBadge status={bounty.data.status} size="sm" />
+                  </div>
+                  <p class="text-sm text-gray-400">
+                    Delivered by <span class="text-green-400 font-medium">{bounty.data.claimed_by}</span>
+                  </p>
+                </div>
+                <p class="text-xl font-bold text-green-400">${bounty.data.reward.toLocaleString()}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- CTA -->
+    <div class="bg-gray-900 border border-gray-800 rounded-xl p-8 text-center">
+      <h2 class="text-xl font-bold text-white mb-3">Want to post or claim a bounty?</h2>
+      <p class="text-gray-400 mb-6">Submit a PR on GitHub to add a new bounty or claim an existing one.</p>
+      <a href="https://github.com/davidklan-png/bountymon" class="px-6 py-3 bg-amber-500 hover:bg-amber-400 text-gray-950 font-semibold rounded-lg transition-colors" target="_blank" rel="noopener">
+        Contribute on GitHub
+      </a>
+    </div>
+  </div>
+</Layout>
