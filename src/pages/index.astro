@@ -7,6 +7,7 @@ import { getCollection } from 'astro:content';
 const alternatives = await getCollection('alternatives');
 const categories = await getCollection('categories');
 const bounties = await getCollection('bounties');
+const articles = await getCollection('articles');
 
 const liveAlts = alternatives.filter(a => a.data.status === 'live');
 const totalSavings = liveAlts.reduce((sum, a) => sum + a.data.bounty_value, 0);
@@ -21,6 +22,10 @@ const featured = alternatives
 const topBounties = bounties
   .filter(b => b.data.status === 'open')
   .sort((a, b) => b.data.reward - a.data.reward)
+  .slice(0, 3);
+
+const latestArticles = articles
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
   .slice(0, 3);
 ---
 
@@ -156,6 +161,56 @@ const topBounties = bounties
           </div>
         </a>
       ))}
+    </div>
+  </section>
+
+  <!-- Latest Articles -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
+    <div class="flex items-center justify-between mb-8">
+      <div>
+        <h2 class="text-2xl font-bold text-white">Latest Articles</h2>
+        <p class="text-gray-400 mt-1">Guides, case studies, and opinions</p>
+      </div>
+      <a href="/blog" class="text-green-400 hover:text-green-300 text-sm font-medium transition-colors">
+        All articles &rarr;
+      </a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 stagger-children">
+      {latestArticles.map(article => (
+        <a href={`/blog/${article.data.slug}`} class="group bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-green-500/30 transition-all">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xs font-medium text-green-400 bg-green-500/10 border border-green-500/20 rounded-full px-2 py-0.5">
+              {article.data.category}
+            </span>
+            <span class="text-xs text-gray-500">{article.data.read_time} min</span>
+          </div>
+          <h3 class="text-base font-semibold text-white group-hover:text-green-400 transition-colors mb-2 leading-snug">
+            {article.data.title}
+          </h3>
+          <p class="text-sm text-gray-400 line-clamp-2">{article.data.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Social Proof / Numbers -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
+    <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8 sm:p-12">
+      <h2 class="text-2xl font-bold text-white text-center mb-8">The math is simple</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div>
+          <p class="text-4xl sm:text-5xl font-bold text-red-400 mb-2">$103K</p>
+          <p class="text-gray-400">Average 50-person team SaaS spend per year</p>
+        </div>
+        <div>
+          <p class="text-4xl sm:text-5xl font-bold text-white mb-2">$2.5K</p>
+          <p class="text-gray-400">Self-hosting infrastructure cost per year</p>
+        </div>
+        <div>
+          <p class="text-4xl sm:text-5xl font-bold text-green-400 mb-2">97%</p>
+          <p class="text-gray-400">Potential cost reduction</p>
+        </div>
+      </div>
     </div>
   </section>
 

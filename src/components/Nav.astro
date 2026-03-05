@@ -1,4 +1,7 @@
 ---
+import SearchDialog from './islands/SearchDialog';
+import { getCollection } from 'astro:content';
+
 interface Props {
   currentPath: string;
 }
@@ -10,13 +13,50 @@ const links = [
   { href: '/directory', label: 'Directory' },
   { href: '/bounties', label: 'Bounties' },
   { href: '/calculator', label: 'Calculator' },
-  { href: '/manifesto', label: 'Manifesto' },
+  { href: '/blog', label: 'Blog' },
 ];
 
 function isActive(href: string, current: string) {
   if (href === '/') return current === '/';
   return current.startsWith(href);
 }
+
+// Build search index
+const alternatives = await getCollection('alternatives');
+const bounties = await getCollection('bounties');
+const articles = await getCollection('articles');
+const categories = await getCollection('categories');
+
+const searchItems = [
+  ...alternatives.map(a => ({
+    title: a.data.name,
+    description: `Replaces ${a.data.replaces.join(', ')} — $${a.data.bounty_value} bounty`,
+    url: `/alternatives/${a.data.slug}`,
+    type: 'alternative' as const,
+    tags: a.data.tags,
+  })),
+  ...bounties.map(b => ({
+    title: b.data.title,
+    description: `$${b.data.reward.toLocaleString()} reward — ${b.data.status}`,
+    url: `/bounties/${b.data.slug}`,
+    type: 'bounty' as const,
+    tags: [],
+  })),
+  ...articles.map(a => ({
+    title: a.data.title,
+    description: a.data.description,
+    url: `/blog/${a.data.slug}`,
+    type: 'article' as const,
+    tags: a.data.tags,
+  })),
+  ...categories.map(c => ({
+    title: c.data.name,
+    description: c.data.description,
+    url: `/directory/${c.data.slug}`,
+    type: 'category' as const,
+    tags: [],
+  })),
+];
 ---
 
 <header class="border-b border-gray-800 bg-gray-950/80 backdrop-blur-md sticky top-0 z-50">
@@ -42,9 +82,12 @@ function isActive(href: string, current: string) {
             {link.label}
           </a>
         ))}
+        <div class="ml-2">
+          <SearchDialog client:load items={searchItems} />
+        </div>
         <a
           href="https://github.com/davidklan-png/bountymon"
-          class="ml-2 px-3 py-2 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-gray-800/50 transition-colors"
+          class="ml-1 px-3 py-2 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-gray-800/50 transition-colors"
           target="_blank"
           rel="noopener"
         >
@@ -52,16 +95,19 @@ function isActive(href: string, current: string) {
         </a>
       </nav>
 
-      <!-- Mobile menu button -->
-      <button
-        id="mobile-menu-btn"
-        class="md:hidden p-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800/50"
-        aria-label="Toggle menu"
-      >
-        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
+      <!-- Mobile controls -->
+      <div class="flex md:hidden items-center gap-2">
+        <SearchDialog client:load items={searchItems} />
+        <button
+          id="mobile-menu-btn"
+          class="p-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800/50"
+          aria-label="Toggle menu"
+        >
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
     </div>
 
     <!-- Mobile nav -->
@@ -79,6 +125,17 @@ function isActive(href: string, current: string) {
           {link.label}
         </a>
       ))}
+      <a
+        href="/manifesto"
+        class:list={[
+          'block px-3 py-2 rounded-lg text-sm font-medium transition-colors',
+          isActive('/manifesto', currentPath)
+            ? 'bg-green-500/10 text-green-400'
+            : 'text-gray-400 hover:text-white hover:bg-gray-800/50'
+        ]}
+      >
+        Manifesto
+      </a>
       <a
         href="https://github.com/davidklan-png/bountymon"
         class="block px-3 py-2 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-gray-800/50"
