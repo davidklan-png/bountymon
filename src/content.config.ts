@@ -57,4 +57,20 @@ const bounties = defineCollection({
   }),
 });
 
-export const collections = { categories, alternatives, bounties };
+const articles = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/articles' }),
+  schema: z.object({
+    title: z.string(),
+    slug: z.string(),
+    description: z.string(),
+    author: z.string(),
+    date: z.string(),
+    category: z.enum(['guide', 'case-study', 'opinion', 'tutorial', 'news']),
+    tags: z.array(z.string()).default([]),
+    featured: z.boolean().default(false),
+    image: z.string().optional(),
+    read_time: z.number().default(5),
+  }),
+});
+
+export const collections = { categories, alternatives, bounties, articles };

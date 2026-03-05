@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import DirectoryFilter from '../../components/islands/DirectoryFilter';
 import { getCollection } from 'astro:content';
 
 const categories = await getCollection('categories');
@@ -10,58 +11,41 @@ const categoryData = categories.map(cat => {
   const totalSavings = alts.reduce((sum, a) => sum + a.data.annual_cost_replaced, 0);
   const avgEnterpriseCost = cat.data.enterprise_examples.reduce((sum, e) => sum + e.annual_cost_per_seat, 0) / cat.data.enterprise_examples.length;
   return {
-    ...cat.data,
+    name: cat.data.name,
+    slug: cat.data.slug,
+    icon: cat.data.icon,
     altCount: alts.length,
     totalSavings,
     avgEnterpriseCost,
+    enterpriseExamples: cat.data.enterprise_examples.map(e => e.name).join(', '),
   };
 }).sort((a, b) => b.totalSavings - a.totalSavings);
+
+const totalAlternatives = alternatives.length;
+const totalSavings = alternatives.reduce((sum, a) => sum + a.data.annual_cost_replaced, 0);
 ---
 
 <Layout title="Directory - Bountymon">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
-    <div class="mb-10">
-      <h1 class="text-3xl sm:text-4xl font-bold text-white mb-3">Software Directory</h1>
-      <p class="text-gray-400 text-lg max-w-2xl">
-        Browse categories of enterprise software and discover open alternatives. Every category represents a moat waiting to be breached.
-      </p>
+    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-6 gap-4">
+      <div>
+        <h1 class="text-3xl sm:text-4xl font-bold text-white mb-3">Software Directory</h1>
+        <p class="text-gray-400 text-lg max-w-2xl">
+          Browse categories of enterprise software and discover open alternatives. Every category represents a moat waiting to be breached.
+        </p>
+      </div>
+      <div class="flex gap-4 text-sm shrink-0">
+        <div class="text-center">
+          <p class="text-xl font-bold text-white">{totalAlternatives}</p>
+          <p class="text-gray-500">Alternatives</p>
+        </div>
+        <div class="text-center">
+          <p class="text-xl font-bold text-green-400">${totalSavings.toLocaleString()}</p>
+          <p class="text-gray-500">Savings/yr</p>
+        </div>
+      </div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 stagger-children">
-      {categoryData.map(cat => (
-        <a href={`/directory/${cat.slug}`} class="group bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-green-500/30 transition-all">
-          <div class="flex items-start justify-between mb-4">
-            <div class="text-3xl">{cat.icon}</div>
-            {cat.altCount > 0 && (
-              <span class="text-xs font-medium text-green-400 bg-green-500/10 border border-green-500/20 rounded-full px-2 py-0.5">
-                {cat.altCount} alternative{cat.altCount !== 1 ? 's' : ''}
-              </span>
-            )}
-          </div>
-          <h2 class="text-xl font-semibold text-white group-hover:text-green-400 transition-colors mb-2">{cat.name}</h2>
-          <p class="text-sm text-gray-400 mb-4">{cat.description}</p>
-          <div class="border-t border-gray-800 pt-4">
-            <div class="flex justify-between text-sm">
-              <div>
-                <p class="text-gray-500">Avg. enterprise cost</p>
-                <p class="text-white font-semibold">${Math.round(cat.avgEnterpriseCost)}/seat/yr</p>
-              </div>
-              {cat.totalSavings > 0 && (
-                <div class="text-right">
-                  <p class="text-gray-500">Potential savings</p>
-                  <p class="text-green-400 font-semibold">${cat.totalSavings.toLocaleString()}/yr</p>
-                </div>
-              )}
-            </div>
-            <div class="mt-3">
-              <p class="text-xs text-gray-500">Enterprise examples</p>
-              <p class="text-xs text-gray-400 mt-0.5">
-                {cat.enterprise_examples.map(e => e.name).join(', ')}
-              </p>
-            </div>
-          </div>
-        </a>
-      ))}
-    </div>
+    <DirectoryFilter client:load categories={categoryData} />
   </div>
 </Layout>

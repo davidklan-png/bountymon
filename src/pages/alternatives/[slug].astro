@@ -78,21 +78,47 @@ const related = alternatives
       </div>
     </div>
 
-    <!-- Enterprise Comparison -->
+    <!-- Enterprise Comparison Table -->
     {category && (
-      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 mb-8">
-        <h2 class="text-lg font-semibold text-white mb-4">Enterprise Pricing Comparison</h2>
-        <div class="space-y-3">
-          {category.data.enterprise_examples.map(ex => (
-            <div class="flex items-center justify-between py-2 border-b border-gray-800 last:border-0">
-              <span class="text-gray-300">{ex.name}</span>
-              <div class="flex items-center gap-4">
-                <span class="text-red-400 font-medium">${ex.annual_cost_per_seat}/seat/yr</span>
-                <span class="text-green-400 text-sm">Save 100%</span>
-              </div>
-            </div>
-          ))}
+      <div class="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden mb-8">
+        <div class="p-6 pb-0">
+          <h2 class="text-lg font-semibold text-white mb-1">Enterprise vs. Open Alternative</h2>
+          <p class="text-sm text-gray-500 mb-4">Cost comparison per seat per year</p>
         </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm" role="table">
+            <thead>
+              <tr class="border-t border-b border-gray-800">
+                <th class="text-left py-3 px-6 text-gray-400 font-medium">Tool</th>
+                <th class="text-right py-3 px-6 text-gray-400 font-medium">Cost/seat/yr</th>
+                <th class="text-right py-3 px-6 text-gray-400 font-medium">10 seats</th>
+                <th class="text-right py-3 px-6 text-gray-400 font-medium">50 seats</th>
+                <th class="text-right py-3 px-6 text-gray-400 font-medium">Savings</th>
+              </tr>
+            </thead>
+            <tbody>
+              {category.data.enterprise_examples.map(ex => (
+                <tr class="border-b border-gray-800/50 hover:bg-gray-800/30 transition-colors">
+                  <td class="py-3 px-6 text-gray-300 font-medium">{ex.name}</td>
+                  <td class="py-3 px-6 text-right text-red-400 font-mono">${ex.annual_cost_per_seat}</td>
+                  <td class="py-3 px-6 text-right text-red-400/70 font-mono">${(ex.annual_cost_per_seat * 10).toLocaleString()}</td>
+                  <td class="py-3 px-6 text-right text-red-400/70 font-mono">${(ex.annual_cost_per_seat * 50).toLocaleString()}</td>
+                  <td class="py-3 px-6 text-right text-green-400 font-semibold">100%</td>
+                </tr>
+              ))}
+              <tr class="bg-green-500/5">
+                <td class="py-3 px-6 text-green-400 font-semibold">{alternative.data.name}</td>
+                <td class="py-3 px-6 text-right text-green-400 font-mono font-semibold">$0</td>
+                <td class="py-3 px-6 text-right text-green-400 font-mono font-semibold">$0</td>
+                <td class="py-3 px-6 text-right text-green-400 font-mono font-semibold">$0</td>
+                <td class="py-3 px-6 text-right text-green-400 font-semibold">Free</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-gray-500 px-6 py-3 border-t border-gray-800">
+          Self-hosting infrastructure costs not included. Typically $2-10/month per service.
+        </p>
       </div>
     )}
 

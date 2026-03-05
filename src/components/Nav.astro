@@ -1,4 +1,7 @@
 ---
+import SearchDialog from './islands/SearchDialog';
+import { getCollection } from 'astro:content';
+
 interface Props {
   currentPath: string;
 }
@@ -10,25 +13,63 @@ const links = [
   { href: '/directory', label: 'Directory' },
   { href: '/bounties', label: 'Bounties' },
   { href: '/calculator', label: 'Calculator' },
-  { href: '/manifesto', label: 'Manifesto' },
+  { href: '/blog', label: 'Blog' },
 ];
 
 function isActive(href: string, current: string) {
   if (href === '/') return current === '/';
   return current.startsWith(href);
 }
+
+// Build search index server-side; passed as a serialised prop to the single island
+const alternatives = await getCollection('alternatives');
+const bounties = await getCollection('bounties');
+const articles = await getCollection('articles');
+const categories = await getCollection('categories');
+
+const searchItems = [
+  ...alternatives.map(a => ({
+    title: a.data.name,
+    description: `Replaces ${a.data.replaces.join(', ')} — $${a.data.bounty_value} bounty`,
+    url: `/alternatives/${a.data.slug}`,
+    type: 'alternative' as const,
+    tags: a.data.tags,
+  })),
+  ...bounties.map(b => ({
+    title: b.data.title,
+    description: `$${b.data.reward.toLocaleString()} reward — ${b.data.status}`,
+    url: `/bounties/${b.data.slug}`,
+    type: 'bounty' as const,
+    tags: [] as string[],
+  })),
+  ...articles.map(a => ({
+    title: a.data.title,
+    description: a.data.description,
+    url: `/blog/${a.data.slug}`,
+    type: 'article' as const,
+    tags: a.data.tags,
+  })),
+  ...categories.map(c => ({
+    title: c.data.name,
+    description: c.data.description,
+    url: `/directory/${c.data.slug}`,
+    type: 'category' as const,
+    tags: [] as string[],
+  })),
+];
 ---
 
 <header class="border-b border-gray-800 bg-gray-950/80 backdrop-blur-md sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
       <a href="/" class="flex items-center gap-3 group">
         <img src="/mascot.png" alt="" class="w-10 h-10 object-contain group-hover:scale-110 transition-transform" />
         <span class="text-xl font-bold text-white">Bountymon</span>
       </a>
 
-      <!-- Desktop nav -->
-      <nav class="hidden md:flex items-center gap-1">
+      <!-- Desktop nav links -->
+      <nav class="hidden md:flex items-center gap-1" aria-label="Main navigation">
         {links.map(link => (
           <a
             href={link.href}
@@ -44,7 +85,7 @@ function isActive(href: string, current: string) {
         ))}
         <a
           href="https://github.com/davidklan-png/bountymon"
-          class="ml-2 px-3 py-2 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-gray-800/50 transition-colors"
+          class="ml-1 px-3 py-2 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-gray-800/50 transition-colors"
           target="_blank"
           rel="noopener"
         >
@@ -52,20 +93,36 @@ function isActive(href: string, current: string) {
         </a>
       </nav>
 
-      <!-- Mobile menu button -->
-      <button
-        id="mobile-menu-btn"
-        class="md:hidden p-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800/50"
-        aria-label="Toggle menu"
-      >
-        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
+      <!--
+        Right-side controls: SearchDialog is mounted ONCE here, always in the DOM
+        regardless of viewport. The trigger button and the dialog overlay are both
+        rendered by this single island, so there is exactly one keydown listener
+        and one body.overflow mutation.
+      -->
+      <div class="flex items-center gap-2">
+        <SearchDialog client:load items={searchItems} />
+
+        <!-- Mobile hamburger -->
+        <button
+          id="mobile-menu-btn"
+          class="md:hidden p-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800/50"
+          aria-label="Toggle navigation menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
     </div>
 
-    <!-- Mobile nav -->
-    <nav id="mobile-menu" class="md:hidden hidden pb-4 border-t border-gray-800 mt-2 pt-2">
+    <!-- Mobile nav drawer -->
+    <nav
+      id="mobile-menu"
+      class="md:hidden hidden pb-4 border-t border-gray-800 mt-2 pt-2"
+      aria-label="Mobile navigation"
+    >
       {links.map(link => (
         <a
           href={link.href}
@@ -79,6 +136,17 @@ function isActive(href: string, current: string) {
           {link.label}
         </a>
       ))}
+      <a
+        href="/manifesto"
+        class:list={[
+          'block px-3 py-2 rounded-lg text-sm font-medium transition-colors',
+          isActive('/manifesto', currentPath)
+            ? 'bg-green-500/10 text-green-400'
+            : 'text-gray-400 hover:text-white hover:bg-gray-800/50'
+        ]}
+      >
+        Manifesto
+      </a>
       <a
         href="https://github.com/davidklan-png/bountymon"
         class="block px-3 py-2 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-gray-800/50"
@@ -94,5 +162,9 @@ function isActive(href: string, current: string) {
 <script>
   const btn = document.getElementById('mobile-menu-btn');
   const menu = document.getElementById('mobile-menu');
-  btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+  btn?.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    menu?.classList.toggle('hidden');
+  });
 </script>
