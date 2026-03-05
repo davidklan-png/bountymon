@@ -1,0 +1,11 @@
+name: Design
+slug: design
+description: UI/UX design, prototyping, and design collaboration
+icon: "\U0001F3A8"
+enterprise_examples:
+  - name: Figma Enterprise
+    annual_cost_per_seat: 540
+  - name: Adobe Creative Cloud
+    annual_cost_per_seat: 660
+  - name: Sketch
+    annual_cost_per_seat: 120

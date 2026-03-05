@@ -1,0 +1,11 @@
+name: Monitoring
+slug: monitoring
+description: Infrastructure monitoring, logging, and observability
+icon: "\U0001F4E6"
+enterprise_examples:
+  - name: Datadog Pro
+    annual_cost_per_seat: 300
+  - name: New Relic
+    annual_cost_per_seat: 360
+  - name: Splunk Cloud
+    annual_cost_per_seat: 1800

@@ -1,0 +1,11 @@
+name: Communication
+slug: communication
+description: Team messaging, chat, and real-time collaboration
+icon: "\U0001F4AC"
+enterprise_examples:
+  - name: Slack Enterprise
+    annual_cost_per_seat: 180
+  - name: Microsoft Teams (E3)
+    annual_cost_per_seat: 264
+  - name: Discord Nitro (per user)
+    annual_cost_per_seat: 120

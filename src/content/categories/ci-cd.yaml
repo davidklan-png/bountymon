@@ -1,0 +1,11 @@
+name: CI/CD
+slug: ci-cd
+description: Continuous integration, deployment pipelines, and DevOps automation
+icon: "\U0001F504"
+enterprise_examples:
+  - name: GitHub Actions (Team)
+    annual_cost_per_seat: 528
+  - name: CircleCI
+    annual_cost_per_seat: 420
+  - name: GitLab Ultimate
+    annual_cost_per_seat: 1188

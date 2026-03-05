@@ -1,0 +1,11 @@
+name: Email
+slug: email
+description: Business email, calendaring, and productivity suites
+icon: "\U0001F4E7"
+enterprise_examples:
+  - name: Google Workspace Business Plus
+    annual_cost_per_seat: 216
+  - name: Microsoft 365 E3
+    annual_cost_per_seat: 420
+  - name: Fastmail Business
+    annual_cost_per_seat: 60

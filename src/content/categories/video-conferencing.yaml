@@ -1,0 +1,11 @@
+name: Video Conferencing
+slug: video-conferencing
+description: Video meetings, webinars, and virtual collaboration
+icon: "\U0001F4F9"
+enterprise_examples:
+  - name: Zoom Business
+    annual_cost_per_seat: 240
+  - name: Microsoft Teams
+    annual_cost_per_seat: 264
+  - name: Google Meet (Workspace)
+    annual_cost_per_seat: 216

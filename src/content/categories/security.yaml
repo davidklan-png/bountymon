@@ -1,0 +1,11 @@
+name: Security
+slug: security
+description: Identity management, secrets storage, and access control
+icon: "\U0001F512"
+enterprise_examples:
+  - name: Okta
+    annual_cost_per_seat: 120
+  - name: 1Password Business
+    annual_cost_per_seat: 96
+  - name: HashiCorp Vault Enterprise
+    annual_cost_per_seat: 600

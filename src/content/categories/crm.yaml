@@ -1,0 +1,11 @@
+name: CRM
+slug: crm
+description: Customer relationship management, sales pipelines, and contact management
+icon: "\U0001F4BC"
+enterprise_examples:
+  - name: Salesforce
+    annual_cost_per_seat: 1800
+  - name: HubSpot Enterprise
+    annual_cost_per_seat: 1200
+  - name: Pipedrive Enterprise
+    annual_cost_per_seat: 600
