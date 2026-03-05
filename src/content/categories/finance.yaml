@@ -1,0 +1,13 @@
+name: Finance
+slug: finance
+description: Accounting, ERP, invoicing, and financial management
+icon: "\U0001F4B0"
+enterprise_examples:
+  - name: SAP
+    annual_cost_per_seat: 3600
+  - name: QuickBooks Enterprise
+    annual_cost_per_seat: 1200
+  - name: NetSuite
+    annual_cost_per_seat: 2400
+  - name: Oracle Financials
+    annual_cost_per_seat: 4200
