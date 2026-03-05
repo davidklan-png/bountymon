@@ -18,15 +18,22 @@ export default function SearchDialog({ items }: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    const handler = (e: KeyboardEvent) => {
+    const onKey = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
         e.preventDefault();
         setOpen(prev => !prev);
       }
       if (e.key === 'Escape') setOpen(false);
     };
-    document.addEventListener('keydown', handler);
-    return () => document.removeEventListener('keydown', handler);
+    // Custom event so static trigger buttons elsewhere can open this single instance
+    const onOpen = () => setOpen(true);
+
+    document.addEventListener('keydown', onKey);
+    document.addEventListener('bountymon:open-search', onOpen);
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.removeEventListener('bountymon:open-search', onOpen);
+    };
   }, []);
 
   useEffect(() => {
@@ -60,10 +67,13 @@ export default function SearchDialog({ items }: Props) {
 
   return (
     <>
+      {/* Single trigger button — always rendered once */}
       <button
         onClick={() => setOpen(true)}
         class="flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm text-gray-400 bg-gray-800/50 border border-gray-700 hover:border-gray-600 hover:text-white transition-colors"
-        aria-label="Search"
+        aria-label="Search (Ctrl+K)"
+        aria-haspopup="dialog"
+        aria-expanded={open}
       >
         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -74,8 +84,15 @@ export default function SearchDialog({ items }: Props) {
         </kbd>
       </button>
 
+      {/* Single dialog overlay — rendered once, shared across all viewports */}
       {open && (
-        <div class="fixed inset-0 z-[100] flex items-start justify-center pt-[15vh]" onClick={() => setOpen(false)}>
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label="Search"
+          class="fixed inset-0 z-[100] flex items-start justify-center pt-[15vh]"
+          onClick={() => setOpen(false)}
+        >
           <div class="fixed inset-0 bg-black/60 backdrop-blur-sm" />
           <div
             class="relative w-full max-w-xl mx-4 bg-gray-900 border border-gray-700 rounded-2xl shadow-2xl overflow-hidden"
@@ -93,7 +110,11 @@ export default function SearchDialog({ items }: Props) {
                 onInput={(e) => setQuery((e.target as HTMLInputElement).value)}
                 class="flex-1 bg-transparent border-0 outline-none text-white placeholder-gray-500 py-4 text-base"
               />
-              <button onClick={() => setOpen(false)} class="text-xs text-gray-500 bg-gray-800 rounded px-2 py-1 border border-gray-700 hover:text-white transition-colors">
+              <button
+                onClick={() => setOpen(false)}
+                class="text-xs text-gray-500 bg-gray-800 rounded px-2 py-1 border border-gray-700 hover:text-white transition-colors"
+                aria-label="Close search"
+              >
                 Esc
               </button>
             </div>

@@ -21,7 +21,7 @@ function isActive(href: string, current: string) {
   return current.startsWith(href);
 }
 
-// Build search index
+// Build search index server-side; passed as a serialised prop to the single island
 const alternatives = await getCollection('alternatives');
 const bounties = await getCollection('bounties');
 const articles = await getCollection('articles');
@@ -40,7 +40,7 @@ const searchItems = [
     description: `$${b.data.reward.toLocaleString()} reward — ${b.data.status}`,
     url: `/bounties/${b.data.slug}`,
     type: 'bounty' as const,
-    tags: [],
+    tags: [] as string[],
   })),
   ...articles.map(a => ({
     title: a.data.title,
@@ -54,7 +54,7 @@ const searchItems = [
     description: c.data.description,
     url: `/directory/${c.data.slug}`,
     type: 'category' as const,
-    tags: [],
+    tags: [] as string[],
   })),
 ];
 ---
@@ -62,13 +62,14 @@ const searchItems = [
 <header class="border-b border-gray-800 bg-gray-950/80 backdrop-blur-md sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
       <a href="/" class="flex items-center gap-3 group">
         <img src="/mascot.png" alt="" class="w-10 h-10 object-contain group-hover:scale-110 transition-transform" />
         <span class="text-xl font-bold text-white">Bountymon</span>
       </a>
 
-      <!-- Desktop nav -->
-      <nav class="hidden md:flex items-center gap-1">
+      <!-- Desktop nav links -->
+      <nav class="hidden md:flex items-center gap-1" aria-label="Main navigation">
         {links.map(link => (
           <a
             href={link.href}
@@ -82,9 +83,6 @@ const searchItems = [
             {link.label}
           </a>
         ))}
-        <div class="ml-2">
-          <SearchDialog client:load items={searchItems} />
-        </div>
         <a
           href="https://github.com/davidklan-png/bountymon"
           class="ml-1 px-3 py-2 rounded-lg text-sm font-medium text-gray-400 hover:text-white hover:bg-gray-800/50 transition-colors"
@@ -95,13 +93,22 @@ const searchItems = [
         </a>
       </nav>
 
-      <!-- Mobile controls -->
-      <div class="flex md:hidden items-center gap-2">
+      <!--
+        Right-side controls: SearchDialog is mounted ONCE here, always in the DOM
+        regardless of viewport. The trigger button and the dialog overlay are both
+        rendered by this single island, so there is exactly one keydown listener
+        and one body.overflow mutation.
+      -->
+      <div class="flex items-center gap-2">
         <SearchDialog client:load items={searchItems} />
+
+        <!-- Mobile hamburger -->
         <button
           id="mobile-menu-btn"
-          class="p-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800/50"
-          aria-label="Toggle menu"
+          class="md:hidden p-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800/50"
+          aria-label="Toggle navigation menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
         >
           <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -110,8 +117,12 @@ const searchItems = [
       </div>
     </div>
 
-    <!-- Mobile nav -->
-    <nav id="mobile-menu" class="md:hidden hidden pb-4 border-t border-gray-800 mt-2 pt-2">
+    <!-- Mobile nav drawer -->
+    <nav
+      id="mobile-menu"
+      class="md:hidden hidden pb-4 border-t border-gray-800 mt-2 pt-2"
+      aria-label="Mobile navigation"
+    >
       {links.map(link => (
         <a
           href={link.href}
@@ -151,5 +162,9 @@ const searchItems = [
 <script>
   const btn = document.getElementById('mobile-menu-btn');
   const menu = document.getElementById('mobile-menu');
-  btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+  btn?.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    menu?.classList.toggle('hidden');
+  });
 </script>
