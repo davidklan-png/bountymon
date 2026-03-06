@@ -7,9 +7,12 @@ replaces: Figma
 annual_cost: 1800
 reward: 15000
 status: open
+difficulty: extreme
 posted_by: "bountymon"
 posted_date: "2026-03-01"
+deadline: "2026-09-01"
 seats: 15
+tags: ["design", "collaboration", "ui-ux"]
 requirements:
   - Vector editing with pen tool
   - Component/symbol system

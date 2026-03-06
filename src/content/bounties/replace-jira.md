@@ -7,9 +7,12 @@ replaces: Jira
 annual_cost: 1200
 reward: 5000
 status: open
+difficulty: moderate
 posted_by: "bountymon"
 posted_date: "2026-02-15"
+deadline: "2026-06-15"
 seats: 12
+tags: ["productivity", "developer-tools", "kanban"]
 requirements:
   - Keyboard-first navigation
   - Sprint planning with velocity tracking

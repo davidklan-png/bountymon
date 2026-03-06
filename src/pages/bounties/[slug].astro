@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import StatusBadge from '../../components/StatusBadge.astro';
+import BountyActions from '../../components/islands/BountyActions.tsx';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -13,12 +14,14 @@ export async function getStaticPaths() {
 
 const { bounty } = Astro.props;
 const { Content } = await render(bounty);
+
+const repoBase = 'https://github.com/davidklan-png/bountymon';
 ---
 
 <Layout title={`${bounty.data.title} - Bountymon`}>
   <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
     <!-- Breadcrumb -->
-    <nav class="text-sm mb-8">
+    <nav class="text-sm mb-8" aria-label="Breadcrumb">
       <a href="/bounties" class="text-gray-400 hover:text-white transition-colors">Bounties</a>
       <span class="text-gray-600 mx-2">/</span>
       <span class="text-white">{bounty.data.title}</span>
@@ -54,53 +57,46 @@ const { Content } = await render(bounty);
       </div>
     </div>
 
-    <!-- Requirements -->
-    {bounty.data.requirements.length > 0 && (
-      <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 mb-8">
-        <h2 class="text-lg font-semibold text-white mb-4">Requirements</h2>
-        <ul class="space-y-2">
-          {bounty.data.requirements.map(req => (
-            <li class="flex items-start gap-3 text-gray-300">
-              <span class="text-green-400 mt-0.5 shrink-0">&#9744;</span>
-              {req}
-            </li>
-          ))}
-        </ul>
-      </div>
-    )}
+    <!-- Interactive Bounty Actions Island -->
+    <BountyActions
+      client:load
+      title={bounty.data.title}
+      slug={bounty.data.slug}
+      status={bounty.data.status}
+      reward={bounty.data.reward}
+      replaces={bounty.data.replaces}
+      difficulty={bounty.data.difficulty}
+      posted_date={bounty.data.posted_date}
+      deadline={bounty.data.deadline}
+      claimed_by={bounty.data.claimed_by}
+      claimed_date={bounty.data.claimed_date}
+      hunter_url={bounty.data.hunter_url}
+      hunter_contact={bounty.data.hunter_contact}
+      delivery_date={bounty.data.delivery_date}
+      verified_date={bounty.data.verified_date}
+      requirements={bounty.data.requirements}
+      milestones={bounty.data.milestones}
+      discussion_url={bounty.data.discussion_url}
+      repoBase={repoBase}
+    />
 
-    <!-- Hunter info -->
-    {bounty.data.claimed_by && (
-      <div class="bg-gray-900 border border-yellow-500/20 rounded-xl p-6 mb-8">
-        <h2 class="text-lg font-semibold text-white mb-2">
-          {bounty.data.status === 'verified' ? 'Bounty collected by' : 'Claimed by'}
-        </h2>
-        <p class="text-yellow-400 font-medium text-lg">{bounty.data.claimed_by}</p>
-        {bounty.data.hunter_url && (
-          <a href={bounty.data.hunter_url} class="text-sm text-gray-400 hover:text-white transition-colors mt-2 inline-block" target="_blank" rel="noopener">
-            View project &rarr;
-          </a>
-        )}
+    <!-- Tags -->
+    {bounty.data.tags.length > 0 && (
+      <div class="flex flex-wrap gap-2 mt-6 mb-8">
+        {bounty.data.tags.map(tag => (
+          <span class="text-xs text-gray-400 bg-gray-800 rounded-full px-3 py-1 border border-gray-700">
+            #{tag}
+          </span>
+        ))}
       </div>
     )}
 
     <!-- Content -->
-    <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 sm:p-8 mb-8 prose prose-invert prose-green max-w-none
+    <div class="bg-gray-900 border border-gray-800 rounded-xl p-6 sm:p-8 mt-6 mb-8 prose prose-invert prose-green max-w-none
       [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-white [&_h2]:mt-8 [&_h2]:mb-4
       [&_p]:text-gray-300 [&_p]:leading-relaxed [&_p]:mb-4
       [&_strong]:text-white [&_strong]:font-semibold">
       <Content />
     </div>
-
-    <!-- CTA -->
-    {bounty.data.status === 'open' && (
-      <div class="bg-gradient-to-r from-amber-500/10 to-orange-500/10 border border-amber-500/20 rounded-xl p-8 text-center">
-        <h2 class="text-xl font-bold text-white mb-3">Ready to claim this bounty?</h2>
-        <p class="text-gray-400 mb-6">Fork the repo, build the alternative, and submit a PR to claim it.</p>
-        <a href="https://github.com/davidklan-png/bountymon" class="px-6 py-3 bg-amber-500 hover:bg-amber-400 text-gray-950 font-semibold rounded-lg transition-colors" target="_blank" rel="noopener">
-          Claim on GitHub
-        </a>
-      </div>
-    )}
   </div>
 </Layout>
