@@ -7,9 +7,12 @@ replaces: Salesforce
 annual_cost: 3600
 reward: 10000
 status: open
+difficulty: hard
 posted_by: "bountymon"
 posted_date: "2026-01-20"
+deadline: "2026-07-20"
 seats: 12
+tags: ["crm", "sales", "pipeline"]
 requirements:
   - Contact and company management
   - Deal pipeline with drag-and-drop
