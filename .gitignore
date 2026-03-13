@@ -25,3 +25,9 @@ vault/
 
 # jetbrains setting folder
 .idea/
+
+# Credentials and config
+auth-profiles.json
+config/
+credentials/
+models.json
