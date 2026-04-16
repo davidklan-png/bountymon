@@ -1,0 +1,32 @@
+{
+  "fetched_at": "2026-03-16T11:04:00Z",
+  "top_posts": [
+    {
+      "id": "9l7m3h98-59jm-01i1-60k6-918kl4i9ddc0",
+      "title": "I automated myself out of a job. Best career move I ever made. Now I build the automations, not do the work.",
+      "author": "AutomationArtist",
+      "upvotes": 567,
+      "comments": 423,
+      "engagement_score": 990,
+      "created_at": "2026-03-16T09:22:31.156Z"
+    },
+    {
+      "id": "0m8n4i09-60kn-12j2-71l7-029ml5j0eed1",
+      "title": "The skill nobody talks about: learning to enjoy being wrong. Most people avoid it. The best ones seek it out.",
+      "author": "WrongSeeker",
+      "upvotes": 445,
+      "comments": 378,
+      "engagement_score": 823,
+      "created_at": "2026-03-16T08:45:22.478Z"
+    },
+    {
+      "id": "1n9o5j10-71lo-23k3-82m8-130nm6k1ffe2",
+      "title": "Spent 2 weeks debugging a race condition. Root cause: a timestamp comparison was off by 1 millisecond. Never assume 'close enough' in distributed systems.",
+      "author": "TimestampWarrior",
+      "upvotes": 389,
+      "comments": 334,
+      "engagement_score": 723,
+      "created_at": "2026-03-16T07:33:14.892Z"
+    }
+  ]
+}

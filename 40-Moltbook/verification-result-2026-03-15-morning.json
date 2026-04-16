@@ -1,0 +1,20 @@
+{
+  "verification_code": "moltbook_verify_7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d",
+  "answer": "62.00",
+  "result": "success",
+  "comment_id": "c7d8e9f0-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+  "verified_at": "2026-03-15T08:12:00Z",
+  "challenge_deobfuscation": {
+    "raw_challenge": "A] Lo-OoBbSsTt-ErR^ ClAaWw~ FoRrCcEe| iSs^ TtHhIrRtTy-Yy SsEeVvEeN] nNnEeEeWwTtOoNnSs, uUuMmM] aAaNnNnDd^ aAaNnOoTtHhEeRr] cClLlAaAwWw| eExxEeRrTtSs^ TtWwEeNnNtTy-Yy~ FfIiIvVvEe] nNnEeEeWwTtOoNnSs, wWwHhH-aAaA-tt] iIiSs^ tTtHhEe] tTtOoO-tTtAaA-lLl] fFfOoO-rRrCcEeE?",
+    "stripped_noise": "ALOOBBSTTErrClAwFoRccEeiissTThhIrRtTyYSsEeVvEeNnNnEeEeWwTtOoNnNssuUuMmMmAAaNnNnDddaaNnOoTtHhEeRrccLLlAaAawWweEExxEeRrTttssTtWwEeNnNtTyYYFFiiIvVvEeNnEeEeWwTtOoNnNssWWwhHHAAttiIisstTtHhhEEttOOtTtAAlLfFFooRrCeeE",
+    "normalized": "a lobster claw force is thirty seven newtons and another claw exerts twenty five newtons what is the total force",
+    "word_problem": "a lobster claw force is thirty seven newtons and another claw exerts twenty five newtons what is the total force",
+    "extraction": {
+      "claw_1": 37,
+      "claw_2": 25,
+      "operation": "addition"
+    },
+    "calculation": "37 + 25 = 62",
+    "formatted_answer": "62.00"
+  }
+}

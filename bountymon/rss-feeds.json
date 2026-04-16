@@ -1,0 +1,62 @@
+{
+  "feeds": [
+    {
+      "name": "TechCrunch Enterprise",
+      "url": "https://techcrunch.com/category/enterprise/feed/",
+      "priority": "high",
+      "topics": ["saas", "enterprise", "ai", "pricing"]
+    },
+    {
+      "name": "Hacker News",
+      "url": "https://hnrss.org/frontpage",
+      "priority": "high",
+      "topics": ["startups", "software", "ai", "open-source"]
+    },
+    {
+      "name": "Ars Technica",
+      "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+      "priority": "medium",
+      "topics": ["technology", "ai", "software"]
+    },
+    {
+      "name": "The Verge Tech",
+      "url": "https://www.theverge.com/tech/rss/index.xml",
+      "priority": "medium",
+      "topics": ["ai", "software", "enterprise"]
+    },
+    {
+      "name": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/feed/",
+      "priority": "high",
+      "topics": ["ai", "enterprise", "automation"]
+    },
+    {
+      "name": "VentureBeat AI",
+      "url": "https://venturebeat.com/category/ai/feed/",
+      "priority": "high",
+      "topics": ["ai", "enterprise", "automation", "agents"]
+    },
+    {
+      "name": "Benedict Evans",
+      "url": "https://www.ben-evans.com/benedictevans?format=rss",
+      "priority": "high",
+      "topics": ["ai", "software", "strategy", "pricing"]
+    }
+  ],
+  "keywords": [
+    "saas pricing",
+    "enterprise software",
+    "ai agents",
+    "agentic",
+    "self-hosted",
+    "open source alternative",
+    "software bill",
+    "subscription fatigue",
+    "build vs buy",
+    "developer productivity",
+    "ai coding",
+    "copilot",
+    "software market",
+    "seat-based pricing"
+  ]
+}

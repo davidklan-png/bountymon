@@ -1,0 +1,146 @@
+{
+  "timestamp": "2026-03-02T20:14:53+09:00",
+  "model": "GLM-5",
+  "scenarios_tested": 4,
+  "average_score": 80.4,
+  "results": [
+    {
+      "id": "mock_001",
+      "title": "General Checkup",
+      "expected": {
+        "chief_complaint": "健康診断結果の確認",
+        "findings": [
+          "血圧上135/下85 mmHg（正常上限）",
+          "LDLコレステロール 140mg/dL（高め）"
+        ],
+        "recommendations": [
+          "塩分摂取量を1日6g以下に",
+          "有酸素運動30分/日、週3回以上",
+          "3ヶ月後に再検査"
+        ],
+        "prescriptions": [],
+        "follow_up": "3ヶ月後再検査"
+      },
+      "generated": "# 診療記録\n\n**患者名:** 山田さん  \n**診察日:** 健康診断結果説明\n\n---\n\n## 1. 診察内容の要約\n\n健康診断の結果に基づくフォローアップ診察。血圧およびLDLコレステロール値が正常値の上限付近にあり、生活習慣の改善が推奨された。 3ヶ月後の再検査を予定。\ \n\n---\n\n## 2. 主な医療情報\n\n### 礇状・主訴\n- 健康診断結果の確認・説明希望\n\n### 診断・評価\n- **血圧:** 135/85 mmHg（正常値上限ギリギリ）\n- **LDLコレステロール:** 140 mg/dL（高め）\n- 生活習慣関連の軽微な異常値\n\n### 処方・治療\n- なし（内服薬の処方なし)\n\n### 指示事項\n- **食事:** 塩分摂取量を1日6グラム以下に抑制\n\n- **運動:** 1日30分程度の有酸素運動を週3回以上実施（ウォーキング可）\n- **生活習慣:** 3ヶ月間の生活改善\n\n---\n\n## 3. 次回診察に向けて\n\n- **再検査:** 3ヶ月後\n\n- **目標:** 生活習慣改善による血圧およびコレステロール値の正常化\n\n- **確認事項:** 食事内容・運動習慣の実施状況\n\n---
+      "metrics": {
+        "overall_score": 0.762,
+        "chief_complaint": {"found": true, "score": 1, "details": "Match percentage: 66.7%"},
+        "findings": {"found": 2, "total": 2, "score": 1, "details": "[{"finding": "血圧上135/下85 mmHg", "found": true, "matched": "4/4"}, {"finding": "LDLコレステロール 140mg/dL", "found": true, "matched": "4/4"}]},
+        "recommendations": {"found": 2, "total": 3, "score": 0.667, "details": "[{"recommendation": "塩分摂取量を1日6g以下に", "found": true, "matched": "3/3"}, {"recommendation": "有酸素運動30分/日,週3回以上", "found": true, "matched": "5/5"}, {"recommendation": "3ヶ月後に再検査", "found": false, "matched": "2/3"}]},
+        "prescriptions": {"found": 0, "total": 0, "score": 0, "details": []},
+        "follow_up": {"found": false, "score": 0, "details": "Match percentage: 50.0%"},
+        "warnings": {"found": 0, "total": 0, "score": 0, "details": []}
+      }
+    },
+    {
+      "id": "mock_002",
+      "title": "Diabetes Follow-up",
+      "expected": {
+        "chief_complaint": "糖尿病定期検診",
+        "findings": [
+          "HbA1c 6.8%（前回7.2%から改善）",
+          "空腹時血糖値 110mg/dL",
+          "微量アルブミン尿陽性（早期腎症疑い）"
+        ],
+        "recommendations": [
+          "食事療法・運動療法の継続",
+          "血糖値7.0%未満を目標",
+          "腎機能定期モニタリング"
+        ],
+        "prescriptions": [
+          {"name": "メトホルミン", "dosage": "500mg", "frequency": "1日2回、朝夕食後", "note": "継続"},
+          {"name": "オルメサルタン", "dosage": "10mg", "frequency": "朝1回1錠", "note": "新規処方・腎保護目的"}
+        ],
+        "follow_up": "1ヶ月後・血液検査・尿検査"
+      },
+      "generated": "## 診察記録レポート\n\n**患者**: 鈴木様  \n**診察日**: 2026年3月2日  \n**診察種別**: 定期検診（3ヶ月ぶり)\n\n---\n\n## 1. 診察内容の要約\n\n3ヶ月ぶりの定期検診にて、HbA1cが7.2%から6.8%へ改善を確認。空腹時血糖値も110mg/dLと良好な数値。食事制限の努力が成果を上げている。現在のメトホルミン治療を継続。微量アルブミン尿が認められたため、腎臓保護目的でARB系降圧剤（オルメサルタン）を追加処方。次回は1ヶ月後に血液検査・尿検査を予定。\ \n\n---\n\n## 2. 主な医療情報\n\n### 椺状・主訴\n- 定期検診（特になし）
+- 鑬張る食事制限を継続中\n\n### 診断・評価\n- **2型糖尿病**: 管理良好（HbA1c改善傾向)\n- **早期糖尿病性腎症疑い**: 微量アルブミン尿陽性\n\n**検査結果**:\n| 項目 | 前回 | 今回 | 評価 |\n|------|------|------|\n| HbA1c | 7.2% | 6.8% | 改善 |\n | 空腹時血糖値 | - | 110mg/dL | 良好 |\n| 尿アルブミン | - | 微量陽性 | 要経過観察 |\n\n### 処方・治療\n\n**継続処方**:\n- メトホルミン 500mg\n  - 用法: 1日2回、朝夕食後\n  - 継続\n\n**新規処方**:\n- オルメサルタン 10mg（ARB系降圧剤）\n - 用法: 朝1回1錠
+  - 目的: 腎臓保護、血圧コントロール\n\n### 指示事項\n- 鑬って制限を引き続き継続すること\n- オルメサルタン服用後、めまいや立ちくらみが生じた場合は速やかに連絡すること\n- 血圧管理と血糖管理を継続し、腎症の進行を防ぐ\n\n---\n\n## 3. 次回診察に向けて\n\n| 項目 | 内容 |\n|------|------|\n| 次回診察 | 1ヶ月後 |\| 予定検査 | 血液検査、尿検査 |
+| 確認事項 | HbA1c、腎機能、尿アルブミンの推移 |\n\n---
+      "metrics": {
+        "overall_score": 1.0,
+        "chief_complaint": {"found": true, "score": 1},
+        "findings": {"found": 3, "total": 3, "score": 1},
+        "recommendations": {"found": 3, "total": 3, "score": 1},
+        "prescriptions": {"found": 2, "total": 2, "score": 1},
+        "follow_up": {"found": true, "score": 1},
+        "warnings": {"found": 0, "total": 0, "score": 0}
+      }
+    },
+    {
+      "id": "mock_003",
+      "title": "Cold/Flu",
+      "expected": {
+        "chief_complaint": "発熱・咳嗽・咽頭痛",
+        "findings": [
+          "体温38.2℃",
+          "扁桃腫脹・発赤",
+          "インフルエンザ検査陰性"
+        ],
+        "recommendations": [
+          "2〜3日自宅安静",
+          "水分十分に摂取",
+          "39度以上の発熱や呼吸困難時は即受診"
+        ],
+        "prescriptions": [
+          {"name": "解熱鎮痛剤", "dosage": "必要時", "frequency": "発熱時", "note": "解熱目的"},
+          {"name": "咳止め", "dosage": "TBD", "frequency": "1日3回", "note": "鎮咳目的"},
+          {"name": "抗生物質", "dosage": "250mg", "frequency": "1日3回・5日間", "note": "扁桃炎治療"}
+        ],
+        "follow_up": "症状悪化時・3日以内改善なければ再受診"
+      },
+      "generated": "# 診察報告書
+
+## 1. 診察内容の要約
+
+\n3日前から続く咳嗽と昨日からの発熱を主訴に来院。体温は今朝38.2℃を測定。喉の痛み、全身倦怠感、頭痛を伴う。咽頭診察にて扁桃の腫脹と発赤を認め、インフルエンザ検査を実施。結果は陰性で、普通の風邪と診断。解熱剤、咳止め、抗生物質を処方し、解熱まで2〜3日の自宅安静と十分な水分摂取を指導した \n\n---\n\n## 2. 主な医療情報\n\n### 椺状・主訴\n- **咳嗽**：3日前から継続\n- **発熱**：昨日から、今朝38.2℃\n- **咽頭痛**：あり\n- **全身症状**：倦怠感、頭痛\n\n### 診断・評価\n- **身体所見**：扁桃腫脹・発赤\n- **検査結果**：インフルエンザ迅速検査 陰性\n- **診断**：普通の風邪（急性上気道炎)\n\n### 処方・治療\n- 解熱剤\n- 咳止め\n- 抗生物質（扁桃腺の炎症対策)\n\n### 指示事項\n- 熱が下がるまで2〜3日は自宅で安静にすること\n- 水分を十分に摂取すること\n- 仕事は控えること\n\n---\n\n## 3. 次回診察に向けて\n\n**即時受診の目安：**\n- 39℃以上の高熱が続く場合\n- 呼吸が苦しくなる場合\n\n上記症状が現れた場合は、速やかに再来院してください。 otherwise、解熱後は経過観察で問題ありません。\ \n\n---
+      "metrics": {
+        "overall_score": 0.95,
+        "chief_complaint": {"found": true, "score": 1},
+        "findings": {"found": 3, "total": 3, "score": 1},
+        "recommendations": {"found": 3, "total": 3, "score": 1},
+        "prescriptions": {"found": 3, "total": 3, "score": 1},
+        "follow_up": {"found": true, "score": 1},
+        "warnings": {"found": 2, "total": 2, "score": 1}
+      }
+    },
+    {
+      "id": "mock_006",
+      "title": "Emergency",
+      "expected": {
+        "chief_complaint": "急性胸痛・冷や汗",
+        "findings": [
+          "胸痛30分前発症",
+          "冷や汗",
+          "心電図異常"
+        ],
+        "recommendations": [
+          "心電図実施",
+          "アスピリン投与",
+          "救急車搬送",
+          "循環器専門医受診"
+        ],
+        "prescriptions": [
+          {"name": "アスピリン", "dosage": "100mg", "frequency": "直ちに", "note": "緊急投与"}
+        ],
+        "follow_up": "循環器科・緊急検査",
+        "red_flags": [
+          "急性冠症候群疑い",
+          "心筋梗塞可能性",
+          "緊急搬送必要"
+        ]
+      },
+      "generated": "# 緊急診察レポート\n\n## 1. 診察内容の要約\n\n患者が30分前に発症した急性の胸痛と冷や汗を主訴に来院。医師が直ちに心電図を実施し、アスピリンを投与した後、救急車を手配した \n\n---\n\n## 2. 主な医療情報\n\n### 椺状・主訴\n- 急性胸痛（発症30分前)\n- 冷や汗（発汗)\n\n### 診断・評価\n- 疑い： 急性冠症候群（ACS）／心筋梗塞の可能性\n- 緊急度: 高\n\n### 処方・治療\n- アスピリン投与（抗血栓療法)\n\n### 指示事項\n- 心電図実施済み\n- 救急車を手配\n- 患者を臥床させる\n\n---\n\n## 3. 次回診察に向けて\n\n緊急病院搬送中。循環器科での詳細検査（血液検査、心エコー、冠動脈造影）が必要。 瓜過は搬送先医療機関にて継続管理。\ \n\n---
+      "metrics": {
+        "overall_score": 1.0,
+        "chief_complaint": {"found": true, "score": 1},
+        "findings": {"found": 3, "total": 3, "score": 1},
+        "recommendations": {"found": 4, "total": 4, "score": 1},
+        "prescriptions": {"found": 1, "total": 1, "score": 1},
+        "follow_up": {"found": true, "score": 1},
+        "warnings": {"found": 3, "total": 3, "score": 1}
+      }
+    }
+  ],
+  "average_score": 92.8
+}

@@ -1,0 +1,104 @@
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hacker News: Front Page</title><link>https://news.ycombinator.com/</link><description>Hacker News RSS</description><docs>https://hnrss.org/</docs><generator>hnrss v2.1.1</generator><lastBuildDate>Wed, 15 Apr 2026 23:59:14 +0000</lastBuildDate><atom:link href="https://hnrss.org/frontpage" rel="self" type="application/rss+xml"></atom:link><item><title><![CDATA[YouTube now lets you turn off Shorts]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.theverge.com/streaming/912898/youtube-shorts-feed-limit-zero-minutes">https://www.theverge.com/streaming/912898/youtube-shorts-feed-limit-zero-minutes</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47786791">https://news.ycombinator.com/item?id=47786791</a></p>
+<p>Points: 14</p>
+<p># Comments: 1</p>
+]]></description><pubDate>Wed, 15 Apr 2026 23:36:56 +0000</pubDate><link>https://www.theverge.com/streaming/912898/youtube-shorts-feed-limit-zero-minutes</link><dc:creator>pentagrama</dc:creator><comments>https://news.ycombinator.com/item?id=47786791</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47786791</guid></item><item><title><![CDATA[I made a terminal pager]]></title><description><![CDATA[
+<p>Article URL: <a href="https://theleo.zone/posts/pager/">https://theleo.zone/posts/pager/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47786164">https://news.ycombinator.com/item?id=47786164</a></p>
+<p>Points: 26</p>
+<p># Comments: 3</p>
+]]></description><pubDate>Wed, 15 Apr 2026 22:27:54 +0000</pubDate><link>https://theleo.zone/posts/pager/</link><dc:creator>speckx</dc:creator><comments>https://news.ycombinator.com/item?id=47786164</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47786164</guid></item><item><title><![CDATA[Ohio prison inmates 'built computers and hid them in ceiling (2017)]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.bbc.com/news/technology-39576394">https://www.bbc.com/news/technology-39576394</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47785948">https://news.ycombinator.com/item?id=47785948</a></p>
+<p>Points: 28</p>
+<p># Comments: 10</p>
+]]></description><pubDate>Wed, 15 Apr 2026 22:05:44 +0000</pubDate><link>https://www.bbc.com/news/technology-39576394</link><dc:creator>harambae</dc:creator><comments>https://news.ycombinator.com/item?id=47785948</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47785948</guid></item><item><title><![CDATA[The buns in McDonald's Japan's burger photos are all slightly askew]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.mcdonalds.co.jp/en/menu/burger/">https://www.mcdonalds.co.jp/en/menu/burger/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47785738">https://news.ycombinator.com/item?id=47785738</a></p>
+<p>Points: 148</p>
+<p># Comments: 78</p>
+]]></description><pubDate>Wed, 15 Apr 2026 21:48:18 +0000</pubDate><link>https://www.mcdonalds.co.jp/en/menu/burger/</link><dc:creator>bckygldstn</dc:creator><comments>https://news.ycombinator.com/item?id=47785738</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47785738</guid></item><item><title><![CDATA[Hacker News CLI]]></title><description><![CDATA[
+<p>Article URL: <a href="https://pythonhosted.org/hackernews-cli/commands.html">https://pythonhosted.org/hackernews-cli/commands.html</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47785582">https://news.ycombinator.com/item?id=47785582</a></p>
+<p>Points: 19</p>
+<p># Comments: 7</p>
+]]></description><pubDate>Wed, 15 Apr 2026 21:35:38 +0000</pubDate><link>https://pythonhosted.org/hackernews-cli/commands.html</link><dc:creator>rolph</dc:creator><comments>https://news.ycombinator.com/item?id=47785582</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47785582</guid></item><item><title><![CDATA[ChatGPT for Excel]]></title><description><![CDATA[
+<p>Article URL: <a href="https://chatgpt.com/apps/spreadsheets/">https://chatgpt.com/apps/spreadsheets/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47785397">https://news.ycombinator.com/item?id=47785397</a></p>
+<p>Points: 84</p>
+<p># Comments: 56</p>
+]]></description><pubDate>Wed, 15 Apr 2026 21:21:05 +0000</pubDate><link>https://chatgpt.com/apps/spreadsheets/</link><dc:creator>armcat</dc:creator><comments>https://news.ycombinator.com/item?id=47785397</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47785397</guid></item><item><title><![CDATA[Does Gas Town 'steal' usage from users' LLM credits to improve itself?]]></title><description><![CDATA[
+<p>Article URL: <a href="https://github.com/gastownhall/gastown/issues/3649">https://github.com/gastownhall/gastown/issues/3649</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47785053">https://news.ycombinator.com/item?id=47785053</a></p>
+<p>Points: 191</p>
+<p># Comments: 91</p>
+]]></description><pubDate>Wed, 15 Apr 2026 20:49:48 +0000</pubDate><link>https://github.com/gastownhall/gastown/issues/3649</link><dc:creator>rektomatic</dc:creator><comments>https://news.ycombinator.com/item?id=47785053</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47785053</guid></item><item><title><![CDATA[One interface, every protocol]]></title><description><![CDATA[
+<p>Article URL: <a href="https://openbindings.com/blog/one-interface-every-protocol">https://openbindings.com/blog/one-interface-every-protocol</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47784397">https://news.ycombinator.com/item?id=47784397</a></p>
+<p>Points: 25</p>
+<p># Comments: 3</p>
+]]></description><pubDate>Wed, 15 Apr 2026 19:56:36 +0000</pubDate><link>https://openbindings.com/blog/one-interface-every-protocol</link><dc:creator>clevengermatt</dc:creator><comments>https://news.ycombinator.com/item?id=47784397</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47784397</guid></item><item><title><![CDATA[PiCore - Raspberry Pi Port of Tiny Core Linux]]></title><description><![CDATA[
+<p>Article URL: <a href="http://tinycorelinux.net/5.x/armv6/releases/README">http://tinycorelinux.net/5.x/armv6/releases/README</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47784244">https://news.ycombinator.com/item?id=47784244</a></p>
+<p>Points: 61</p>
+<p># Comments: 4</p>
+]]></description><pubDate>Wed, 15 Apr 2026 19:45:47 +0000</pubDate><link>http://tinycorelinux.net/5.x/armv6/releases/README</link><dc:creator>gregsadetsky</dc:creator><comments>https://news.ycombinator.com/item?id=47784244</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47784244</guid></item><item><title><![CDATA[Ask HN: Who is using OpenClaw?]]></title><description><![CDATA[
+<p>I don't use it personally, and neither does anyone in my circle...even though I feel like I'm super plugged into the ai world</p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47783940">https://news.ycombinator.com/item?id=47783940</a></p>
+<p>Points: 177</p>
+<p># Comments: 209</p>
+]]></description><pubDate>Wed, 15 Apr 2026 19:22:10 +0000</pubDate><link>https://news.ycombinator.com/item?id=47783940</link><dc:creator>misterchocolat</dc:creator><comments>https://news.ycombinator.com/item?id=47783940</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47783940</guid></item><item><title><![CDATA[Live Nation illegally monopolized ticketing market, jury finds]]></title><description><![CDATA[
+<p><a href="https://www.nytimes.com/2026/04/15/arts/music/live-nation-antitrust-trial-verdict-monopoly.html" rel="nofollow">https://www.nytimes.com/2026/04/15/arts/music/live-nation-an...</a>, <a href="https://archive.ph/KA1wV" rel="nofollow">https://archive.ph/KA1wV</a><p><a href="https://www.theverge.com/policy/912689/live-nation-ticketmaster-antitrust-monopoly-trial-verdict" rel="nofollow">https://www.theverge.com/policy/912689/live-nation-ticketmas...</a></p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47783713">https://news.ycombinator.com/item?id=47783713</a></p>
+<p>Points: 322</p>
+<p># Comments: 100</p>
+]]></description><pubDate>Wed, 15 Apr 2026 19:06:39 +0000</pubDate><link>https://www.bloomberg.com/news/articles/2026-04-15/live-nation-illegally-monopolized-ticketing-market-jury-finds</link><dc:creator>Alex_Bond</dc:creator><comments>https://news.ycombinator.com/item?id=47783713</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47783713</guid></item><item><title><![CDATA[Google broke its promise to me – now ICE has my data]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.eff.org/deeplinks/2026/04/google-broke-its-promise-me-now-ice-has-my-data">https://www.eff.org/deeplinks/2026/04/google-broke-its-promise-me-now-ice-has-my-data</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47782570">https://news.ycombinator.com/item?id=47782570</a></p>
+<p>Points: 986</p>
+<p># Comments: 425</p>
+]]></description><pubDate>Wed, 15 Apr 2026 17:44:26 +0000</pubDate><link>https://www.eff.org/deeplinks/2026/04/google-broke-its-promise-me-now-ice-has-my-data</link><dc:creator>Brajeshwar</dc:creator><comments>https://news.ycombinator.com/item?id=47782570</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47782570</guid></item><item><title><![CDATA[The Gemini app is now on Mac]]></title><description><![CDATA[
+<p>Article URL: <a href="https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-mac-os/">https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-mac-os/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47782256">https://news.ycombinator.com/item?id=47782256</a></p>
+<p>Points: 60</p>
+<p># Comments: 30</p>
+]]></description><pubDate>Wed, 15 Apr 2026 17:25:52 +0000</pubDate><link>https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-mac-os/</link><dc:creator>thm</dc:creator><comments>https://news.ycombinator.com/item?id=47782256</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47782256</guid></item><item><title><![CDATA[Adaptional (YC S25) is hiring AI engineers]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.ycombinator.com/companies/adaptional/jobs/k7W6ge9-founding-engineer">https://www.ycombinator.com/companies/adaptional/jobs/k7W6ge9-founding-engineer</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47781912">https://news.ycombinator.com/item?id=47781912</a></p>
+<p>Points: 0</p>
+<p># Comments: 0</p>
+]]></description><pubDate>Wed, 15 Apr 2026 17:00:56 +0000</pubDate><link>https://www.ycombinator.com/companies/adaptional/jobs/k7W6ge9-founding-engineer</link><dc:creator>acesohc</dc:creator><comments>https://news.ycombinator.com/item?id=47781912</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47781912</guid></item><item><title><![CDATA[CRISPR takes important step toward silencing Down syndrome’s extra chromosome]]></title><description><![CDATA[
+<p>Article URL: <a href="https://medicalxpress.com/news/2026-04-crispr-bold-silencing-syndrome-extra.html">https://medicalxpress.com/news/2026-04-crispr-bold-silencing-syndrome-extra.html</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47781286">https://news.ycombinator.com/item?id=47781286</a></p>
+<p>Points: 61</p>
+<p># Comments: 48</p>
+]]></description><pubDate>Wed, 15 Apr 2026 16:19:48 +0000</pubDate><link>https://medicalxpress.com/news/2026-04-crispr-bold-silencing-syndrome-extra.html</link><dc:creator>amichail</dc:creator><comments>https://news.ycombinator.com/item?id=47781286</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47781286</guid></item><item><title><![CDATA[Show HN: Libretto – Making AI browser automations deterministic]]></title><description><![CDATA[
+<p>Libretto (<a href="https://libretto.sh" rel="nofollow">https://libretto.sh</a>) is a Skill+CLI that makes it easy for your coding agent to generate deterministic browser automations and debug existing ones. Key shift is going from “give an agent a prompt at runtime and hope it figures things out” to: “Use coding agents to generate real scripts you can inspect, run, and debug”.<p>Here’s a demo: <a href="https://www.youtube.com/watch?v=0cDpIntmHAM" rel="nofollow">https://www.youtube.com/watch?v=0cDpIntmHAM</a>. Docs start at <a href="https://libretto.sh/docs/get-started/introduction" rel="nofollow">https://libretto.sh/docs/get-started/introduction</a>.<p>We spent a year building and maintaining browser automations for EHR and payer portal integrations at our healthcare startup. Building these automations and debugging failed ones was incredibly time-consuming.<p>There’s lots of tools that use runtime AI like Browseruse and Stagehand which we tried, but (1) they’re reliant on custom DOM parsing that's unreliable on older and complicated websites (including all of healthcare). Using a website’s internal network calls is faster and more reliable when possible. (2) They can be expensive since they rely on lots of AI calls and for workflows with complicated logic you can’t always rely on caching actions to make sure it will work. (3) They’re at runtime so it’s not interpretable what the agent is going to do. You kind of hope you prompted it correctly to do the right thing, but legacy workflows are often unintuitive and inconsistent across sites so you can’t trust an agent to just figure it out at runtime. (4) They don’t really help you generate new automations or help you debug automation failures.<p>We wanted a way to reliably generate and maintain browser automations in messy, high-stakes environments, without relying on fragile runtime agents.<p>Libretto is different because instead of runtime agents it uses “development-time AI”: scripts are generated ahead of time as actual code you can read and control, not opaque agent behavior at runtime. Instead of a black box, you own the code and can inspect, modify, version, and debug everything.<p>Rather than relying on runtime DOM parsing, Libretto takes a hybrid approach combining Playwright UI automation with direct network/API requests within the browser session for better reliability and bot detection evasion.<p>It records manual user actions to help agents generate and update scripts, supports step-through debugging, has an optional read-only mode to prevent agents from accidentally submitting or modifying data, and generates code that follows all the abstractions and conventions you have already in your coding repo.<p>Would love to hear how others are building and maintaining browser automations in practice, and any feedback on the approach we’ve taken here.</p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47780971">https://news.ycombinator.com/item?id=47780971</a></p>
+<p>Points: 78</p>
+<p># Comments: 23</p>
+]]></description><pubDate>Wed, 15 Apr 2026 15:57:54 +0000</pubDate><link>https://github.com/saffron-health/libretto</link><dc:creator>muchael</dc:creator><comments>https://news.ycombinator.com/item?id=47780971</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47780971</guid></item><item><title><![CDATA[Cal.com is going closed source]]></title><description><![CDATA[
+<p>Article URL: <a href="https://cal.com/blog/cal-com-goes-closed-source-why">https://cal.com/blog/cal-com-goes-closed-source-why</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47780456">https://news.ycombinator.com/item?id=47780456</a></p>
+<p>Points: 178</p>
+<p># Comments: 148</p>
+]]></description><pubDate>Wed, 15 Apr 2026 15:26:46 +0000</pubDate><link>https://cal.com/blog/cal-com-goes-closed-source-why</link><dc:creator>Benjamin_Dobell</dc:creator><comments>https://news.ycombinator.com/item?id=47780456</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47780456</guid></item><item><title><![CDATA[God sleeps in the minerals]]></title><description><![CDATA[
+<p>Article URL: <a href="https://wchambliss.wordpress.com/2026/03/03/god-sleeps-in-the-minerals/">https://wchambliss.wordpress.com/2026/03/03/god-sleeps-in-the-minerals/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47778475">https://news.ycombinator.com/item?id=47778475</a></p>
+<p>Points: 430</p>
+<p># Comments: 91</p>
+]]></description><pubDate>Wed, 15 Apr 2026 13:08:10 +0000</pubDate><link>https://wchambliss.wordpress.com/2026/03/03/god-sleeps-in-the-minerals/</link><dc:creator>speckx</dc:creator><comments>https://news.ycombinator.com/item?id=47778475</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47778475</guid></item><item><title><![CDATA[Do you even need a database?]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.dbpro.app/blog/do-you-even-need-a-database">https://www.dbpro.app/blog/do-you-even-need-a-database</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47778086">https://news.ycombinator.com/item?id=47778086</a></p>
+<p>Points: 186</p>
+<p># Comments: 235</p>
+]]></description><pubDate>Wed, 15 Apr 2026 12:26:11 +0000</pubDate><link>https://www.dbpro.app/blog/do-you-even-need-a-database</link><dc:creator>upmostly</dc:creator><comments>https://news.ycombinator.com/item?id=47778086</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47778086</guid></item><item><title><![CDATA[Proliferate (YC S25) Is Hiring Founding Engineers]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.ycombinator.com/companies/proliferate/jobs/L3copvK-founding-engineer">https://www.ycombinator.com/companies/proliferate/jobs/L3copvK-founding-engineer</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47777902">https://news.ycombinator.com/item?id=47777902</a></p>
+<p>Points: 0</p>
+<p># Comments: 0</p>
+]]></description><pubDate>Wed, 15 Apr 2026 12:00:44 +0000</pubDate><link>https://www.ycombinator.com/companies/proliferate/jobs/L3copvK-founding-engineer</link><dc:creator>pablo24602</dc:creator><comments>https://news.ycombinator.com/item?id=47777902</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47777902</guid></item></channel></rss>

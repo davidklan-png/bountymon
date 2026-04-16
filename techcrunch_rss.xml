@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Enterprise News | TechCrunch</title>
+	<atom:link href="https://techcrunch.com/category/enterprise/feed/" rel="self" type="application/rss+xml" />
+	<link>https://techcrunch.com/category/enterprise/</link>
+	<description>Startup and Technology News</description>
+	<lastBuildDate>Wed, 15 Apr 2026 19:10:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9.4</generator>
+
+<image>
+	<url>https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32</url>
+	<title>Enterprise News | TechCrunch</title>
+	<link>https://techcrunch.com/category/enterprise/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Feds will require data centers to show their power bills</title>
+		<link>https://techcrunch.com/2026/04/15/feds-will-require-data-centers-to-show-their-power-bills/</link>
+		
+		<dc:creator><![CDATA[Tim De Chant]]></dc:creator>
+		<pubDate>Wed, 15 Apr 2026 18:50:48 +0000</pubDate>
+				<category><![CDATA[Climate]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Government & Policy]]></category>
+		<category><![CDATA[data centers]]></category>
+		<category><![CDATA[electricity]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<category><![CDATA[U.S. Senate]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3112830</guid>
+
+					<description><![CDATA[In a first, the U.S. Energy Information Agency said it will require data centers to disclose details of their energy use.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>AI data center startup Fluidstack in talks for $1B round at $18B valuation months after hitting $7.5B, says report</title>
+		<link>https://techcrunch.com/2026/04/14/ai-datacenter-startup-fluidstack-in-talks-for-1b-round-at-18b-valuation-months-after-hitting-7-5b-says-report/</link>
+		
+		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
+		<pubDate>Tue, 14 Apr 2026 21:33:38 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[data centers]]></category>
+		<category><![CDATA[fluidstack]]></category>
+		<category><![CDATA[neocloud]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3112415</guid>
+
+					<description><![CDATA[Fundraising is reportedly flowing for Fluidstack after it secured a $50 billion deal to build data centers for Anthropic.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>IBM pays $17M fine to end DOJ suit over DEI programs</title>
+		<link>https://techcrunch.com/2026/04/13/ibm-pays-17m-fine-to-end-doj-suit-over-dei-programs/</link>
+		
+		<dc:creator><![CDATA[Dominic-Madori Davis]]></dc:creator>
+		<pubDate>Mon, 13 Apr 2026 19:11:27 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Government & Policy]]></category>
+		<category><![CDATA[IBM]]></category>
+		<category><![CDATA[doj]]></category>
+		<category><![CDATA[DEI]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3111807</guid>
+
+					<description><![CDATA[IBM entered into a $17 million settlement agreement on Friday with the U.S. DOJ over allegations that it engaged in “illegal DEI practices.” ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Microsoft is working on yet another OpenClaw-like agent</title>
+		<link>https://techcrunch.com/2026/04/13/microsoft-is-working-on-yet-another-openclaw-like-agent/</link>
+		
+		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
+		<pubDate>Mon, 13 Apr 2026 19:05:19 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[ai agent]]></category>
+		<category><![CDATA[Copilot]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[openclaw]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3111806</guid>
+
+					<description><![CDATA[The new features would be geared toward enterprise customers, with better security controls than the famously risky open source OpenClaw agent.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Last 24 hours: Save up to $500 on your TechCrunch Disrupt 2026 pass</title>
+		<link>https://techcrunch.com/2026/04/10/final-24-hours-save-up-to-500-on-your-techcrunch-disrupt-2026-pass/</link>
+		
+		<dc:creator><![CDATA[TechCrunch Events]]></dc:creator>
+		<pubDate>Fri, 10 Apr 2026 14:00:00 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[Space]]></category>
+		<category><![CDATA[Climate]]></category>
+		<category><![CDATA[Fintech]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Robotics]]></category>
+		<category><![CDATA[Fundraising]]></category>
+		<category><![CDATA[TechCrunch Disrupt 2026]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3111266</guid>
+
+					<description><![CDATA[This is it. Tonight is your last chance to lock in savings of up to $500 for your TechCrunch Disrupt 2026 pass. These discounts end at 11:59 p.m. PT.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Google and Intel deepen AI infrastructure partnership</title>
+		<link>https://techcrunch.com/2026/04/09/google-and-intel-deepen-ai-infrastructure-partnership/</link>
+		
+		<dc:creator><![CDATA[Rebecca Szkutak]]></dc:creator>
+		<pubDate>Thu, 09 Apr 2026 18:27:47 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Intel]]></category>
+		<category><![CDATA[cpus]]></category>
+		<category><![CDATA[GPUS]]></category>
+		<category><![CDATA[google cloud]]></category>
+		<category><![CDATA[ai infrastructure]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<category><![CDATA[IPUs]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3110988</guid>
+
+					<description><![CDATA[The two tech giants are looking to co-develop custom chips, at a time when demand for CPUs is high due to a growing global shortage. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Amazon CEO takes aim at Nvidia, Intel, Starlink, more in annual shareholder letter</title>
+		<link>https://techcrunch.com/2026/04/09/amazon-ceo-takes-aim-at-nvidia-intel-starlink-more-in-annual-shareholder-letter/</link>
+		
+		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
+		<pubDate>Thu, 09 Apr 2026 14:27:57 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[AWS]]></category>
+		<category><![CDATA[CAPEX]]></category>
+		<category><![CDATA[OpenAI]]></category>
+		<category><![CDATA[Andy Jassy]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3110724</guid>
+
+					<description><![CDATA[Andy Jassy's annual shareholder letter reads something like a diss track to a wide range of competitors as he defends spending $200 billion in capex.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>AWS boss explains why investing billions in both Anthropic and OpenAI is an OK conflict</title>
+		<link>https://techcrunch.com/2026/04/08/aws-boss-explains-why-investing-billions-in-both-anthropic-and-openai-is-an-ok-conflict/</link>
+		
+		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
+		<pubDate>Wed, 08 Apr 2026 20:09:14 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[AWS]]></category>
+		<category><![CDATA[OpenAI]]></category>
+		<category><![CDATA[Anthropic]]></category>
+		<category><![CDATA[Matt Garman]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3110560</guid>
+
+					<description><![CDATA[AWS has an ingrained culture of handling competition, he explained, because the cloud giant also competes with its partners. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Databricks co-founder wins prestigious ACM award, says &#8216;AGI is here already&#8217;</title>
+		<link>https://techcrunch.com/2026/04/08/databricks-matei-zaharia-wins-acm-computing-prize-agi/</link>
+		
+		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
+		<pubDate>Wed, 08 Apr 2026 15:00:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[AGI]]></category>
+		<category><![CDATA[ACM]]></category>
+		<category><![CDATA[Databricks]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3110335</guid>
+
+					<description><![CDATA[Matei Zaharia has won the top honor from the Association for Computing Machinery. Now he's working on AI for research and says AGI is simply misunderstood.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Final 3 days to save up to $500 on your TechCrunch Disrupt 2026 pass</title>
+		<link>https://techcrunch.com/2026/04/08/final-3-days-to-save-up-to-500-on-your-techcrunch-disrupt-2026-pass/</link>
+		
+		<dc:creator><![CDATA[TechCrunch Events]]></dc:creator>
+		<pubDate>Wed, 08 Apr 2026 14:00:00 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Fintech]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Robotics]]></category>
+		<category><![CDATA[Fundraising]]></category>
+		<category><![CDATA[TechCrunch Disrupt 2026]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3110367</guid>
+
+					<description><![CDATA[Save up to $500 on your TechCrunch Disrupt 2026 pass until April 10, 11:59 p.m. PT. Secure your spot at the center of the tech ecosystem. Register today.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Atlassian launches visual AI tools and third-party agents in Confluence</title>
+		<link>https://techcrunch.com/2026/04/08/atlassian-confluence-visual-ai-tools-agents/</link>
+		
+		<dc:creator><![CDATA[Rebecca Szkutak]]></dc:creator>
+		<pubDate>Wed, 08 Apr 2026 13:00:00 +0000</pubDate>
+				<category><![CDATA[Apps]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Atlassian]]></category>
+		<category><![CDATA[confluence]]></category>
+		<category><![CDATA[JIRA]]></category>
+		<category><![CDATA[AI agents]]></category>
+		<category><![CDATA[artificial intelligence]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3110234</guid>
+
+					<description><![CDATA[Confluence users can now create visual assets within the software in addition to new third-party agents working with Lovable, Replit, and Gamma. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Anthropic debuts preview of powerful new AI model Mythos in new cybersecurity initiative</title>
+		<link>https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/</link>
+		
+		<dc:creator><![CDATA[Lucas Ropek]]></dc:creator>
+		<pubDate>Tue, 07 Apr 2026 18:00:00 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[Anthropic]]></category>
+		<category><![CDATA[Mythos]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3109830</guid>
+
+					<description><![CDATA[The new model will be used by a small number of high-profile companies to engage in defensive cybersecurity work. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Uber is the latest to be won over by Amazon&#8217;s AI chips</title>
+		<link>https://techcrunch.com/2026/04/07/uber-is-the-latest-to-be-won-over-by-amazons-ai-chips/</link>
+		
+		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
+		<pubDate>Tue, 07 Apr 2026 16:46:59 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[Uber]]></category>
+		<category><![CDATA[AWS]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3110079</guid>
+
+					<description><![CDATA[Uber is expanding its AWS contract to run more of its ride-sharing features on Amazon's chips. This is a thumb-of-the nose at Oracle and Google.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Anthropic ups compute deal with Google and Broadcom amid skyrocketing demand</title>
+		<link>https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/</link>
+		
+		<dc:creator><![CDATA[Rebecca Szkutak]]></dc:creator>
+		<pubDate>Tue, 07 Apr 2026 16:05:56 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Anthropic]]></category>
+		<category><![CDATA[Broadcom]]></category>
+		<category><![CDATA[Claude]]></category>
+		<category><![CDATA[compute]]></category>
+		<category><![CDATA[Google]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3110066</guid>
+
+					<description><![CDATA[Anthropic bulked up its compute deal with Google and Broadcom as the company has seen its run-rate revenue surge to $30 billion. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>4 days left to save close to $500 on TechCrunch Disrupt 2026 passes</title>
+		<link>https://techcrunch.com/2026/04/07/4-days-left-to-save-close-to-500-on-techcrunch-disrupt-2026-passes/</link>
+		
+		<dc:creator><![CDATA[TechCrunch Events]]></dc:creator>
+		<pubDate>Tue, 07 Apr 2026 14:00:00 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[Climate]]></category>
+		<category><![CDATA[Fintech]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[Media & Entertainment]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Fundraising]]></category>
+		<category><![CDATA[TechCrunch Disrupt 2026]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3110003</guid>
+
+					<description><![CDATA[Four days left to save up to $482 on your TechCrunch Disrupt 2026 ticket. These low rates will disappear on April 10 at 11:59 p.m. PT. Register now.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Iran threatens &#8216;Stargate&#8217; AI data centers</title>
+		<link>https://techcrunch.com/2026/04/06/iran-threatens-stargate-ai-data-centers/</link>
+		
+		<dc:creator><![CDATA[Rebecca Szkutak]]></dc:creator>
+		<pubDate>Mon, 06 Apr 2026 18:06:28 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Government & Policy]]></category>
+		<category><![CDATA[Cisco]]></category>
+		<category><![CDATA[oracle]]></category>
+		<category><![CDATA[stargate]]></category>
+		<category><![CDATA[OpenAI]]></category>
+		<category><![CDATA[datacenters]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<category><![CDATA[Iran-US War]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3109661</guid>
+
+					<description><![CDATA[Iran said it will target U.S.-linked data centers with new missile strikes, as the war between the U.S. and Iran escalates. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Ticket savings of up to $500 this week for TechCrunch Disrupt 2026</title>
+		<link>https://techcrunch.com/2026/04/06/massive-ticket-savings-of-up-to-500-this-week-for-techcrunch-disrupt-2026/</link>
+		
+		<dc:creator><![CDATA[TechCrunch Events]]></dc:creator>
+		<pubDate>Mon, 06 Apr 2026 14:00:00 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Space]]></category>
+		<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[Climate]]></category>
+		<category><![CDATA[Fintech]]></category>
+		<category><![CDATA[Biotech & Health]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[Media & Entertainment]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Gadgets]]></category>
+		<category><![CDATA[Robotics]]></category>
+		<category><![CDATA[Fundraising]]></category>
+		<category><![CDATA[TechCrunch Disrupt 2026]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3109491</guid>
+
+					<description><![CDATA[Starting today, you have 5 days to save nearly $500 on your ticket to TechCrunch Disrupt 2026. This offer disappears Friday, April 10, at 11:59 p.m. PT. Register here to secure these low rates.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Embattled startup Delve has ‘parted ways’ with Y Combinator</title>
+		<link>https://techcrunch.com/2026/04/04/embattled-startup-delve-has-parted-ways-with-y-combinator/</link>
+		
+		<dc:creator><![CDATA[Anthony Ha]]></dc:creator>
+		<pubDate>Sat, 04 Apr 2026 21:03:43 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Y Combinator]]></category>
+		<category><![CDATA[Delve]]></category>
+		<category><![CDATA[selin kocalar]]></category>
+		<category><![CDATA[karun kaushik]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3109441</guid>
+
+					<description><![CDATA[The controversy around Delve appears to have cost the compliance startup its relationship with accelerator Y Combinator.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>AI companies are building huge natural gas plants to power data centers. What could go wrong?</title>
+		<link>https://techcrunch.com/2026/04/03/ai-companies-are-building-huge-natural-gas-plants-to-power-data-centers-what-could-go-wrong/</link>
+		
+		<dc:creator><![CDATA[Tim De Chant]]></dc:creator>
+		<pubDate>Fri, 03 Apr 2026 19:48:22 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Climate]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Meta]]></category>
+		<category><![CDATA[natural gas]]></category>
+		<category><![CDATA[data centers]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[Google]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3109180</guid>
+
+					<description><![CDATA[Meta, Microsoft, and Google are all betting big on new natural gas power plants to run their AI data centers. They may regret it.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>People would rather have an Amazon warehouse in their backyard than a data center</title>
+		<link>https://techcrunch.com/2026/04/03/people-would-rather-have-an-amazon-warehouse-in-their-backyard-than-a-data-center/</link>
+		
+		<dc:creator><![CDATA[Tim De Chant]]></dc:creator>
+		<pubDate>Fri, 03 Apr 2026 19:20:36 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<category><![CDATA[polling]]></category>
+		<category><![CDATA[data centers]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3109229</guid>
+
+					<description><![CDATA[A new poll shows that the debate over data centers is far from settled.]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,120 @@
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hacker News: Front Page</title><link>https://news.ycombinator.com/</link><description>Hacker News RSS</description><docs>https://hnrss.org/</docs><generator>hnrss v2.1.1</generator><lastBuildDate>Wed, 01 Apr 2026 23:57:35 +0000</lastBuildDate><atom:link href="https://hnrss.org/frontpage" rel="self" type="application/rss+xml"></atom:link><item><title><![CDATA[A new C++ back end for ocamlc]]></title><description><![CDATA[
+<p>Article URL: <a href="https://github.com/ocaml/ocaml/pull/14701">https://github.com/ocaml/ocaml/pull/14701</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47608058">https://news.ycombinator.com/item?id=47608058</a></p>
+<p>Points: 16</p>
+<p># Comments: 0</p>
+]]></description><pubDate>Wed, 01 Apr 2026 23:35:02 +0000</pubDate><link>https://github.com/ocaml/ocaml/pull/14701</link><dc:creator>glittershark</dc:creator><comments>https://news.ycombinator.com/item?id=47608058</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47608058</guid></item><item><title><![CDATA[Artemis II lifts off: four astronauts begin 10-day lunar mission]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.theguardian.com/science/live/2026/apr/01/artemis-ii-launch-nasa-orion-moon-trip-live-updates">https://www.theguardian.com/science/live/2026/apr/01/artemis-ii-launch-nasa-orion-moon-trip-live-updates</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47607447">https://news.ycombinator.com/item?id=47607447</a></p>
+<p>Points: 242</p>
+<p># Comments: 136</p>
+]]></description><pubDate>Wed, 01 Apr 2026 22:38:25 +0000</pubDate><link>https://www.theguardian.com/science/live/2026/apr/01/artemis-ii-launch-nasa-orion-moon-trip-live-updates</link><dc:creator>Philpax</dc:creator><comments>https://news.ycombinator.com/item?id=47607447</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47607447</guid></item><item><title><![CDATA[Swappa.com for GrapheneOS compatible devices – Stay Away]]></title><description><![CDATA[
+<p>Article URL: <a href="https://discuss.grapheneos.org/d/33727-swappacom-for-grapheneos-compatible-devices-stay-away">https://discuss.grapheneos.org/d/33727-swappacom-for-grapheneos-compatible-devices-stay-away</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47607067">https://news.ycombinator.com/item?id=47607067</a></p>
+<p>Points: 80</p>
+<p># Comments: 45</p>
+]]></description><pubDate>Wed, 01 Apr 2026 21:59:14 +0000</pubDate><link>https://discuss.grapheneos.org/d/33727-swappacom-for-grapheneos-compatible-devices-stay-away</link><dc:creator>OsrsNeedsf2P</dc:creator><comments>https://news.ycombinator.com/item?id=47607067</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47607067</guid></item><item><title><![CDATA[DRAM pricing is killing the hobbyist SBC market]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.jeffgeerling.com/blog/2026/dram-pricing-is-killing-the-hobbyist-sbc-market/">https://www.jeffgeerling.com/blog/2026/dram-pricing-is-killing-the-hobbyist-sbc-market/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47606840">https://news.ycombinator.com/item?id=47606840</a></p>
+<p>Points: 219</p>
+<p># Comments: 151</p>
+]]></description><pubDate>Wed, 01 Apr 2026 21:36:41 +0000</pubDate><link>https://www.jeffgeerling.com/blog/2026/dram-pricing-is-killing-the-hobbyist-sbc-market/</link><dc:creator>ingve</dc:creator><comments>https://news.ycombinator.com/item?id=47606840</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47606840</guid></item><item><title><![CDATA[Show HN: Dull – Instagram Without Reels, YouTube Without Shorts (iOS)]]></title><description><![CDATA[
+<p>I kept deleting and redownloading Instagram because I couldn't stop watching Reels but needed the app for DMs. Tried screen time limits, just overrode them. So I built this.<p>Dull loads Instagram, YouTube, Facebook, and X and filters out short-form content with a mix of CSS and JS injection. MutationObserver handles anything that lazy-loads after the page renders, which is most of the annoying stuff since these platforms love to load content dynamically.<p>The ongoing work is maintaining the filters. Platforms change their DOM all the time, Instagram obfuscates class names, YouTube restructures how Shorts appear in the feed, etc. It's a cat-and-mouse thing that never really ends.<p>Also has grayscale mode, time limits, and usage tracking.<p>Happy to answer questions.</p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47606560">https://news.ycombinator.com/item?id=47606560</a></p>
+<p>Points: 23</p>
+<p># Comments: 9</p>
+]]></description><pubDate>Wed, 01 Apr 2026 21:04:53 +0000</pubDate><link>https://getdull.app</link><dc:creator>kasparnoor</dc:creator><comments>https://news.ycombinator.com/item?id=47606560</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47606560</guid></item><item><title><![CDATA[InspectMind AI (YC W24) Is Hiring]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.ycombinator.com/companies/inspectmind-ai/jobs/jQNra64-software-engineer-build-the-world-s-best-ai-plan-checker">https://www.ycombinator.com/companies/inspectmind-ai/jobs/jQNra64-software-engineer-build-the-world-s-best-ai-plan-checker</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47606495">https://news.ycombinator.com/item?id=47606495</a></p>
+<p>Points: 0</p>
+<p># Comments: 0</p>
+]]></description><pubDate>Wed, 01 Apr 2026 21:00:06 +0000</pubDate><link>https://www.ycombinator.com/companies/inspectmind-ai/jobs/jQNra64-software-engineer-build-the-world-s-best-ai-plan-checker</link><dc:creator>aakashprasad91</dc:creator><comments>https://news.ycombinator.com/item?id=47606495</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47606495</guid></item><item><title><![CDATA[Signing data structures the wrong way]]></title><description><![CDATA[
+<p>Article URL: <a href="https://blog.foks.pub/posts/domain-separation-in-idl/">https://blog.foks.pub/posts/domain-separation-in-idl/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47605677">https://news.ycombinator.com/item?id=47605677</a></p>
+<p>Points: 66</p>
+<p># Comments: 36</p>
+]]></description><pubDate>Wed, 01 Apr 2026 19:52:00 +0000</pubDate><link>https://blog.foks.pub/posts/domain-separation-in-idl/</link><dc:creator>malgorithms</dc:creator><comments>https://news.ycombinator.com/item?id=47605677</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47605677</guid></item><item><title><![CDATA[Jax's true calling: Ray-Marching renderers on WebGL]]></title><description><![CDATA[
+<p>Article URL: <a href="https://benoit.paris/posts/jax-ray-marcher/">https://benoit.paris/posts/jax-ray-marcher/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47605494">https://news.ycombinator.com/item?id=47605494</a></p>
+<p>Points: 45</p>
+<p># Comments: 6</p>
+]]></description><pubDate>Wed, 01 Apr 2026 19:36:07 +0000</pubDate><link>https://benoit.paris/posts/jax-ray-marcher/</link><dc:creator>BenoitP</dc:creator><comments>https://news.ycombinator.com/item?id=47605494</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47605494</guid></item><item><title><![CDATA[Scientists crack a 20-year nuclear mystery behind the creation of gold]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.sciencedaily.com/releases/2026/03/260313002633.htm">https://www.sciencedaily.com/releases/2026/03/260313002633.htm</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47605374">https://news.ycombinator.com/item?id=47605374</a></p>
+<p>Points: 42</p>
+<p># Comments: 13</p>
+]]></description><pubDate>Wed, 01 Apr 2026 19:26:12 +0000</pubDate><link>https://www.sciencedaily.com/releases/2026/03/260313002633.htm</link><dc:creator>prabal97</dc:creator><comments>https://news.ycombinator.com/item?id=47605374</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47605374</guid></item><item><title><![CDATA[Apple at 50]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.apple.com/">https://www.apple.com/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47604897">https://news.ycombinator.com/item?id=47604897</a></p>
+<p>Points: 91</p>
+<p># Comments: 58</p>
+]]></description><pubDate>Wed, 01 Apr 2026 18:48:30 +0000</pubDate><link>https://www.apple.com/</link><dc:creator>janandonly</dc:creator><comments>https://news.ycombinator.com/item?id=47604897</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47604897</guid></item><item><title><![CDATA[SpaceX files to go public]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.nytimes.com/2026/04/01/technology/spacex-ipo-elon-musk.html">https://www.nytimes.com/2026/04/01/technology/spacex-ipo-elon-musk.html</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47604155">https://news.ycombinator.com/item?id=47604155</a></p>
+<p>Points: 145</p>
+<p># Comments: 196</p>
+]]></description><pubDate>Wed, 01 Apr 2026 17:49:54 +0000</pubDate><link>https://www.nytimes.com/2026/04/01/technology/spacex-ipo-elon-musk.html</link><dc:creator>nutjob2</dc:creator><comments>https://news.ycombinator.com/item?id=47604155</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47604155</guid></item><item><title><![CDATA[Show HN: Flight-Viz – 10K flights on a 3D globe in 3.5MB of Rust+WASM]]></title><description><![CDATA[
+<p>I built a real-time flight tracker that renders 10,000+ aircraft on an interactive 3D globe, entirely in the browser using Rust compiled to WebAssembly.</p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47603966">https://news.ycombinator.com/item?id=47603966</a></p>
+<p>Points: 48</p>
+<p># Comments: 28</p>
+]]></description><pubDate>Wed, 01 Apr 2026 17:34:16 +0000</pubDate><link>https://flight-viz.com</link><dc:creator>coolwulf</dc:creator><comments>https://news.ycombinator.com/item?id=47603966</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47603966</guid></item><item><title><![CDATA[AI for American-produced cement and concrete]]></title><description><![CDATA[
+<p>Article URL: <a href="https://engineering.fb.com/2026/03/30/data-center-engineering/ai-for-american-produced-cement-and-concrete/">https://engineering.fb.com/2026/03/30/data-center-engineering/ai-for-american-produced-cement-and-concrete/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47603737">https://news.ycombinator.com/item?id=47603737</a></p>
+<p>Points: 125</p>
+<p># Comments: 102</p>
+]]></description><pubDate>Wed, 01 Apr 2026 17:17:24 +0000</pubDate><link>https://engineering.fb.com/2026/03/30/data-center-engineering/ai-for-american-produced-cement-and-concrete/</link><dc:creator>latchkey</dc:creator><comments>https://news.ycombinator.com/item?id=47603737</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47603737</guid></item><item><title><![CDATA[NASA Artemis II moon mission live launch broadcast]]></title><description><![CDATA[
+<p>Article URL: <a href="https://plus.nasa.gov/scheduled-video/nasas-artemis-ii-crew-launches-to-the-moon-official-broadcast/">https://plus.nasa.gov/scheduled-video/nasas-artemis-ii-crew-launches-to-the-moon-official-broadcast/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47603657">https://news.ycombinator.com/item?id=47603657</a></p>
+<p>Points: 456</p>
+<p># Comments: 308</p>
+]]></description><pubDate>Wed, 01 Apr 2026 17:11:31 +0000</pubDate><link>https://plus.nasa.gov/scheduled-video/nasas-artemis-ii-crew-launches-to-the-moon-official-broadcast/</link><dc:creator>apitman</dc:creator><comments>https://news.ycombinator.com/item?id=47603657</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47603657</guid></item><item><title><![CDATA[StepFun 3.5 Flash is #1 cost-effective model for OpenClaw tasks (300 battles)]]></title><description><![CDATA[
+<p>Article URL: <a href="https://app.uniclaw.ai/arena?tab=costEffectiveness&via=hn">https://app.uniclaw.ai/arena?tab=costEffectiveness&via=hn</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47602879">https://news.ycombinator.com/item?id=47602879</a></p>
+<p>Points: 130</p>
+<p># Comments: 56</p>
+]]></description><pubDate>Wed, 01 Apr 2026 16:17:35 +0000</pubDate><link>https://app.uniclaw.ai/arena?tab=costEffectiveness&amp;via=hn</link><dc:creator>skysniper</dc:creator><comments>https://news.ycombinator.com/item?id=47602879</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47602879</guid></item><item><title><![CDATA[EmDash – a spiritual successor to WordPress that solves plugin security]]></title><description><![CDATA[
+<p>Article URL: <a href="https://blog.cloudflare.com/emdash-wordpress/">https://blog.cloudflare.com/emdash-wordpress/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47602832">https://news.ycombinator.com/item?id=47602832</a></p>
+<p>Points: 434</p>
+<p># Comments: 311</p>
+]]></description><pubDate>Wed, 01 Apr 2026 16:14:38 +0000</pubDate><link>https://blog.cloudflare.com/emdash-wordpress/</link><dc:creator>elithrar</dc:creator><comments>https://news.ycombinator.com/item?id=47602832</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47602832</guid></item><item><title><![CDATA[The OpenAI graveyard: All the deals and products that haven't happened]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.forbes.com/sites/phoebeliu/2026/03/31/openai-graveyard-deals-and-products-havent-happened-openai/">https://www.forbes.com/sites/phoebeliu/2026/03/31/openai-graveyard-deals-and-products-havent-happened-openai/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47602565">https://news.ycombinator.com/item?id=47602565</a></p>
+<p>Points: 215</p>
+<p># Comments: 172</p>
+]]></description><pubDate>Wed, 01 Apr 2026 15:55:30 +0000</pubDate><link>https://www.forbes.com/sites/phoebeliu/2026/03/31/openai-graveyard-deals-and-products-havent-happened-openai/</link><dc:creator>dherls</dc:creator><comments>https://news.ycombinator.com/item?id=47602565</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47602565</guid></item><item><title><![CDATA[Ask HN: Who is hiring? (April 2026)]]></title><description><![CDATA[
+<p>Please state the location and include REMOTE for remote work, REMOTE (US)
+or similar if the country is restricted, and ONSITE when remote work is <i>not</i> an option.<p>Please only post if you personally are part of the hiring company—no
+recruiting firms or job boards. One post per company. If it isn't a household name,
+explain what your company does.<p>Please only post if you are actively filling a position and are committed
+to replying to applicants.<p>Commenters: please don't reply to job posts to complain about
+something. It's off topic here.<p>Readers: please only email if you are personally interested in the job.<p>Searchers: try <a href="https://nthesis.ai/public/hn-who-is-hiring" rel="nofollow">https://nthesis.ai/public/hn-who-is-hiring</a>, <a href="http://nchelluri.github.io/hnjobs/" rel="nofollow">http://nchelluri.github.io/hnjobs/</a>, <a href="https://hnjobs.emilburzo.com" rel="nofollow">https://hnjobs.emilburzo.com</a>,
+or this (unofficial) Chrome extension:
+<a href="https://chromewebstore.google.com/detail/hn-hiring-pro/mpfaljjblphnlloddaplgicpkinikjlp" rel="nofollow">https://chromewebstore.google.com/detail/hn-hiring-pro/mpfal...</a>.<p>Don't miss this other fine thread: <i>Who wants to be hired?</i> <a href="https://news.ycombinator.com/item?id=47601858">https://news.ycombinator.com/item?id=47601858</a></p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47601859">https://news.ycombinator.com/item?id=47601859</a></p>
+<p>Points: 185</p>
+<p># Comments: 154</p>
+]]></description><pubDate>Wed, 01 Apr 2026 15:01:36 +0000</pubDate><link>https://news.ycombinator.com/item?id=47601859</link><dc:creator>whoishiring</dc:creator><comments>https://news.ycombinator.com/item?id=47601859</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47601859</guid></item><item><title><![CDATA[Ask HN: Who wants to be hired? (April 2026)]]></title><description><![CDATA[
+<p>Share your information if you are looking for work. Please use this format:<p><pre><code>  Location:
+  Remote:
+  Willing to relocate:
+  Technologies:
+  Résumé/CV:
+  Email:
+</code></pre>
+Please only post if you are personally looking for work. Agencies, recruiters, job boards,
+and so on, are off topic here.<p>Readers: please only email these addresses to discuss work opportunities.<p>There's a site for searching these posts at <a href="https://www.wantstobehired.com" rel="nofollow">https://www.wantstobehired.com</a>.</p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47601858">https://news.ycombinator.com/item?id=47601858</a></p>
+<p>Points: 50</p>
+<p># Comments: 121</p>
+]]></description><pubDate>Wed, 01 Apr 2026 15:01:36 +0000</pubDate><link>https://news.ycombinator.com/item?id=47601858</link><dc:creator>whoishiring</dc:creator><comments>https://news.ycombinator.com/item?id=47601858</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47601858</guid></item><item><title><![CDATA[Is BGP safe yet?]]></title><description><![CDATA[
+<p>Article URL: <a href="https://isbgpsafeyet.com/">https://isbgpsafeyet.com/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=47600382">https://news.ycombinator.com/item?id=47600382</a></p>
+<p>Points: 234</p>
+<p># Comments: 80</p>
+]]></description><pubDate>Wed, 01 Apr 2026 13:10:29 +0000</pubDate><link>https://isbgpsafeyet.com/</link><dc:creator>janandonly</dc:creator><comments>https://news.ycombinator.com/item?id=47600382</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=47600382</guid></item></channel></rss>

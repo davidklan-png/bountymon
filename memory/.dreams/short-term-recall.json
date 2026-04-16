@@ -1,0 +1,323 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-14T07:41:16.398Z",
+  "entries": {
+    "memory:memory/2026-04-03.md:54:57": {
+      "key": "memory:memory/2026-04-03.md:54:57",
+      "path": "memory/2026-04-03.md",
+      "startLine": 54,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "@@ -54,4 @@ (53 before, 51 after) ### Yesterday Highlights (April 2) From `memory/2026-04-02.md`:",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.73,
+      "maxScore": 0.88,
+      "firstRecalledAt": "2026-04-06T23:00:19.321Z",
+      "lastRecalledAt": "2026-04-10T07:33:21.222Z",
+      "queryHashes": [
+        "fc6abb2c230c",
+        "9c82b0cd4bfc"
+      ],
+      "recallDays": [
+        "2026-04-07",
+        "2026-04-10"
+      ],
+      "conceptTags": [
+        "memory/2026-04-02.md",
+        "54,4",
+        "yesterday",
+        "highlights",
+        "april"
+      ]
+    },
+    "memory:memory/2026-04-03.md:58:61": {
+      "key": "memory:memory/2026-04-03.md:58:61",
+      "path": "memory/2026-04-03.md",
+      "startLine": 58,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "@@ -58,4 @@ (57 before, 47 after) - Morning Briefing Generated (08:00 JST) - Governance Hypothesis Stalemate: 8 days, 23 comments, 5 reviews - New Posts Reviewed: Modification-Procedure Verification, Alex K. Chen substrate work, Heaviside-0/Marconi-0 - Yesterday Focus: Break stalemate, engage with substrate post, review modificat...",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.69,
+      "maxScore": 0.87,
+      "firstRecalledAt": "2026-04-06T23:00:33.303Z",
+      "lastRecalledAt": "2026-04-10T23:00:16.867Z",
+      "queryHashes": [
+        "500df60f0c46",
+        "6a9aa09a5e02"
+      ],
+      "recallDays": [
+        "2026-04-07",
+        "2026-04-11"
+      ],
+      "conceptTags": [
+        "modification-procedure",
+        "heaviside-0/marconi-0",
+        "58,4",
+        "morning",
+        "briefing",
+        "generated",
+        "jst",
+        "governance"
+      ]
+    },
+    "memory:memory/2026-04-08.md:13:16": {
+      "key": "memory:memory/2026-04-08.md:13:16",
+      "path": "memory/2026-04-08.md",
+      "startLine": 13,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "@@ -13,4 @@ (12 before, 43 after) - Today focus (Cue language, governance hypothesis peer review response, cron job reliability) - Server health (stable with job reliability issues) - Reminders (ClawInstitute engagement strategy, channel rules, Bio_HP updates, Bountymon accountId)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.07,
+      "maxScore": 0.07,
+      "firstRecalledAt": "2026-04-10T23:00:16.849Z",
+      "lastRecalledAt": "2026-04-10T23:00:16.849Z",
+      "queryHashes": [
+        "6108508dcf56"
+      ],
+      "recallDays": [
+        "2026-04-11"
+      ],
+      "conceptTags": [
+        "bio-hp",
+        "13,4",
+        "focus",
+        "cue",
+        "language",
+        "governance",
+        "hypothesis",
+        "peer"
+      ]
+    },
+    "memory:memory/2026-04-08.md:9:12": {
+      "key": "memory:memory/2026-04-08.md:9:12",
+      "path": "memory/2026-04-08.md",
+      "startLine": 9,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "@@ -9,4 @@ (8 before, 47 after) 1. **Generated Morning Briefing** covering: - ClawInstitute activity (governance hypothesis, NQO1*2 research, SpecEyes, substrate problems paper, GerryHank intro) - Moltbook check-in (reduced engagement, notable governance posts on agent traps, Microsoft toolkit failure, work-life balance) ...",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.66,
+      "maxScore": 0.83,
+      "firstRecalledAt": "2026-04-10T23:00:16.867Z",
+      "lastRecalledAt": "2026-04-13T23:00:23.921Z",
+      "queryHashes": [
+        "6a9aa09a5e02",
+        "176bebdaac02"
+      ],
+      "recallDays": [
+        "2026-04-11",
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "check-in",
+        "work-life",
+        "9,4",
+        "generated",
+        "morning",
+        "briefing",
+        "covering",
+        "clawinstitute"
+      ]
+    },
+    "memory:memory/2026-04-01.md:9:12": {
+      "key": "memory:memory/2026-04-01.md:9:12",
+      "path": "memory/2026-04-01.md",
+      "startLine": 9,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "@@ -9,4 @@ (8 before, 24 after) **Content Summary:** - **ClawInstitute Governance Hypothesis**: 23 comments, 5 reviews, quality score 2.80, BUT last activity was March 25 (6 days stalemate) - **Major New Post**: Alex K. Chen's \"The Immune System Your Computer Doesn't Have\" — substrate-level security, Internal State Communicabil...",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.63,
+      "maxScore": 0.82,
+      "firstRecalledAt": "2026-04-10T23:00:16.867Z",
+      "lastRecalledAt": "2026-04-13T23:00:23.921Z",
+      "queryHashes": [
+        "6a9aa09a5e02",
+        "176bebdaac02"
+      ],
+      "recallDays": [
+        "2026-04-11",
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "2.80",
+        "substrate-level",
+        "9,4",
+        "content",
+        "summary",
+        "clawinstitute",
+        "governance",
+        "hypothesis"
+      ]
+    },
+    "memory:memory/2026-04-06.md:30:33": {
+      "key": "memory:memory/2026-04-06.md:30:33",
+      "path": "memory/2026-04-06.md",
+      "startLine": 30,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "@@ -30,4 @@ (29 before, 4 after) **Recommendation**: David should log into LinkedIn directly and check the comment thread manually to verify if Ved Kamat or others responded to the fallback constraint suggestion. **Discord Post**: Unable to post - Discord message tool returned errors when attempting to send to #linkedin channel.",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.81,
+      "maxScore": 0.92,
+      "firstRecalledAt": "2026-04-11T07:40:47.305Z",
+      "lastRecalledAt": "2026-04-13T07:41:55.667Z",
+      "queryHashes": [
+        "b68df0789dac",
+        "57fcaef92551"
+      ],
+      "recallDays": [
+        "2026-04-11",
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "30,4",
+        "recommendation",
+        "david",
+        "log",
+        "linkedin",
+        "directly",
+        "check",
+        "the"
+      ]
+    },
+    "memory:memory/2026-04-04.md:27:30": {
+      "key": "memory:memory/2026-04-04.md:27:30",
+      "path": "memory/2026-04-04.md",
+      "startLine": 27,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "@@ -27,4 @@ (26 before, 19 after) **Task**: Check LinkedIn post for replies to David Klan's comment about \"fallback constraint\" prompt **Post URL**: https://www.linkedin.com/posts/vedkamat_use-a-gem-to-automate-outreach-emails-activity-7434138870885048320-mBaM **Time**: 10:22 JST / 01:22 UTC",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.79,
+      "maxScore": 0.91,
+      "firstRecalledAt": "2026-04-11T07:40:47.305Z",
+      "lastRecalledAt": "2026-04-13T07:41:55.667Z",
+      "queryHashes": [
+        "b68df0789dac",
+        "57fcaef92551"
+      ],
+      "recallDays": [
+        "2026-04-11",
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "27,4",
+        "task",
+        "check",
+        "linkedin",
+        "post",
+        "replies",
+        "david",
+        "klan's"
+      ]
+    },
+    "memory:memory/2026-04-06.md:2:5": {
+      "key": "memory:memory/2026-04-06.md:2:5",
+      "path": "memory/2026-04-06.md",
+      "startLine": 2,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "@@ -2,4 @@ (1 before, 32 after) ## LinkedIn Reply Monitor - Ved Kamat Gem Post (Day 3 of 3) **Task**: Check LinkedIn post for replies to David Klan's comment about \"fallback constraint\" prompt",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.83,
+      "maxScore": 0.92,
+      "firstRecalledAt": "2026-04-12T07:40:25.343Z",
+      "lastRecalledAt": "2026-04-14T07:41:16.398Z",
+      "queryHashes": [
+        "d07e3bc024d5",
+        "ba493a51d1e0"
+      ],
+      "recallDays": [
+        "2026-04-12",
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "2,4",
+        "linkedin",
+        "reply",
+        "monitor",
+        "ved",
+        "kamat",
+        "gem",
+        "post"
+      ]
+    },
+    "memory:memory/2026-04-04.md:25:28": {
+      "key": "memory:memory/2026-04-04.md:25:28",
+      "path": "memory/2026-04-04.md",
+      "startLine": 25,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "@@ -25,4 @@ (24 before, 21 after) ## LinkedIn Reply Monitor - Ved Kamat Gem Post (Day 1 of 3) **Task**: Check LinkedIn post for replies to David Klan's comment about \"fallback constraint\" prompt",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "totalScore": 1.81,
+      "maxScore": 0.91,
+      "firstRecalledAt": "2026-04-12T07:40:25.343Z",
+      "lastRecalledAt": "2026-04-14T07:41:16.398Z",
+      "queryHashes": [
+        "d07e3bc024d5",
+        "ba493a51d1e0"
+      ],
+      "recallDays": [
+        "2026-04-12",
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "25,4",
+        "linkedin",
+        "reply",
+        "monitor",
+        "ved",
+        "kamat",
+        "gem",
+        "post"
+      ]
+    },
+    "memory:memory/2026-04-11.md:38:41": {
+      "key": "memory:memory/2026-04-11.md:38:41",
+      "path": "memory/2026-04-11.md",
+      "startLine": 38,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "@@ -38,4 @@ (37 before, 13 after) **Post URL**: https://www.linkedin.com/posts/vedkamat_use-a-gem-to-automate-outreach-emails-activity-7434138870885048320-mBaM **Target**: Replies to David Klan's comment about \"fallback constraint\" prompt **Result**: No new responses detected",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "totalScore": 2.67,
+      "maxScore": 0.9,
+      "firstRecalledAt": "2026-04-12T07:40:25.343Z",
+      "lastRecalledAt": "2026-04-14T07:41:16.398Z",
+      "queryHashes": [
+        "d07e3bc024d5",
+        "57fcaef92551",
+        "ba493a51d1e0"
+      ],
+      "recallDays": [
+        "2026-04-12",
+        "2026-04-13",
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "38,4",
+        "post",
+        "url",
+        "https",
+        "www.linkedin.com",
+        "posts",
+        "vedkamat-use",
+        "gem"
+      ]
+    }
+  }
+}
