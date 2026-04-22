@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-19T23:01:55.557Z",
+  "updatedAt": "2026-04-21T07:42:05.812Z",
   "entries": {
     "memory:memory/2026-04-03.md:54:57": {
       "key": "memory:memory/2026-04-03.md:54:57",
@@ -235,20 +235,21 @@
       "endLine": 5,
       "source": "memory",
       "snippet": "@@ -2,4 @@ (1 before, 32 after) ## LinkedIn Reply Monitor - Ved Kamat Gem Post (Day 3 of 3) **Task**: Check LinkedIn post for replies to David Klan's comment about \"fallback constraint\" prompt",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.83,
+      "totalScore": 2.74,
       "maxScore": 0.92,
       "firstRecalledAt": "2026-04-12T07:40:25.343Z",
-      "lastRecalledAt": "2026-04-14T07:41:16.398Z",
+      "lastRecalledAt": "2026-04-21T07:42:05.812Z",
       "queryHashes": [
         "d07e3bc024d5",
         "ba493a51d1e0"
       ],
       "recallDays": [
         "2026-04-12",
-        "2026-04-14"
+        "2026-04-14",
+        "2026-04-21"
       ],
       "conceptTags": [
         "2,4",
@@ -268,20 +269,21 @@
       "endLine": 28,
       "source": "memory",
       "snippet": "@@ -25,4 @@ (24 before, 21 after) ## LinkedIn Reply Monitor - Ved Kamat Gem Post (Day 1 of 3) **Task**: Check LinkedIn post for replies to David Klan's comment about \"fallback constraint\" prompt",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.81,
+      "totalScore": 2.71,
       "maxScore": 0.91,
       "firstRecalledAt": "2026-04-12T07:40:25.343Z",
-      "lastRecalledAt": "2026-04-14T07:41:16.398Z",
+      "lastRecalledAt": "2026-04-21T07:42:05.812Z",
       "queryHashes": [
         "d07e3bc024d5",
         "ba493a51d1e0"
       ],
       "recallDays": [
         "2026-04-12",
-        "2026-04-14"
+        "2026-04-14",
+        "2026-04-21"
       ],
       "conceptTags": [
         "25,4",
@@ -301,13 +303,13 @@
       "endLine": 41,
       "source": "memory",
       "snippet": "@@ -38,4 @@ (37 before, 13 after) **Post URL**: https://www.linkedin.com/posts/vedkamat_use-a-gem-to-automate-outreach-emails-activity-7434138870885048320-mBaM **Target**: Replies to David Klan's comment about \"fallback constraint\" prompt **Result**: No new responses detected",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.67,
+      "totalScore": 3.57,
       "maxScore": 0.9,
       "firstRecalledAt": "2026-04-12T07:40:25.343Z",
-      "lastRecalledAt": "2026-04-14T07:41:16.398Z",
+      "lastRecalledAt": "2026-04-21T07:42:05.812Z",
       "queryHashes": [
         "d07e3bc024d5",
         "57fcaef92551",
@@ -316,7 +318,8 @@
       "recallDays": [
         "2026-04-12",
         "2026-04-13",
-        "2026-04-14"
+        "2026-04-14",
+        "2026-04-21"
       ],
       "conceptTags": [
         "38,4",
@@ -450,6 +453,130 @@
         "post",
         "replies",
         "david"
+      ]
+    },
+    "memory:memory/archive/2026-03-14.md:34:37": {
+      "key": "memory:memory/archive/2026-03-14.md:34:37",
+      "path": "memory/archive/2026-03-14.md",
+      "startLine": 34,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "@@ -34,4 @@ (33 before, 158 after) ### International Women's Day Article (2026-03-10) - **URL**: https://www.linkedin.com/pulse/i-didnt-post-international-womens-day-wrote-article-heres-david-klan-jprgc/ - **Topic**: Critique of LinkedIn's IWD campaign as performative",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9,
+      "maxScore": 0.9,
+      "firstRecalledAt": "2026-04-20T07:21:12.336Z",
+      "lastRecalledAt": "2026-04-20T07:21:12.336Z",
+      "queryHashes": [
+        "4c3fed3685c4"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "34,4",
+        "international",
+        "women's",
+        "day",
+        "article",
+        "url",
+        "https",
+        "www.linkedin.com"
+      ]
+    },
+    "memory:memory/archive/2026-03-05.md:2:5": {
+      "key": "memory:memory/archive/2026-03-05.md:2:5",
+      "path": "memory/archive/2026-03-05.md",
+      "startLine": 2,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "@@ -2,4 @@ (1 before, 24 after) ## LinkedIn Reply Monitor - Ved Kamat Gem Post **URL:** https://www.linkedin.com/posts/vedkamat_use-a-gem-to-automate-outreach-emails-activity-7434138870885048320-mBaM",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.91,
+      "maxScore": 0.91,
+      "firstRecalledAt": "2026-04-21T07:42:05.812Z",
+      "lastRecalledAt": "2026-04-21T07:42:05.812Z",
+      "queryHashes": [
+        "ba493a51d1e0"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "2,4",
+        "linkedin",
+        "reply",
+        "monitor",
+        "ved",
+        "kamat",
+        "gem",
+        "post"
+      ]
+    },
+    "memory:memory/archive/2026-03-23.md:38:41": {
+      "key": "memory:memory/archive/2026-03-23.md:38:41",
+      "path": "memory/archive/2026-03-23.md",
+      "startLine": 38,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "@@ -38,4 @@ (37 before, 68 after) ## LinkedIn Reply Monitor - Ved Kamat Gem Post **Task**: Check LinkedIn post for replies to David Klan's comment about \"fallback constraint\" prompt",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.89,
+      "maxScore": 0.89,
+      "firstRecalledAt": "2026-04-21T07:42:05.812Z",
+      "lastRecalledAt": "2026-04-21T07:42:05.812Z",
+      "queryHashes": [
+        "ba493a51d1e0"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "38,4",
+        "linkedin",
+        "reply",
+        "monitor",
+        "ved",
+        "kamat",
+        "gem",
+        "post"
+      ]
+    },
+    "memory:memory/archive/2026-03-09.md:2:5": {
+      "key": "memory:memory/archive/2026-03-09.md:2:5",
+      "path": "memory/archive/2026-03-09.md",
+      "startLine": 2,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "@@ -2,4 @@ (1 before, 309 after) ## LinkedIn Reply Monitor - Ved Kamat Gem Post **Task:** Check LinkedIn post for replies to comment about 'fallback constraint' prompt",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.84,
+      "maxScore": 0.84,
+      "firstRecalledAt": "2026-04-21T07:42:05.812Z",
+      "lastRecalledAt": "2026-04-21T07:42:05.812Z",
+      "queryHashes": [
+        "ba493a51d1e0"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "2,4",
+        "linkedin",
+        "reply",
+        "monitor",
+        "ved",
+        "kamat",
+        "gem",
+        "post"
       ]
     }
   }
