@@ -104,6 +104,29 @@ When sending messages, **always specify `accountId`**:
 - WSL2 gateway IP may change after reboot: check with `ip route show default | awk '{print $3}'` and update `browser.profiles.remote.cdpUrl`
 - BizReach messaging overlay can block LinkedIn interactions — dismiss with Escape or JS remove
 
+## Web Fetch Fallback Stack
+
+**Priority order — try in sequence, fall back on failure:**
+
+1. **`web_search`** — Brave API (primary search). Always try first to find URLs.
+2. **`web_fetch`** — OpenClaw built-in HTTP/Readability extraction. Works for most static pages.
+3. **Jina Reader** (free, hosted) — `bash ~/.openclaw/scripts/jina-fetch.sh <URL>`
+   - No API key needed for basic use. May be rate-limited.
+   - Optional: set `JINA_API_KEY` env var for higher limits.
+   - Good for: pages where built-in fetch fails, simple JS-rendered content.
+4. **Crawl4AI** (free, local) — `bash ~/.openclaw/scripts/crawl4ai-fetch.sh <URL>`
+   - Requires one-time setup with sudo (Playwright system deps).
+   - Good for: heavy JS/SPA pages, sites that block simple fetchers.
+   - Uses local compute only. No API keys, no credits.
+5. **Browser tool** — Last resort for pages requiring login/interaction.
+
+**Firecrawl is intentionally NOT configured.** No hosted credits needed for this stack.
+
+### Fallback Scripts
+- `~/.openclaw/scripts/jina-fetch.sh <URL> [max-chars]` — Jina Reader wrapper
+- `~/.openclaw/scripts/crawl4ai-fetch.sh <URL> [max-chars]` — Crawl4AI wrapper
+- Both accept optional `max-chars` arg (default: 15000)
+
 ## Auto-Heal
 
 ```bash
