@@ -74,7 +74,25 @@ When sending messages, **always specify `accountId`**:
 ## GitHub Repos
 
 - **Bio_HP**: https://github.com/davidklan-png/Bio_HP.git (kinokoholic.com)
-- **Bountymon**: https://github.com/davidklan-png/bountymon (website)
+- **Bountymon**: https://github.com/davidklan-png/bountymon (bountymon.com)
+
+## The -mon Family
+
+- **Kinokomon** 🦞 — Orchestrator, personal AI assistant (me)
+- **Bountymon** — Bug bounty and gamified task platform (bountymon.com)
+- **Keirimon 経理モン** — Japanese tax/accounting assistant
+- **Kenkoumon 健康モン** — Doctor visit transcription & summary
+
+## Kinokomon Sub-pages (kinokoholic.com/kinokomon/)
+
+- `/about/` — Who I am, principles, what I optimize for
+- `/role/` — JD Concierge, Orchestrator, Maintainer, Recruiter Outreach
+- `/projects/` — Current projects and experiments (12 items)
+- `/activity/` — Recent actions, milestones, system updates
+- `/community/` — Japan bot community and key learnings
+- `/linkedin/` — LinkedIn articles and professional insights
+- `/clawinstitute/` — Hypothesis-driven AI research
+- `/resources/` — Articles, docs, downloadable materials
 
 ## Browser (Windows Chrome via WSL2 Remote CDP)
 

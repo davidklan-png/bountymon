@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-22T07:41:55.319Z",
+  "updatedAt": "2026-05-09T22:17:27.006Z",
   "entries": {
     "memory:memory/2026-04-03.md:54:57": {
       "key": "memory:memory/2026-04-03.md:54:57",
@@ -714,6 +714,130 @@
         "post",
         "replies",
         "comment"
+      ]
+    },
+    "memory:memory/2026-04-12.md:13:16": {
+      "key": "memory:memory/2026-04-12.md:13:16",
+      "path": "memory/2026-04-12.md",
+      "startLine": 13,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "@@ -13,4 @@ (12 before, 8 after) ## kinokoholic.com Health Check — 19:00 JST - **Pages checked**: 17 (9 EN + 8 JA) - **API calls**: 2",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.59,
+      "maxScore": 0.59,
+      "firstRecalledAt": "2026-05-04T01:09:36.101Z",
+      "lastRecalledAt": "2026-05-04T01:09:36.101Z",
+      "queryHashes": [
+        "8365bf1d5c3f"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "kinokoholic.com",
+        "13,4",
+        "health",
+        "check",
+        "jst",
+        "pages",
+        "checked",
+        "api"
+      ]
+    },
+    "memory:memory/archive/2026-03-07.md:30:33": {
+      "key": "memory:memory/archive/2026-03-07.md:30:33",
+      "path": "memory/archive/2026-03-07.md",
+      "startLine": 30,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "@@ -30,4 @@ (29 before, 53 after) ### OpenClaw Cron Job Created - **Name**: Kinokoholic Health Check - **ID**: b2f33906-1085-46b6-b92e-670ef85ad57b - **Schedule**: Sundays 19:00 JST",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5,
+      "maxScore": 0.5,
+      "firstRecalledAt": "2026-05-04T01:09:36.101Z",
+      "lastRecalledAt": "2026-05-04T01:09:36.101Z",
+      "queryHashes": [
+        "8365bf1d5c3f"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "30,4",
+        "openclaw",
+        "cron",
+        "job",
+        "created",
+        "name",
+        "kinokoholic",
+        "health"
+      ]
+    },
+    "memory:memory/archive/2026-03-17.md:42:45": {
+      "key": "memory:memory/archive/2026-03-17.md:42:45",
+      "path": "memory/archive/2026-03-17.md",
+      "startLine": 42,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "@@ -42,4 @@ (41 before, 58 after) **Server Health**: - ✅ OK: Morning Briefing, Moltbook Engagement, Bountymon, LinkedIn - Ved Kamat, Kinokoholic Health Check - ❌ Error: Vault Maintenance (9 consecutive), LinkedIn - IWD (2), LinkedIn - Manish Kapil (2), LinkedIn - Artem Batenev (1), Kinokomon (1)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47,
+      "maxScore": 0.47,
+      "firstRecalledAt": "2026-05-04T01:09:36.101Z",
+      "lastRecalledAt": "2026-05-04T01:09:36.101Z",
+      "queryHashes": [
+        "8365bf1d5c3f"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "42,4",
+        "server",
+        "health",
+        "morning",
+        "briefing",
+        "moltbook",
+        "engagement",
+        "bountymon"
+      ]
+    },
+    "memory:memory/archive/2026-03-14.md:62:65": {
+      "key": "memory:memory/archive/2026-03-14.md:62:65",
+      "path": "memory/archive/2026-03-14.md",
+      "startLine": 62,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "@@ -62,4 @@ (61 before, 130 after) - **Status**: Published - **Bio used**: \"David Klan is an IT project delivery professional and recovering 'prompt-engineer' who spent the last year learning to direct AI agents instead of just chat with them. He built the Japan Tax Expert System and runs Kinokomon, an AI agent that manages his we...",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.85,
+      "maxScore": 0.85,
+      "firstRecalledAt": "2026-05-09T22:17:27.006Z",
+      "lastRecalledAt": "2026-05-09T22:17:27.006Z",
+      "queryHashes": [
+        "db79f73d390e"
+      ],
+      "recallDays": [
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "prompt-engineer",
+        "62,4",
+        "status",
+        "published",
+        "bio",
+        "used",
+        "david",
+        "klan"
       ]
     }
   }
