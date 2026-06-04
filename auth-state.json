@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "lastGood": {
+    "zai": "zai:default"
+  },
+  "usageStats": {
+    "zai:default": {
+      "lastUsed": 1773307734595,
+      "errorCount": 2,
+      "lastFailureAt": 1777966773817,
+      "failureCounts": {
+        "auth": 2
+      },
+      "cooldownUntil": 1777966802497,
+      "cooldownReason": "auth"
+    }
+  }
+}
