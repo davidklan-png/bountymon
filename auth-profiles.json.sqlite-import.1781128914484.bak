@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "profiles": {
+    "zai:default": {
+      "type": "api_key",
+      "provider": "zai",
+      "key": "9b58fe1fa21f47989a9b0ec96f196498.npxahbtiDpmm4uqP"
+    }
+  }
+}
