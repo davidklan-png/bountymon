@@ -33,6 +33,16 @@ Use for: high-stakes writing, nuanced judgement, strategic decisions.
 ### Claude Sonnet 4.6 (code)
 Use for: code generation, structured output, faster iteration.
 
+### Keibamon 競馬モン (horse racing)
+- **ID**: (TBD)
+- **Model**: TBD
+- **Emoji**: 🏇
+- **Domain**: Japanese horse racing data/ML platform — research, backtesting, race analysis
+- **Repo**: https://github.com/davidklan-png/keibamon
+- **Stack**: Python, Polars, DuckDB, Dagster, Pandera, MLflow, FastAPI, React/TypeScript
+- **Architecture**: Medallion lake (bronze/silver/gold/marts), Parquet storage, point-in-time features
+- **Sources**: Netkeiba polling, CSV imports, odds snapshots, weather, body weight, travel, psychology annotations
+
 ### GLM-4.1V (vision)
 Use for: image analysis, screenshot review, document processing.
 - **Thinking**: slow variant for complex images, flash for quick checks.

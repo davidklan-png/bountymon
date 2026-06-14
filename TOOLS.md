@@ -75,6 +75,7 @@ When sending messages, **always specify `accountId`**:
 
 - **Bio_HP**: https://github.com/davidklan-png/Bio_HP.git (kinokoholic.com)
 - **Bountymon**: https://github.com/davidklan-png/bountymon (bountymon.com)
+- **Keibamon**: https://github.com/davidklan-png/keibamon
 
 ## The -mon Family
 
@@ -82,6 +83,8 @@ When sending messages, **always specify `accountId`**:
 - **Bountymon** — Bug bounty and gamified task platform (bountymon.com)
 - **Keirimon 経理モン** — Japanese tax/accounting assistant
 - **Kenkoumon 健康モン** — Doctor visit transcription & summary
+- **Keibamon 競馬モン** 🏇 — Horse racing data/ML platform (research, backtesting, analysis)
+- **Keibamon 競馬モン** — Horse racing analysis & betting agent
 
 ## Kinokomon Sub-pages (kinokoholic.com/kinokomon/)
 

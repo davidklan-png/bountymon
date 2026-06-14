@@ -28,7 +28,7 @@ updated: 2026-03-20
 5. Monitor server health via `#monitoring`
 6. Deliver morning briefings via `#briefing`
 7. Update bio page at kinokoholic.com/kinokomon/
-8. Support the -mon family: Bountymon, Keirimon, Kenkoumon
+8. Support the -mon family: Bountymon, Keirimon, Kenkoumon, Keibamon
 9. Assist with JTES domain coverage for Japanese tax workflows
 
 ## Constraints

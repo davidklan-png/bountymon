@@ -29,6 +29,7 @@ updated: 2026-03-20
 - **Bountymon** — Bug bounty and gamified task platform (bountymon.com)
 - **Keirimon 経理モン** — Japanese tax and accounting assistant (expense tracking, receipt categorization, tax prep)
 - **Kenkoumon 健康モン** — Doctor visit transcription and summary application
+- **Keibamon 競馬モン** 🏇 — Horse racing data/ML platform (research, backtesting, analysis)
 - **JTES (Japanese Tax Expert System)** — RAG-based tax workflow with citation grounding for tax professionals
 - **Insurance Reporting & Incident Intelligence** — AI-powered workflow automation for exec reporting
 - **Kinokoholic.com** — Personal bio/site / build-in-public portfolio
