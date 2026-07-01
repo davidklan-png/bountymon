@@ -1,0 +1,104 @@
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hacker News: Front Page</title><link>https://news.ycombinator.com/</link><description>Hacker News RSS</description><docs>https://hnrss.org/</docs><generator>hnrss v2.1.1</generator><lastBuildDate>Tue, 30 Jun 2026 23:58:18 +0000</lastBuildDate><atom:link href="https://hnrss.org/frontpage" rel="self" type="application/rss+xml"></atom:link><item><title><![CDATA[Hatari – Online Atari ST/STE/TT/Falcon Emulator]]></title><description><![CDATA[
+<p>Article URL: <a href="https://hatari.frama.io/hatari/online/hatari.html">https://hatari.frama.io/hatari/online/hatari.html</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48740135">https://news.ycombinator.com/item?id=48740135</a></p>
+<p>Points: 20</p>
+<p># Comments: 3</p>
+]]></description><pubDate>Tue, 30 Jun 2026 22:34:23 +0000</pubDate><link>https://hatari.frama.io/hatari/online/hatari.html</link><dc:creator>gregsadetsky</dc:creator><comments>https://news.ycombinator.com/item?id=48740135</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48740135</guid></item><item><title><![CDATA[TabFM: A zero-shot foundation model for tabular data]]></title><description><![CDATA[
+<p>Article URL: <a href="https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data/">https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48739919">https://news.ycombinator.com/item?id=48739919</a></p>
+<p>Points: 21</p>
+<p># Comments: 4</p>
+]]></description><pubDate>Tue, 30 Jun 2026 22:08:38 +0000</pubDate><link>https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data/</link><dc:creator>brandonb</dc:creator><comments>https://news.ycombinator.com/item?id=48739919</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48739919</guid></item><item><title><![CDATA[Gone but Not Forgotten: Recovering the Dead Web]]></title><description><![CDATA[
+<p>Article URL: <a href="https://blog.archive.org/2026/04/23/gone-but-not-forgotten-recovering-the-dead-web/">https://blog.archive.org/2026/04/23/gone-but-not-forgotten-recovering-the-dead-web/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48739682">https://news.ycombinator.com/item?id=48739682</a></p>
+<p>Points: 7</p>
+<p># Comments: 0</p>
+]]></description><pubDate>Tue, 30 Jun 2026 21:48:43 +0000</pubDate><link>https://blog.archive.org/2026/04/23/gone-but-not-forgotten-recovering-the-dead-web/</link><dc:creator>wslh</dc:creator><comments>https://news.ycombinator.com/item?id=48739682</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48739682</guid></item><item><title><![CDATA[Understanding lattice risks: Many differences between marketing and reality]]></title><description><![CDATA[
+<p>Article URL: <a href="https://blog.cr.yp.to/20260630-risk.html">https://blog.cr.yp.to/20260630-risk.html</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48739467">https://news.ycombinator.com/item?id=48739467</a></p>
+<p>Points: 11</p>
+<p># Comments: 2</p>
+]]></description><pubDate>Tue, 30 Jun 2026 21:29:15 +0000</pubDate><link>https://blog.cr.yp.to/20260630-risk.html</link><dc:creator>ledoge</dc:creator><comments>https://news.ycombinator.com/item?id=48739467</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48739467</guid></item><item><title><![CDATA[From brain waves to words: a new path to communication without surgery]]></title><description><![CDATA[
+<p>Article URL: <a href="https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/?_fb_noscript=1">https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/?_fb_noscript=1</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48739466">https://news.ycombinator.com/item?id=48739466</a></p>
+<p>Points: 88</p>
+<p># Comments: 47</p>
+]]></description><pubDate>Tue, 30 Jun 2026 21:29:13 +0000</pubDate><link>https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/?_fb_noscript=1</link><dc:creator>alok-g</dc:creator><comments>https://news.ycombinator.com/item?id=48739466</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48739466</guid></item><item><title><![CDATA[I ported Kubernetes to the browser]]></title><description><![CDATA[
+<p><a href="https://github.com/ngrok/webernetes" rel="nofollow">https://github.com/ngrok/webernetes</a><p><a href="https://webernetes-demo.ngrok.app/" rel="nofollow">https://webernetes-demo.ngrok.app/</a></p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48738985">https://news.ycombinator.com/item?id=48738985</a></p>
+<p>Points: 134</p>
+<p># Comments: 43</p>
+]]></description><pubDate>Tue, 30 Jun 2026 20:48:36 +0000</pubDate><link>https://ngrok.com/blog/i-ported-kubernetes-to-the-browser</link><dc:creator>peterdemin</dc:creator><comments>https://news.ycombinator.com/item?id=48738985</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48738985</guid></item><item><title><![CDATA[Leanstral 1.5]]></title><description><![CDATA[
+<p>Article URL: <a href="https://docs.mistral.ai/models/model-cards/leanstral-1-5-26-06">https://docs.mistral.ai/models/model-cards/leanstral-1-5-26-06</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48738938">https://news.ycombinator.com/item?id=48738938</a></p>
+<p>Points: 65</p>
+<p># Comments: 9</p>
+]]></description><pubDate>Tue, 30 Jun 2026 20:44:56 +0000</pubDate><link>https://docs.mistral.ai/models/model-cards/leanstral-1-5-26-06</link><dc:creator>vetronauta</dc:creator><comments>https://news.ycombinator.com/item?id=48738938</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48738938</guid></item><item><title><![CDATA[Tokyo has only two barley tea makers, we visited one to see how mugicha is made]]></title><description><![CDATA[
+<p>Article URL: <a href="https://soranews24.com/2026/06/30/tokyo-has-only-two-barley-tea-makers-and-we-visited-one-to-see-how-mugicha-is-made/">https://soranews24.com/2026/06/30/tokyo-has-only-two-barley-tea-makers-and-we-visited-one-to-see-how-mugicha-is-made/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48738262">https://news.ycombinator.com/item?id=48738262</a></p>
+<p>Points: 49</p>
+<p># Comments: 10</p>
+]]></description><pubDate>Tue, 30 Jun 2026 19:47:24 +0000</pubDate><link>https://soranews24.com/2026/06/30/tokyo-has-only-two-barley-tea-makers-and-we-visited-one-to-see-how-mugicha-is-made/</link><dc:creator>zdw</dc:creator><comments>https://news.ycombinator.com/item?id=48738262</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48738262</guid></item><item><title><![CDATA[Claude Sonnet 5]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.anthropic.com/news/claude-sonnet-5">https://www.anthropic.com/news/claude-sonnet-5</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48736605">https://news.ycombinator.com/item?id=48736605</a></p>
+<p>Points: 809</p>
+<p># Comments: 457</p>
+]]></description><pubDate>Tue, 30 Jun 2026 17:59:52 +0000</pubDate><link>https://www.anthropic.com/news/claude-sonnet-5</link><dc:creator>marinesebastian</dc:creator><comments>https://news.ycombinator.com/item?id=48736605</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48736605</guid></item><item><title><![CDATA[I built a mmWave material classification radar (2025)]]></title><description><![CDATA[
+<p>Article URL: <a href="https://gauthier-lechevalier.com/radar">https://gauthier-lechevalier.com/radar</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48736137">https://news.ycombinator.com/item?id=48736137</a></p>
+<p>Points: 128</p>
+<p># Comments: 35</p>
+]]></description><pubDate>Tue, 30 Jun 2026 17:29:36 +0000</pubDate><link>https://gauthier-lechevalier.com/radar</link><dc:creator>GL26</dc:creator><comments>https://news.ycombinator.com/item?id=48736137</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48736137</guid></item><item><title><![CDATA[Claude Science]]></title><description><![CDATA[
+<p>Article URL: <a href="https://claude.com/product/claude-science">https://claude.com/product/claude-science</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48735770">https://news.ycombinator.com/item?id=48735770</a></p>
+<p>Points: 335</p>
+<p># Comments: 111</p>
+]]></description><pubDate>Tue, 30 Jun 2026 17:07:41 +0000</pubDate><link>https://claude.com/product/claude-science</link><dc:creator>lebovic</dc:creator><comments>https://news.ycombinator.com/item?id=48735770</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48735770</guid></item><item><title><![CDATA[Show HN: My 13-year-old built an ant colony tracker]]></title><description><![CDATA[
+<p>He's 13 years old. He wanted to track his own ant colonies — growth, feeding, humidity, and other metrics. He built the whole app himself with some help from AI tools; I just helped him deploy it to a server. Would love to hear your feedback!</p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48735446">https://news.ycombinator.com/item?id=48735446</a></p>
+<p>Points: 32</p>
+<p># Comments: 24</p>
+]]></description><pubDate>Tue, 30 Jun 2026 16:48:47 +0000</pubDate><link>https://formicarium.es</link><dc:creator>abelgvidal</dc:creator><comments>https://news.ycombinator.com/item?id=48735446</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48735446</guid></item><item><title><![CDATA[Nano Banana 2 Lite]]></title><description><![CDATA[
+<p>Article URL: <a href="https://deepmind.google/models/gemini-image/flash-lite/">https://deepmind.google/models/gemini-image/flash-lite/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48735444">https://news.ycombinator.com/item?id=48735444</a></p>
+<p>Points: 286</p>
+<p># Comments: 106</p>
+]]></description><pubDate>Tue, 30 Jun 2026 16:48:37 +0000</pubDate><link>https://deepmind.google/models/gemini-image/flash-lite/</link><dc:creator>minimaxir</dc:creator><comments>https://news.ycombinator.com/item?id=48735444</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48735444</guid></item><item><title><![CDATA[Claude Code is steganographically marking requests]]></title><description><![CDATA[
+<p>Article URL: <a href="https://thereallo.dev/blog/claude-code-prompt-steganography">https://thereallo.dev/blog/claude-code-prompt-steganography</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48734373">https://news.ycombinator.com/item?id=48734373</a></p>
+<p>Points: 1319</p>
+<p># Comments: 376</p>
+]]></description><pubDate>Tue, 30 Jun 2026 15:44:24 +0000</pubDate><link>https://thereallo.dev/blog/claude-code-prompt-steganography</link><dc:creator>kirushik</dc:creator><comments>https://news.ycombinator.com/item?id=48734373</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48734373</guid></item><item><title><![CDATA[Have you restarted your computer this week?]]></title><description><![CDATA[
+<p>Article URL: <a href="https://taonaw.com/2026/06/27/have-you-restarted-your-computer.html">https://taonaw.com/2026/06/27/have-you-restarted-your-computer.html</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48733043">https://news.ycombinator.com/item?id=48733043</a></p>
+<p>Points: 94</p>
+<p># Comments: 202</p>
+]]></description><pubDate>Tue, 30 Jun 2026 14:15:29 +0000</pubDate><link>https://taonaw.com/2026/06/27/have-you-restarted-your-computer.html</link><dc:creator>surprisetalk</dc:creator><comments>https://news.ycombinator.com/item?id=48733043</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48733043</guid></item><item><title><![CDATA[Knoppix]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.knopper.net/knoppix/index-en.html">https://www.knopper.net/knoppix/index-en.html</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48732056">https://news.ycombinator.com/item?id=48732056</a></p>
+<p>Points: 238</p>
+<p># Comments: 98</p>
+]]></description><pubDate>Tue, 30 Jun 2026 12:54:01 +0000</pubDate><link>https://www.knopper.net/knoppix/index-en.html</link><dc:creator>hoangvmpc</dc:creator><comments>https://news.ycombinator.com/item?id=48732056</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48732056</guid></item><item><title><![CDATA[Memoirs of Extraordinary Popular Delusions and the Madness of Crowds (1852)]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.gutenberg.org/ebooks/24518">https://www.gutenberg.org/ebooks/24518</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48731989">https://news.ycombinator.com/item?id=48731989</a></p>
+<p>Points: 162</p>
+<p># Comments: 53</p>
+]]></description><pubDate>Tue, 30 Jun 2026 12:47:51 +0000</pubDate><link>https://www.gutenberg.org/ebooks/24518</link><dc:creator>lstodd</dc:creator><comments>https://news.ycombinator.com/item?id=48731989</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48731989</guid></item><item><title><![CDATA[CERN bids farewell to the LHC and enters Long Shutdown 3]]></title><description><![CDATA[
+<p><a href="https://www.nikhef.nl/en/news/final-run-for-the-current-lhc-accelerator-but-more-to-come/" rel="nofollow">https://www.nikhef.nl/en/news/final-run-for-the-current-lhc-...</a></p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48723484">https://news.ycombinator.com/item?id=48723484</a></p>
+<p>Points: 97</p>
+<p># Comments: 25</p>
+]]></description><pubDate>Mon, 29 Jun 2026 18:52:25 +0000</pubDate><link>https://home.cern/cern-bids-farewell-to-the-lhc-and-enters-long-shutdown-3/</link><dc:creator>HelloUsername</dc:creator><comments>https://news.ycombinator.com/item?id=48723484</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48723484</guid></item><item><title><![CDATA[Reading the internals of Postgres: Database cluster, databases, and tables]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.buraksen.dev/articles/internals-of-postgresql-db-cluster-and-tables">https://www.buraksen.dev/articles/internals-of-postgresql-db-cluster-and-tables</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48718716">https://news.ycombinator.com/item?id=48718716</a></p>
+<p>Points: 45</p>
+<p># Comments: 0</p>
+]]></description><pubDate>Mon, 29 Jun 2026 12:59:49 +0000</pubDate><link>https://www.buraksen.dev/articles/internals-of-postgresql-db-cluster-and-tables</link><dc:creator>buraksen</dc:creator><comments>https://news.ycombinator.com/item?id=48718716</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48718716</guid></item><item><title><![CDATA[How does a pull-back car work? Illustrated teardown]]></title><description><![CDATA[
+<p>Article URL: <a href="https://mechanical-pencil.com/products/car">https://mechanical-pencil.com/products/car</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48712289">https://news.ycombinator.com/item?id=48712289</a></p>
+<p>Points: 81</p>
+<p># Comments: 21</p>
+]]></description><pubDate>Sun, 28 Jun 2026 22:16:20 +0000</pubDate><link>https://mechanical-pencil.com/products/car</link><dc:creator>Muhammad523</dc:creator><comments>https://news.ycombinator.com/item?id=48712289</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48712289</guid></item></channel></rss>

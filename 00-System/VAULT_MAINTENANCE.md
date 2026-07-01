@@ -1,249 +1,260 @@
----
-type: maintenance
-tags: [system, vault, maintenance, cleanup, cron]
-updated: 2026-03-01
----
+# Vault Maintenance Guide
 
-# Vault Maintenance Task
+**Last updated:** 2026-05-13
+**Frequency:** Nightly (cron scheduled at 03:00 JST)
+**Purpose:** Keep vault clean, organized, and performant
 
-## Purpose
+## Process Overview
 
-Nightly automated maintenance of the vault structure to ensure:
-1. Files are in correct directories
-2. Old files are archived
-3. No duplicate structures
-4. No misplaced files
-5. Process corrections tracked
+1. **Structure validation** — detect and fix misplaced files
+2. **Archive old files** — move dated content to 90-Archive/
+3. **Duplicate detection** — find and merge/rename duplicates
+4. **Process tracking** — identify and fix root causes
+5. **Generate report** — summary to #monitoring + detailed report
 
-## Maintenance Schedule
+## Directory Structure
 
-**Cron**: Daily at 03:00 JST (low-activity time)
-**Duration**: ~2-5 minutes
-**Report to**: #monitoring channel
-
-## Tasks
-
-### 1. Structure Validation
-
-**Check for dated files in 00-System/**:
-```bash
-find vault/00-System -type f -name "[0-9][0-9][0-9][0-9]-*.md"
 ```
-- **Action**: Move to appropriate directory based on tags/content
-- **Log**: File path, destination, reason
-
-**Check for nested vault structures**:
-```bash
-find vault/00-System -type d -name "[0-9][0-9]-*"
+vault/
+├── 00-System/          # NEVER archive (AGENTS.md, SOUL.md, USER.md, etc.)
+├── 10-Daily/           # Daily tasks and notes
+├── 20-Summaries/       # Summary files
+├── 30-Biz-Ideas/       # Business ideas and projects
+├── 40-Moltbook/        # Moltbook content
+├── 50-Monitoring/      # Monitoring logs and reports
+├── 60-Skills/          # Skill definitions (NEVER archive)
+├── 70-Engagements/     # LinkedIn and other engagement files
+├── 80-Kenkoumon/       # Kenkoumon workspace
+├── 90-Archive/         # Archived content (by type/YYYY-MM/)
+│   ├── biz-ideas/
+│   ├── daily/
+│   ├── engagements/
+│   ├── errors/
+│   ├── kenkoumon/
+│   ├── maintenance/
+│   ├── moltbook/
+│   ├── monitoring/
+│   └── summaries/
+├── bountymon/          # Bountymon workspace
+├── memory/             # Daily logs (YYYY-MM-DD.md format)
+├── state/              # State and cache files
+└── workspace/          # Workspace project files
 ```
-- **Action**: Move contents to sibling directory, remove empty nested dir
-- **Log**: Nested path, files moved, removed structure
 
-**Check for absolute path references**:
+## 1. Structure Validation
+
+### Check for dated files in 00-System/
+Files with `date: YYYY-MM-DD` frontmatter should NOT be in `00-System/`. They belong in:
+- `memory/` — if daily log format
+- `90-Archive/daily/YYYY-MM/` — if old daily log
+- `90-Archive/summaries/YYYY-MM/` — if summary
+- `90-Archive/engagements/YYYY-MM/` — if engagement
+- `90-Archive/moltbook/YYYY-MM/` — if Moltbook content
+
+### Check for nested vault structures
+Should NEVER have:
+- `00-System/vault/`
+- `00-System/40-Moltbook/`
+- `00-System/50-JTES/`
+- Any other nested directory from parent
+
+### Check for absolute path references
+Search for:
+- `/home/teabagger/` in frontmatter or links
+- Hardcoded paths that break on other machines
+
+## 2. Archive Old Files
+
+### Archive Rules
+
+| Type | Source | Destination | Age Threshold |
+|------|--------|-------------|---------------|
+| Daily logs | `memory/` | `90-Archive/daily/YYYY-MM/` | > 2 months |
+| Summaries | `20-Summaries/` | `90-Archive/summaries/YYYY-MM/` | > 90 days |
+| Engagements | `70-Engagements/` | `90-Archive/engagements/YYYY-MM/` | > 90 days |
+| Moltbook | `40-Moltbook/` | `90-Archive/moltbook/YYYY-MM/` | > 90 days |
+| Kenkoumon dev logs | `80-Kenkoumon/` | `90-Archive/kenkoumon/YYYY-MM/` | > 180 days |
+| Biz ideas | `30-Biz-Ideas/` | `90-Archive/biz-ideas/YYYY-MM/` | > 180 days |
+| Monitoring | `50-Monitoring/` | `90-Archive/monitoring/YYYY-MM/` | > 180 days |
+
+### NEVER Archive
+- `00-System/` — core system files
+- `60-Skills/` — skill definitions
+- Files modified in last 24 hours
+- Files without clear date frontmatter
+
+### Archive Command Template
 ```bash
-grep -r "/home/teabagger/.openclaw/vault/" vault/ --include="*.md" | head -10
+# Create destination directory
+mkdir -p /home/teabagger/.openclaw/vault/90-Archive/<type>/$(date +%Y-%m)
+
+# Move old files
+find /home/teabagger/.openclaw/vault/<source> \
+  -type f -name "*.md" \
+  -mtime +<days> \
+  -exec mv {} /home/teabagger/.openclaw/vault/90-Archive/<type>/$(date +%Y-%m)/ \;
 ```
-- **Action**: Flag for manual review (might break references)
-- **Log**: File, line number, context
 
-### 2. File Age Management
+## 3. Duplicate Detection
 
-**Archive files older than 30 days**:
-
-**Daily logs** (`10-Daily/`):
-- Keep: Current month + previous month
-- Archive: Older than 2 months → `90-Archive/daily/YYYY-MM/`
-
-**Summaries** (`20-Summaries/`):
-- Keep: Last 90 days
-- Archive: Older than 90 days → `90-Archive/summaries/YYYY-MM/`
-
-**Engagements** (`70-Engagements/`):
-- Keep: Last 90 days
-- Archive: Older than 90 days → `90-Archive/engagements/YYYY-MM/`
-
-**Moltbook** (`40-Moltbook/`):
-- Keep: Last 90 days
-- Archive: Older than 90 days → `90-Archive/moltbook/YYYY-MM/`
-
-**System config** (`00-System/`):
-- NEVER archive (permanent files)
-
-**Skills** (`60-Skills/`):
-- NEVER archive (permanent files)
-
-**Kenkoumon** (`80-Kenkoumon/`):
-- Keep development logs: Last 180 days
-- Archive: Older than 180 days → `90-Archive/kenkoumon/YYYY-MM/`
-
-### 3. Duplicate Detection
-
-**Find duplicate filenames**:
+### Find duplicate filenames
 ```bash
-find vault -type f -name "*.md" -exec basename {} \; | sort | uniq -d
+find /home/teabagger/.openclaw/vault -name "*.md" -type f -printf "%f\n" | sort | uniq -d
 ```
-- **Action**: Compare content, merge if identical, rename if different
-- **Log**: Duplicate files, action taken
 
-**Find duplicate directories**:
-- Check for nested directories with same names
-- Check for `00-System/vault/` vs `vault/`
-- **Action**: Consolidate, remove duplicates
+### Compare content
+For each duplicate filename:
+- If content identical → keep newest, remove older
+- If content different → rename with suffix (e.g., `file-v2.md`)
+- If nested duplicate directory → consolidate
 
-### 4. File Placement Validation
+### Remove nested duplicate directories
+```bash
+find /home/teabagger/.openclaw/vault -type d -name "vault" -o -name "40-Moltbook" | while read dir; do
+  # Check if nested inside another vault directory
+  parent=$(dirname "$dir")
+  if [[ "$parent" == *"vault"* ]]; then
+    echo "NESTED: $dir inside $parent"
+  fi
+done
+```
 
-**Check tags match directory**:
-
-| File Location | Expected Tags |
-|---------------|---------------|
-| `10-Daily/` | `daily`, `briefing`, `log` |
-| `20-Summaries/` | `summary`, `web`, `video` |
-| `30-Biz-Ideas/` | `biz-ideas`, `business`, `discovery` |
-| `40-Moltbook/` | `moltbook`, `engagement`, `ghost-hunt` |
-| `50-Monitoring/` | `monitoring`, `health`, `alert` |
-| `70-Engagements/` | `engagement`, `linkedin`, `moltbook` |
-| `80-Kenkoumon/` | `kenkoumon`, `health`, `transcription` |
-
-**Misplaced files**:
-- **Action**: Move to correct directory, update process
-- **Log**: File, old location, new location, process identified
-
-### 5. Process Tracking
+## 4. Process Tracking
 
 When misplaced file found:
 
-1. **Identify source**:
-   - Check file frontmatter for `date`, `tags`, `source`
-   - Check recent session logs in `agents/main/sessions/`
-   - Check cron job execution logs
+### a. Identify source
+- Check frontmatter for `type`, `tags`, `created`, `updated`
+- Check session logs for file creation
+- Check cron logs for automation outputs
 
-2. **Identify process**:
-   - Which skill/command created this file?
-   - Which channel triggered it?
-   - Was it manual or automated?
+### b. Identify process
+- Which skill created it?
+- Which command/script generated it?
+- Which Discord channel triggered it?
 
-3. **Fix process**:
-   - Update skill documentation
-   - Update BOOTSTRAP.md channel instructions
-   - Update cron job configuration
+### c. Fix process
+- Update skill docs with correct output path
+- Update BOOTSTRAP.md with correct structure
+- Update cron config with correct working directory
+- Add validation to prevent future issues
 
-4. **Log correction**:
-   ```
-   vault/90-Archive/maintenance/corrections/YYYY-MM-DD-corrections.md
-   ```
-
-## Archive Structure
-
-```
-vault/90-Archive/
-├── daily/
-│   ├── 2025-12/
-│   └── 2026-01/
-├── summaries/
-│   ├── 2025-11/
-│   └── 2025-12/
-├── engagements/
-│   └── 2025-11/
-├── moltbook/
-│   └── 2025-11/
-├── kenkoumon/
-│   └── 2026-01/
-└── maintenance/
-    ├── YYYY-MM-DD-cleanup-report.md
-    └── corrections/
-        └── YYYY-MM-DD-corrections.md
-```
-
-## Report Format
-
-**Posted to #monitoring**:
-
+### d. Log correction
+Create: `90-Archive/maintenance/corrections/YYYY-MM-DD-corrections.md`
 ```markdown
-## 🧹 Vault Maintenance — [DATE]
-
-**Duration**: X seconds
-**Files checked**: N
-**Files moved**: N
-**Files archived**: N
-**Duplicates resolved**: N
-**Processes fixed**: N
-
-### Actions Taken
-- Moved: [file] → [destination] (reason)
-- Archived: [file] → [archive-path] (age: N days)
-- Fixed: [process-name] was writing to wrong directory
-
-### Issues Found
-- [Issue description and resolution]
-
-### Process Corrections
-- [Process] updated to write to [correct-directory]
-
 ---
-*Next cleanup: Tomorrow 03:00 JST*
-```
-
-## Manual Override
-
-**Force cleanup now**:
-```bash
-/vault-cleanup
-```
-
-**Dry run** (show what would happen):
-```bash
-/vault-cleanup --dry-run
-```
-
-**Skip archiving** (only reorganize):
-```bash
-/vault-cleanup --no-archive
-```
-
-## Exclusions
-
-**Never move or archive**:
-- `00-System/*.md` — System configuration
-- `60-Skills/**/*.md` — Agent skills
-- `README.md` — Repository readme
-- `.obsidian/**` — Obsidian config
-- Files modified in last 24 hours
-
-## Error Handling
-
-**If maintenance fails**:
-1. Log error to `90-Archive/maintenance/errors/`
-2. Post alert to #monitoring
-3. Do NOT partially complete (rollback if needed)
-4. Manual intervention required
-
-**Safe defaults**:
-- When in doubt, don't move
-- Always preserve file content
-- Never delete, only archive
-- Keep audit trail
-
-## Metrics Tracked
-
-- Files by directory (trend over time)
-- Archive size (should grow slowly)
-- Misplaced files found (should decrease over time)
-- Process corrections (should decrease over time)
-- Maintenance duration (should be <5 minutes)
-
-## Initial Setup
-
-**Create archive structure**:
-```bash
-mkdir -p vault/90-Archive/{daily,summaries,engagements,moltbook,kenkoumon,maintenance/corrections,errors}
-```
-
-**Create maintenance log**:
-```bash
-touch vault/90-Archive/maintenance/YYYY-MM-DD-cleanup-report.md
-```
-
+type: maintenance
+tags: [correction, vault]
+date: YYYY-MM-DD
 ---
 
-*Created: 2026-03-01*
-*Next run: 2026-03-02 03:00 JST*
+# Vault Correction Log
+
+## Misplaced File
+- **File**: path/to/file.md
+- **Found in**: wrong/directory/
+- **Should be in**: correct/directory/
+
+## Root Cause
+- **Process**: skill/command/cron
+- **Source**: channel/script
+- **Reason**: why it happened
+
+## Fix Applied
+- Moved file to: correct/directory/
+- Updated: file/doc/config
+- Prevention: what changed
+```
+
+## 5. Generate Report
+
+### Summary to #monitoring
+```
+🧹 Vault Maintenance Complete
+⏱️ Duration: X min
+📁 Files checked: N
+📦 Files archived: N
+🔄 Files moved: N
+👯 Duplicates resolved: N
+🔧 Processes fixed: N
+
+Full report: 90-Archive/maintenance/YYYY-MM-DD-cleanup-report.md
+```
+
+### Detailed Report
+Save to: `90-Archive/maintenance/YYYY-MM-DD-cleanup-report.md`
+
+Include:
+- Start/end time
+- All checks performed
+- Every file moved/archived (with reason)
+- All duplicates found/resolved
+- All processes fixed
+- Recommendations for future
+
+## Safety Rules
+
+1. **Never delete files** — only archive or move
+2. **Never archive recent files** — skip if modified < 24h
+3. **Never archive core directories** — protect 00-System/, 60-Skills/
+4. **When in doubt, don't move** — ask or document in report
+5. **Keep audit trail** — log every change
+
+## Common Issues
+
+### Issue: Daily logs accumulating
+**Symptom:** Too many `memory/YYYY-MM-DD.md` files
+**Fix:** Archive to `90-Archive/daily/YYYY-MM/` (keep 2 months in memory/)
+
+### Issue: Nested vault structure
+**Symptom:** Files in `00-System/vault/` or similar
+**Fix:** Move to correct location, update process that created it
+
+### Issue: Non-standard archive directory
+**Symptom:** `memory/archive/` or similar directories created by ad-hoc processes
+**Fix:** Move files to `90-Archive/daily/YYYY-MM/`, remove non-standard directory, update process
+**Example:** 2026-05-13 - Found `memory/archive/` with 9 March logs, moved to proper location
+
+### Issue: Duplicate summaries
+**Symptom:** Multiple files with same name in different directories
+**Fix:** Compare content, merge if identical, rename if different
+
+### Issue: Absolute paths
+**Symptom:** Hardcoded `/home/teabagger/` in files
+**Fix:** Replace with relative paths or `~/.openclaw/` references
+
+## Cron Job
+
+```cron
+# Vault maintenance - daily at 03:00 JST
+0 3 * * * cd /home/teabagger/.openclaw/vault && openclaw agents trigger kinokomon "Run nightly vault maintenance"
+```
+
+## Related Documentation
+
+- `AGENTS.md` — Agent roles and session rules
+- `SOUL.md` — Agent identity and behavior
+- `USER.md` — User preferences and context
+- `MEMORY.md` — Long-term memories (main session only)
+- `memory/YYYY-MM-DD.md` — Daily logs
+- `90-Archive/maintenance/corrections/YYYY-MM-DD-corrections.md` — Correction logs
+- `90-Archive/maintenance/YYYY-MM-DD-cleanup-report.md` — Maintenance reports
+
+---
+
+**Version:** 1.1
+**Maintainer:** Kinokomon
+**Review:** Monthly
+
+## Changelog
+
+### v1.1 (2026-05-13)
+- Updated directory structure to match actual vault layout
+- Added business ideas, monitoring, and engagements to archive rules
+- Added issue documentation for non-standard archive directories
+- Added references to correction logs and maintenance reports
+
+### v1.0 (2026-05-13)
+- Initial documentation
+- Defined structure validation, archival, duplicate detection, and process tracking
+- Established safety rules and compliance checklist

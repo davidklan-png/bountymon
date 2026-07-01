@@ -12,7 +12,7 @@
 	<atom:link href="https://techcrunch.com/category/enterprise/feed/" rel="self" type="application/rss+xml" />
 	<link>https://techcrunch.com/category/enterprise/</link>
 	<description>Startup and Technology News</description>
-	<lastBuildDate>Fri, 17 Apr 2026 15:40:14 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 29 Jun 2026 21:49:12 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,425 +28,399 @@
 	<height>32</height>
 </image> 
 	<item>
-		<title>Anthropic launches Claude Design, a new product for creating quick visuals</title>
-		<link>https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/</link>
+		<title>Chamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role</title>
+		<link>https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role/</link>
 		
-		<dc:creator><![CDATA[Aisha Malik]]></dc:creator>
-		<pubDate>Fri, 17 Apr 2026 15:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
+		<pubDate>Mon, 29 Jun 2026 20:55:50 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Fundraising]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[ai coding]]></category>
+		<category><![CDATA[Chamath Palihapitiya]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3137388</guid>
+
+					<description><![CDATA[VCs remain thirsty to fund AI coding startups. This one, founded by investor Chamath Palihapitiya, is no exception.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Rippling now wants to be your entire data stack</title>
+		<link>https://techcrunch.com/2026/06/25/parker-conrad-knows-which-employees-are-worth-their-ai-spend-and-says-rippling-can-help-you-too/</link>
+		
+		<dc:creator><![CDATA[Connie Loizos]]></dc:creator>
+		<pubDate>Thu, 25 Jun 2026 16:00:00 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[parker conrad]]></category>
+		<category><![CDATA[Ramp]]></category>
+		<category><![CDATA[Rippling]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3136056</guid>
+
+					<description><![CDATA["There were employees doing things like, 'Claude is so helpful for me — it analyzes my calendar and my email and puts together a plan for me,'" he says. "That person was spending at a run rate of $30,000 a year for this."]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Amazon ups India bet with fresh $13B AI infrastructure investment</title>
+		<link>https://techcrunch.com/2026/06/25/amazon-ups-india-bet-with-fresh-13b-ai-infrastructure-investment/</link>
+		
+		<dc:creator><![CDATA[Jagmeet Singh]]></dc:creator>
+		<pubDate>Thu, 25 Jun 2026 12:00:38 +0000</pubDate>
 				<category><![CDATA[AI]]></category>
-		<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[Andy Jassy]]></category>
+		<category><![CDATA[AWS]]></category>
+		<category><![CDATA[data centers]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3136083</guid>
+
+					<description><![CDATA[Amazon’s latest India investment comes as global tech companies race to expand AI infrastructure in the country.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>India&#8217;s MoEngage bets that the future of marketing is millions of AI agents</title>
+		<link>https://techcrunch.com/2026/06/23/indias-moengage-bets-marketings-future-on-millions-of-ai-agents/</link>
+		
+		<dc:creator><![CDATA[Jagmeet Singh]]></dc:creator>
+		<pubDate>Tue, 23 Jun 2026 23:30:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Aampe]]></category>
+		<category><![CDATA[ai agent]]></category>
+		<category><![CDATA[MoEngage]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3135480</guid>
+
+					<description><![CDATA[The all-cash deal gives MoEngage access to technology that assigns AI agents to individual customers.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Anthropic’s Claude Tag is learning your company, one Slack message at a time</title>
+		<link>https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/</link>
+		
+		<dc:creator><![CDATA[Rebecca Bellan]]></dc:creator>
+		<pubDate>Tue, 23 Jun 2026 17:00:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
 		<category><![CDATA[Enterprise]]></category>
 		<category><![CDATA[Anthropic]]></category>
 		<category><![CDATA[Claude]]></category>
-		<category><![CDATA[claude design]]></category>
-		<category><![CDATA[design]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3113618</guid>
+		<category><![CDATA[claude tag]]></category>
+		<category><![CDATA[Enterprise AI]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3135349</guid>
 
-					<description><![CDATA[The company says Claude Design is intended to help people like founders and product managers without a design background share their ideas more easily. ]]></description>
+					<description><![CDATA[Anthropic’s new Claude Tag brings an always-on AI teammate to Slack. But beyond productivity, the feature is a strategic play to capture organizational context, institutional knowledge, and enterprise workflows.]]></description>
 		
 		
 		
 			</item>
 		<item>
-		<title>OpenAI takes aim at Anthropic with beefed-up Codex that gives it more power over your desktop</title>
-		<link>https://techcrunch.com/2026/04/16/openai-takes-aim-at-anthropic-with-beefed-up-codex-that-gives-it-more-power-over-your-desktop/</link>
+		<title>Fika Jobs raises $4M to build a video-first hiring platform where AI agents interview candidates</title>
+		<link>https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates/</link>
 		
-		<dc:creator><![CDATA[Lucas Ropek]]></dc:creator>
-		<pubDate>Thu, 16 Apr 2026 19:18:41 +0000</pubDate>
+		<dc:creator><![CDATA[Lauren Forristal]]></dc:creator>
+		<pubDate>Tue, 23 Jun 2026 13:00:00 +0000</pubDate>
 				<category><![CDATA[AI]]></category>
 		<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[agents]]></category>
-		<category><![CDATA[Anthropic]]></category>
-		<category><![CDATA[claude code]]></category>
-		<category><![CDATA[codex]]></category>
-		<category><![CDATA[OpenAI]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3113143</guid>
+		<category><![CDATA[Fundraising]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[AI agents]]></category>
+		<category><![CDATA[hiring]]></category>
+		<category><![CDATA[job hunting]]></category>
+		<category><![CDATA[Luminar Ventures]]></category>
+		<category><![CDATA[pre-seed funding]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3135158</guid>
 
-					<description><![CDATA[OpenAI's agentic coding tool has gotten a major makeover, with a variety of new powers and abilities. ]]></description>
+					<description><![CDATA[Stockholm-based startup Fika Jobs is building a video-first hiring platform that combines AI interview agents with short-form video profiles, creating something that feels like a cross between LinkedIn and TikTok.]]></description>
 		
 		
 		
 			</item>
 		<item>
-		<title>InsightFinder raises $15M to help companies figure out where AI agents go wrong</title>
-		<link>https://techcrunch.com/2026/04/16/insightfinder-raises-15m-to-help-companies-figure-out-where-ai-agents-go-wrong/</link>
+		<title>Source: Elastic agrees to buy CRV-backed Deductive AI for up to $85M</title>
+		<link>https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/</link>
+		
+		<dc:creator><![CDATA[Marina Temkin]]></dc:creator>
+		<pubDate>Fri, 19 Jun 2026 00:51:11 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[AI SRE]]></category>
+		<category><![CDATA[CRV]]></category>
+		<category><![CDATA[DeductiveAI]]></category>
+		<category><![CDATA[Elastic]]></category>
+		<category><![CDATA[Exclusive]]></category>
+		<category><![CDATA[observability]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3134483</guid>
+
+					<description><![CDATA[Deductive AI, a startup that uses AI to catch and resolve bugs in software, was founded just three years ago. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Amazon hopes to challenge Nvidia more directly by selling its AI chips</title>
+		<link>https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/</link>
+		
+		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
+		<pubDate>Thu, 18 Jun 2026 18:22:13 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[AI chips]]></category>
+		<category><![CDATA[Amazon]]></category>
+		<category><![CDATA[AWS]]></category>
+		<category><![CDATA[nvidia]]></category>
+		<category><![CDATA[trainium]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3134182</guid>
+
+					<description><![CDATA[AWS is in talks to sell its chips to other data centers. CEO Andy Jassy has said this represents a $50 billion opportunity for the company.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Canadian pension giant joins race to fund India&#8217;s AI-fueled data center boom</title>
+		<link>https://techcrunch.com/2026/06/17/canadian-pension-giant-joins-race-to-fund-indias-ai-fueled-data-center-boom/</link>
+		
+		<dc:creator><![CDATA[Jagmeet Singh]]></dc:creator>
+		<pubDate>Wed, 17 Jun 2026 12:38:09 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Canada Pension Plan Investment Board]]></category>
+		<category><![CDATA[CPP Investments]]></category>
+		<category><![CDATA[CtrlS]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3133722</guid>
+
+					<description><![CDATA[The Canadian pension giant will acquire an 8.2% stake in CtrlS, a tech giant that operates more than 15 data centers across India.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Anthropic&#8217;s latest feud with the Trump admin may actually help it, sales data suggests</title>
+		<link>https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests/</link>
+		
+		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
+		<pubDate>Tue, 16 Jun 2026 22:34:17 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Fintech]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[Anthropic]]></category>
+		<category><![CDATA[Fable 5]]></category>
+		<category><![CDATA[Mythos]]></category>
+		<category><![CDATA[Ramp]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3133474</guid>
+
+					<description><![CDATA[Anthropic's popularity with business users is growing so well that the latest beef with the government might actually boost it, data from Ramp suggests.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Salesforce acquires AI customer service platform Fin for $3.6B</title>
+		<link>https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b/</link>
+		
+		<dc:creator><![CDATA[Amanda Silberling]]></dc:creator>
+		<pubDate>Mon, 15 Jun 2026 14:34:45 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Agentforce]]></category>
+		<category><![CDATA[AI agents]]></category>
+		<category><![CDATA[Fin]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<category><![CDATA[Mergers and Acquisitions]]></category>
+		<category><![CDATA[Salesforce]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3132810</guid>
+
+					<description><![CDATA[Salesforce says it wants to use Fin's team and technology to improve Agentforce, its existing enterprise platform that businesses can use to build custom AI agents that automate tasks.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Anthropic taps TCS to scale its enterprise AI deployments</title>
+		<link>https://techcrunch.com/2026/06/11/anthropic-taps-tcs-to-scale-its-enterprise-ai-deployments/</link>
+		
+		<dc:creator><![CDATA[Jagmeet Singh]]></dc:creator>
+		<pubDate>Thu, 11 Jun 2026 11:48:55 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Anthropic]]></category>
+		<category><![CDATA[Claude]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<category><![CDATA[tata consultancy services]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3132066</guid>
+
+					<description><![CDATA[The partnership will see TCS creating a business unit focused on deploying Anthropic's AI models to its customers.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Jedify raises $24M to help companies arm AI agents with context on their business</title>
+		<link>https://techcrunch.com/2026/06/10/jedify-raises-24m-to-help-companies-arm-ai-agents-with-context-on-their-business/</link>
 		
 		<dc:creator><![CDATA[Ram Iyer]]></dc:creator>
-		<pubDate>Thu, 16 Apr 2026 16:15:00 +0000</pubDate>
+		<pubDate>Wed, 10 Jun 2026 13:33:09 +0000</pubDate>
 				<category><![CDATA[AI]]></category>
 		<category><![CDATA[Enterprise]]></category>
 		<category><![CDATA[Fundraising]]></category>
-		<category><![CDATA[data observability]]></category>
-		<category><![CDATA[Datadog]]></category>
-		<category><![CDATA[Dynatrace]]></category>
-		<category><![CDATA[Grafana Labs]]></category>
-		<category><![CDATA[InsightFinder]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3113071</guid>
-
-					<description><![CDATA[According to CEO Helen Gu, the biggest problem facing the industry today is not just monitoring and diagnosing where AI models go wrong — it's also diagnosing how the entire tech stack operates now that AI is part of it. ]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Feds will require data centers to show their power bills</title>
-		<link>https://techcrunch.com/2026/04/15/feds-will-require-data-centers-to-show-their-power-bills/</link>
-		
-		<dc:creator><![CDATA[Tim De Chant]]></dc:creator>
-		<pubDate>Wed, 15 Apr 2026 18:50:48 +0000</pubDate>
-				<category><![CDATA[Climate]]></category>
-		<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[Government & Policy]]></category>
-		<category><![CDATA[data centers]]></category>
-		<category><![CDATA[electricity]]></category>
-		<category><![CDATA[In Brief]]></category>
-		<category><![CDATA[U.S. Senate]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3112830</guid>
-
-					<description><![CDATA[In a first, the U.S. Energy Information Agency said it will require data centers to disclose details of their energy use.]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>AI data center startup Fluidstack in talks for $1B round at $18B valuation months after hitting $7.5B, says report</title>
-		<link>https://techcrunch.com/2026/04/14/ai-datacenter-startup-fluidstack-in-talks-for-1b-round-at-18b-valuation-months-after-hitting-7-5b-says-report/</link>
-		
-		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
-		<pubDate>Tue, 14 Apr 2026 21:33:38 +0000</pubDate>
-				<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[Hardware]]></category>
 		<category><![CDATA[Startups]]></category>
-		<category><![CDATA[TC]]></category>
-		<category><![CDATA[data centers]]></category>
-		<category><![CDATA[fluidstack]]></category>
-		<category><![CDATA[neocloud]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3112415</guid>
-
-					<description><![CDATA[Fundraising is reportedly flowing for Fluidstack after it secured a $50 billion deal to build data centers for Anthropic.]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>IBM pays $17M fine to end DOJ suit over DEI programs</title>
-		<link>https://techcrunch.com/2026/04/13/ibm-pays-17m-fine-to-end-doj-suit-over-dei-programs/</link>
-		
-		<dc:creator><![CDATA[Dominic-Madori Davis]]></dc:creator>
-		<pubDate>Mon, 13 Apr 2026 19:11:27 +0000</pubDate>
-				<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[Government & Policy]]></category>
-		<category><![CDATA[IBM]]></category>
-		<category><![CDATA[doj]]></category>
-		<category><![CDATA[DEI]]></category>
-		<category><![CDATA[In Brief]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3111807</guid>
-
-					<description><![CDATA[IBM entered into a $17 million settlement agreement on Friday with the U.S. DOJ over allegations that it engaged in “illegal DEI practices.” ]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Microsoft is working on yet another OpenClaw-like agent</title>
-		<link>https://techcrunch.com/2026/04/13/microsoft-is-working-on-yet-another-openclaw-like-agent/</link>
-		
-		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
-		<pubDate>Mon, 13 Apr 2026 19:05:19 +0000</pubDate>
-				<category><![CDATA[AI]]></category>
-		<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[openclaw]]></category>
-		<category><![CDATA[ai agent]]></category>
-		<category><![CDATA[Copilot]]></category>
-		<category><![CDATA[Microsoft]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3111806</guid>
-
-					<description><![CDATA[The new features would be geared toward enterprise customers, with better security controls than the famously risky open source OpenClaw agent.]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Last 24 hours: Save up to $500 on your TechCrunch Disrupt 2026 pass</title>
-		<link>https://techcrunch.com/2026/04/10/final-24-hours-save-up-to-500-on-your-techcrunch-disrupt-2026-pass/</link>
-		
-		<dc:creator><![CDATA[TechCrunch Events]]></dc:creator>
-		<pubDate>Fri, 10 Apr 2026 14:00:00 +0000</pubDate>
-				<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[Startups]]></category>
-		<category><![CDATA[Transportation]]></category>
-		<category><![CDATA[Space]]></category>
-		<category><![CDATA[Climate]]></category>
-		<category><![CDATA[Fintech]]></category>
-		<category><![CDATA[Venture]]></category>
-		<category><![CDATA[AI]]></category>
-		<category><![CDATA[Apps]]></category>
-		<category><![CDATA[Robotics]]></category>
-		<category><![CDATA[Fundraising]]></category>
-		<category><![CDATA[TechCrunch Disrupt 2026]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3111266</guid>
-
-					<description><![CDATA[This is it. Tonight is your last chance to lock in savings of up to $500 for your TechCrunch Disrupt 2026 pass. These discounts end at 11:59 p.m. PT.]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Google and Intel deepen AI infrastructure partnership</title>
-		<link>https://techcrunch.com/2026/04/09/google-and-intel-deepen-ai-infrastructure-partnership/</link>
-		
-		<dc:creator><![CDATA[Rebecca Szkutak]]></dc:creator>
-		<pubDate>Thu, 09 Apr 2026 18:27:47 +0000</pubDate>
-				<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[Hardware]]></category>
-		<category><![CDATA[AI]]></category>
-		<category><![CDATA[Intel]]></category>
-		<category><![CDATA[cpus]]></category>
-		<category><![CDATA[GPUS]]></category>
-		<category><![CDATA[google cloud]]></category>
-		<category><![CDATA[ai infrastructure]]></category>
-		<category><![CDATA[In Brief]]></category>
-		<category><![CDATA[IPUs]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3110988</guid>
-
-					<description><![CDATA[The two tech giants are looking to co-develop custom chips, at a time when demand for CPUs is high due to a growing global shortage. ]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Amazon CEO takes aim at Nvidia, Intel, Starlink, more in annual shareholder letter</title>
-		<link>https://techcrunch.com/2026/04/09/amazon-ceo-takes-aim-at-nvidia-intel-starlink-more-in-annual-shareholder-letter/</link>
-		
-		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
-		<pubDate>Thu, 09 Apr 2026 14:27:57 +0000</pubDate>
-				<category><![CDATA[AI]]></category>
-		<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[Amazon]]></category>
-		<category><![CDATA[AWS]]></category>
-		<category><![CDATA[CAPEX]]></category>
-		<category><![CDATA[OpenAI]]></category>
-		<category><![CDATA[Andy Jassy]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3110724</guid>
-
-					<description><![CDATA[Andy Jassy's annual shareholder letter reads something like a diss track to a wide range of competitors as he defends spending $200 billion in capex.]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>AWS boss explains why investing billions in both Anthropic and OpenAI is an OK conflict</title>
-		<link>https://techcrunch.com/2026/04/08/aws-boss-explains-why-investing-billions-in-both-anthropic-and-openai-is-an-ok-conflict/</link>
-		
-		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
-		<pubDate>Wed, 08 Apr 2026 20:09:14 +0000</pubDate>
-				<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[TC]]></category>
-		<category><![CDATA[AI]]></category>
-		<category><![CDATA[Matt Garman]]></category>
-		<category><![CDATA[Anthropic]]></category>
-		<category><![CDATA[OpenAI]]></category>
-		<category><![CDATA[AWS]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3110560</guid>
-
-					<description><![CDATA[AWS has an ingrained culture of handling competition, he explained, because the cloud giant also competes with its partners. ]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Databricks co-founder wins prestigious ACM award, says &#8216;AGI is here already&#8217;</title>
-		<link>https://techcrunch.com/2026/04/08/databricks-matei-zaharia-wins-acm-computing-prize-agi/</link>
-		
-		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
-		<pubDate>Wed, 08 Apr 2026 15:00:00 +0000</pubDate>
-				<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[Startups]]></category>
-		<category><![CDATA[AI]]></category>
-		<category><![CDATA[AGI]]></category>
-		<category><![CDATA[ACM]]></category>
-		<category><![CDATA[Databricks]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3110335</guid>
-
-					<description><![CDATA[Matei Zaharia has won the top honor from the Association for Computing Machinery. Now he's working on AI for research and says AGI is simply misunderstood.]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Final 3 days to save up to $500 on your TechCrunch Disrupt 2026 pass</title>
-		<link>https://techcrunch.com/2026/04/08/final-3-days-to-save-up-to-500-on-your-techcrunch-disrupt-2026-pass/</link>
-		
-		<dc:creator><![CDATA[TechCrunch Events]]></dc:creator>
-		<pubDate>Wed, 08 Apr 2026 14:00:00 +0000</pubDate>
-				<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[Fundraising]]></category>
-		<category><![CDATA[Robotics]]></category>
-		<category><![CDATA[AI]]></category>
-		<category><![CDATA[Venture]]></category>
-		<category><![CDATA[Fintech]]></category>
-		<category><![CDATA[Security]]></category>
-		<category><![CDATA[Startups]]></category>
-		<category><![CDATA[TechCrunch Disrupt 2026]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3110367</guid>
-
-					<description><![CDATA[Save up to $500 on your TechCrunch Disrupt 2026 pass until April 10, 11:59 p.m. PT. Secure your spot at the center of the tech ecosystem. Register today.]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Atlassian launches visual AI tools and third-party agents in Confluence</title>
-		<link>https://techcrunch.com/2026/04/08/atlassian-confluence-visual-ai-tools-agents/</link>
-		
-		<dc:creator><![CDATA[Rebecca Szkutak]]></dc:creator>
-		<pubDate>Wed, 08 Apr 2026 13:00:00 +0000</pubDate>
-				<category><![CDATA[Apps]]></category>
-		<category><![CDATA[AI]]></category>
-		<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[artificial intelligence]]></category>
 		<category><![CDATA[AI agents]]></category>
-		<category><![CDATA[JIRA]]></category>
-		<category><![CDATA[confluence]]></category>
-		<category><![CDATA[Atlassian]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3110234</guid>
+		<category><![CDATA[context graphs]]></category>
+		<category><![CDATA[Jedify]]></category>
+		<category><![CDATA[Norwest]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3131144</guid>
 
-					<description><![CDATA[Confluence users can now create visual assets within the software in addition to new third-party agents working with Lovable, Replit, and Gamma. ]]></description>
+					<description><![CDATA[The funding round was led by Norwest, with participation from S Capital VC, Cerca Partners, and Oceans Ventures. Snowflake Ventures also participated as a strategic investor.]]></description>
 		
 		
 		
 			</item>
 		<item>
-		<title>Anthropic debuts preview of powerful new AI model Mythos in new cybersecurity initiative</title>
-		<link>https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/</link>
-		
-		<dc:creator><![CDATA[Lucas Ropek]]></dc:creator>
-		<pubDate>Tue, 07 Apr 2026 18:00:00 +0000</pubDate>
-				<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[Security]]></category>
-		<category><![CDATA[AI]]></category>
-		<category><![CDATA[Amazon]]></category>
-		<category><![CDATA[Microsoft]]></category>
-		<category><![CDATA[Anthropic]]></category>
-		<category><![CDATA[Mythos]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3109830</guid>
-
-					<description><![CDATA[The new model will be used by a small number of high-profile companies to engage in defensive cybersecurity work. ]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Uber is the latest to be won over by Amazon&#8217;s AI chips</title>
-		<link>https://techcrunch.com/2026/04/07/uber-is-the-latest-to-be-won-over-by-amazons-ai-chips/</link>
+		<title>Alphabet&#8217;s record-breaking $85B raise for Google&#8217;s AI business is a helluva good signal</title>
+		<link>https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal/</link>
 		
 		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
-		<pubDate>Tue, 07 Apr 2026 16:46:59 +0000</pubDate>
+		<pubDate>Wed, 03 Jun 2026 19:38:32 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[Alphabet]]></category>
+		<category><![CDATA[capital expenditures]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[IPOs]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3129237</guid>
+
+					<description><![CDATA[If Alphabet's record-breaking $85 billion stock sale signals investor appetite for AI-related offerings, we can see that investors are ready to chow. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>GitLab cuts 14% of staff as it scales its platform to serve AI workloads</title>
+		<link>https://techcrunch.com/2026/06/03/gitlab-cuts-14-of-staff-as-it-scales-its-platform-to-serve-ai-workloads/</link>
+		
+		<dc:creator><![CDATA[Ram Iyer]]></dc:creator>
+		<pubDate>Wed, 03 Jun 2026 14:59:30 +0000</pubDate>
 				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[AI layoffs]]></category>
+		<category><![CDATA[AI workloads]]></category>
+		<category><![CDATA[GitHub]]></category>
+		<category><![CDATA[gitlab]]></category>
+		<category><![CDATA[Layoffs]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3129095</guid>
+
+					<description><![CDATA[The company is reducing its workforce as it exits 22 countries, reduces management layers, and invests in its infrastructure to scale its platform. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>OpenAI launches new Codex tools for white-collar work</title>
+		<link>https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/</link>
+		
+		<dc:creator><![CDATA[Russell Brandom]]></dc:creator>
+		<pubDate>Tue, 02 Jun 2026 16:00:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[OpenAI]]></category>
+		<category><![CDATA[openai codex]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3128585</guid>
+
+					<description><![CDATA[OpenAI released a set of six plug-ins aimed at specific jobs: data analytics, creative production, sales, product design, equity investing, and investment banking. Available from within the Codex app, each of the new tools bundles integrations, instructions, and context to allow Codex to approximate a specific job.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Today is the last day to apply to speak at TechCrunch Disrupt 2026</title>
+		<link>https://techcrunch.com/2026/05/29/today-is-the-last-day-to-apply-to-speak-at-techcrunch-disrupt-2026/</link>
+		
+		<dc:creator><![CDATA[TechCrunch Events]]></dc:creator>
+		<pubDate>Fri, 29 May 2026 14:15:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Biotech & Health]]></category>
+		<category><![CDATA[Climate]]></category>
+		<category><![CDATA[Crypto]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Fintech]]></category>
+		<category><![CDATA[Fundraising]]></category>
+		<category><![CDATA[Government & Policy]]></category>
+		<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[Media & Entertainment]]></category>
+		<category><![CDATA[Robotics]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[TechCrunch Disrupt 2026]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3127664</guid>
+
+					<description><![CDATA[Submit your session topic before today ends for a chance to speak at TechCrunch Disrupt 2026. Apply now to share your insight and help shape the conversations defining the tech industry.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Glean&#8217;s top line crosses $300M as AI budget cutting becomes its major selling point</title>
+		<link>https://techcrunch.com/2026/05/28/gleans-top-line-crosses-300m-as-ai-budget-cutting-becomes-its-major-selling-point/</link>
+		
+		<dc:creator><![CDATA[Marina Temkin]]></dc:creator>
+		<pubDate>Fri, 29 May 2026 00:44:37 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[AI search]]></category>
+		<category><![CDATA[Glean]]></category>
+		<category><![CDATA[revenue]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3127613</guid>
+
+					<description><![CDATA[The enterprise AI search startup tripled its annual revenue even as tech giants entered the category.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>At TechCrunch Disrupt 2026: Databricks’ co-founder on what kills enterprise AI deals</title>
+		<link>https://techcrunch.com/2026/05/28/techcrunch-disrupt-2026-databricks-co-founder-on-what-kills-enterprise-ai-deals/</link>
+		
+		<dc:creator><![CDATA[TechCrunch Events]]></dc:creator>
+		<pubDate>Thu, 28 May 2026 14:30:00 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Startups]]></category>
 		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Databricks]]></category>
+		<category><![CDATA[TechCrunch Disrupt 2026]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3126871</guid>
+
+					<description><![CDATA[Enterprise AI is entering a different phase now, one where enterprises are no longer evaluating whether AI is exciting. They are evaluating whether it is safe to deploy broadly.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>In more good news for Amazon, Snowflake signs $6B deal with AWS for AI CPU chips</title>
+		<link>https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/</link>
+		
+		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
+		<pubDate>Wed, 27 May 2026 20:10:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[AI chips]]></category>
 		<category><![CDATA[Amazon]]></category>
 		<category><![CDATA[AWS]]></category>
-		<category><![CDATA[Uber]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3110079</guid>
+		<category><![CDATA[Snowflake]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3126638</guid>
 
-					<description><![CDATA[Uber is expanding its AWS contract to run more of its ride-sharing features on Amazon's chips. This is a thumb-of-the nose at Oracle and Google.]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Anthropic ups compute deal with Google and Broadcom amid skyrocketing demand</title>
-		<link>https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/</link>
-		
-		<dc:creator><![CDATA[Rebecca Szkutak]]></dc:creator>
-		<pubDate>Tue, 07 Apr 2026 16:05:56 +0000</pubDate>
-				<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[AI]]></category>
-		<category><![CDATA[Anthropic]]></category>
-		<category><![CDATA[Broadcom]]></category>
-		<category><![CDATA[Claude]]></category>
-		<category><![CDATA[compute]]></category>
-		<category><![CDATA[Google]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3110066</guid>
-
-					<description><![CDATA[Anthropic bulked up its compute deal with Google and Broadcom as the company has seen its run-rate revenue surge to $30 billion. ]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>4 days left to save close to $500 on TechCrunch Disrupt 2026 passes</title>
-		<link>https://techcrunch.com/2026/04/07/4-days-left-to-save-close-to-500-on-techcrunch-disrupt-2026-passes/</link>
-		
-		<dc:creator><![CDATA[TechCrunch Events]]></dc:creator>
-		<pubDate>Tue, 07 Apr 2026 14:00:00 +0000</pubDate>
-				<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[Startups]]></category>
-		<category><![CDATA[Hardware]]></category>
-		<category><![CDATA[Climate]]></category>
-		<category><![CDATA[Fintech]]></category>
-		<category><![CDATA[Venture]]></category>
-		<category><![CDATA[Media & Entertainment]]></category>
-		<category><![CDATA[AI]]></category>
-		<category><![CDATA[Fundraising]]></category>
-		<category><![CDATA[TechCrunch Disrupt 2026]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3110003</guid>
-
-					<description><![CDATA[Four days left to save up to $482 on your TechCrunch Disrupt 2026 ticket. These low rates will disappear on April 10 at 11:59 p.m. PT. Register now.]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Iran threatens &#8216;Stargate&#8217; AI data centers</title>
-		<link>https://techcrunch.com/2026/04/06/iran-threatens-stargate-ai-data-centers/</link>
-		
-		<dc:creator><![CDATA[Rebecca Szkutak]]></dc:creator>
-		<pubDate>Mon, 06 Apr 2026 18:06:28 +0000</pubDate>
-				<category><![CDATA[Government & Policy]]></category>
-		<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[AI]]></category>
-		<category><![CDATA[TC]]></category>
-		<category><![CDATA[In Brief]]></category>
-		<category><![CDATA[Iran-US War]]></category>
-		<category><![CDATA[datacenters]]></category>
-		<category><![CDATA[OpenAI]]></category>
-		<category><![CDATA[stargate]]></category>
-		<category><![CDATA[oracle]]></category>
-		<category><![CDATA[Cisco]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3109661</guid>
-
-					<description><![CDATA[Iran said it will target U.S.-linked data centers with new missile strikes, as the war between the U.S. and Iran escalates. ]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Ticket savings of up to $500 this week for TechCrunch Disrupt 2026</title>
-		<link>https://techcrunch.com/2026/04/06/massive-ticket-savings-of-up-to-500-this-week-for-techcrunch-disrupt-2026/</link>
-		
-		<dc:creator><![CDATA[TechCrunch Events]]></dc:creator>
-		<pubDate>Mon, 06 Apr 2026 14:00:00 +0000</pubDate>
-				<category><![CDATA[Biotech & Health]]></category>
-		<category><![CDATA[Fundraising]]></category>
-		<category><![CDATA[Robotics]]></category>
-		<category><![CDATA[Gadgets]]></category>
-		<category><![CDATA[Apps]]></category>
-		<category><![CDATA[AI]]></category>
-		<category><![CDATA[Media & Entertainment]]></category>
-		<category><![CDATA[Venture]]></category>
-		<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[Fintech]]></category>
-		<category><![CDATA[Climate]]></category>
-		<category><![CDATA[Hardware]]></category>
-		<category><![CDATA[Space]]></category>
-		<category><![CDATA[Security]]></category>
-		<category><![CDATA[Transportation]]></category>
-		<category><![CDATA[Startups]]></category>
-		<category><![CDATA[TechCrunch Disrupt 2026]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3109491</guid>
-
-					<description><![CDATA[Starting today, you have 5 days to save nearly $500 on your ticket to TechCrunch Disrupt 2026. This offer disappears Friday, April 10, at 11:59 p.m. PT. Register here to secure these low rates.]]></description>
+					<description><![CDATA[Snowflake has signed a new, enormous five-year deal with Amazon to secure chips for AI usage. Nvidia is once again being put on notice.]]></description>
 		
 		
 		
