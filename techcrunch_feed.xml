@@ -12,7 +12,7 @@
 	<atom:link href="https://techcrunch.com/category/enterprise/feed/" rel="self" type="application/rss+xml" />
 	<link>https://techcrunch.com/category/enterprise/</link>
 	<description>Startup and Technology News</description>
-	<lastBuildDate>Mon, 29 Jun 2026 21:49:12 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 08 Jul 2026 15:47:31 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,97 @@
 	<height>32</height>
 </image> 
 	<item>
+		<title>Apple to produce Made in America wireless chips with Broadcom</title>
+		<link>https://techcrunch.com/2026/07/08/apple-to-produce-made-in-america-wireless-chips-with-broadcom/</link>
+		
+		<dc:creator><![CDATA[Rebecca Bellan]]></dc:creator>
+		<pubDate>Wed, 08 Jul 2026 14:43:00 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[Broadcom]]></category>
+		<category><![CDATA[chips]]></category>
+		<category><![CDATA[In Brief]]></category>
+		<category><![CDATA[wireless chips]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3140051</guid>
+
+					<description><![CDATA[Apple has signed a $30 billion+ multiyear deal with Broadcom to design and produce more than 15 billion U.S.-made custom wireless connectivity chips for Apple products. ]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Why the rise of open source AI isn&#8217;t hurting Anthropic &#8230; yet</title>
+		<link>https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet/</link>
+		
+		<dc:creator><![CDATA[Russell Brandom]]></dc:creator>
+		<pubDate>Tue, 07 Jul 2026 20:04:32 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Anthropic]]></category>
+		<category><![CDATA[Decagon]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3139798</guid>
+
+					<description><![CDATA[Open source models’ success isn’t coming at the expense of frontier labs. Instead, they each seem to capture two phases of the same life cycle.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Microsoft lays off nearly 5,000 employees across Xbox, commercial sales</title>
+		<link>https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/</link>
+		
+		<dc:creator><![CDATA[Rebecca Bellan]]></dc:creator>
+		<pubDate>Mon, 06 Jul 2026 15:32:43 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[tech layoffs]]></category>
+		<category><![CDATA[xbox]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3139164</guid>
+
+					<description><![CDATA[Microsoft cut around 4,800 roles, or 2.1% of its global workforce, on Monday — the latest in a series of layoffs that’s stoking fears of AI replacing jobs. The layoffs will hit Xbox and commercial sales the hardest.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Microsoft launches its own AI deployment company with $2.5 billion commitment</title>
+		<link>https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/</link>
+		
+		<dc:creator><![CDATA[Russell Brandom]]></dc:creator>
+		<pubDate>Thu, 02 Jul 2026 13:53:00 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3138546</guid>
+
+					<description><![CDATA[Microsoft follows Amazon, OpenAI, and Anthropic with its new AI deployment group.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Indian tech tycoon bets $30M of his own money to build AI alternative to Microsoft Office</title>
+		<link>https://techcrunch.com/2026/07/01/indian-tech-tycoon-bets-30m-to-build-an-ai-alternative-to-microsoft-office/</link>
+		
+		<dc:creator><![CDATA[Jagmeet Singh]]></dc:creator>
+		<pubDate>Thu, 02 Jul 2026 05:30:00 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Bhavin Turakhia]]></category>
+		<category><![CDATA[microsoft office]]></category>
+		<category><![CDATA[neo]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=3138430</guid>
+
+					<description><![CDATA[Neo is Bhavin Turakhia’s fifth venture and his latest involving enterprise software. This time he's taking on Microsoft Office and Google Apps with AI.]]></description>
+		
+		
+		
+			</item>
+		<item>
 		<title>Chamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role</title>
 		<link>https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role/</link>
 		
@@ -318,109 +409,6 @@
 		<guid isPermaLink="false">https://techcrunch.com/?p=3129095</guid>
 
 					<description><![CDATA[The company is reducing its workforce as it exits 22 countries, reduces management layers, and invests in its infrastructure to scale its platform. ]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>OpenAI launches new Codex tools for white-collar work</title>
-		<link>https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/</link>
-		
-		<dc:creator><![CDATA[Russell Brandom]]></dc:creator>
-		<pubDate>Tue, 02 Jun 2026 16:00:00 +0000</pubDate>
-				<category><![CDATA[AI]]></category>
-		<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[OpenAI]]></category>
-		<category><![CDATA[openai codex]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3128585</guid>
-
-					<description><![CDATA[OpenAI released a set of six plug-ins aimed at specific jobs: data analytics, creative production, sales, product design, equity investing, and investment banking. Available from within the Codex app, each of the new tools bundles integrations, instructions, and context to allow Codex to approximate a specific job.]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Today is the last day to apply to speak at TechCrunch Disrupt 2026</title>
-		<link>https://techcrunch.com/2026/05/29/today-is-the-last-day-to-apply-to-speak-at-techcrunch-disrupt-2026/</link>
-		
-		<dc:creator><![CDATA[TechCrunch Events]]></dc:creator>
-		<pubDate>Fri, 29 May 2026 14:15:00 +0000</pubDate>
-				<category><![CDATA[AI]]></category>
-		<category><![CDATA[Apps]]></category>
-		<category><![CDATA[Biotech & Health]]></category>
-		<category><![CDATA[Climate]]></category>
-		<category><![CDATA[Crypto]]></category>
-		<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[Fintech]]></category>
-		<category><![CDATA[Fundraising]]></category>
-		<category><![CDATA[Government & Policy]]></category>
-		<category><![CDATA[Hardware]]></category>
-		<category><![CDATA[Media & Entertainment]]></category>
-		<category><![CDATA[Robotics]]></category>
-		<category><![CDATA[Startups]]></category>
-		<category><![CDATA[Transportation]]></category>
-		<category><![CDATA[Venture]]></category>
-		<category><![CDATA[TechCrunch Disrupt 2026]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3127664</guid>
-
-					<description><![CDATA[Submit your session topic before today ends for a chance to speak at TechCrunch Disrupt 2026. Apply now to share your insight and help shape the conversations defining the tech industry.]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>Glean&#8217;s top line crosses $300M as AI budget cutting becomes its major selling point</title>
-		<link>https://techcrunch.com/2026/05/28/gleans-top-line-crosses-300m-as-ai-budget-cutting-becomes-its-major-selling-point/</link>
-		
-		<dc:creator><![CDATA[Marina Temkin]]></dc:creator>
-		<pubDate>Fri, 29 May 2026 00:44:37 +0000</pubDate>
-				<category><![CDATA[AI]]></category>
-		<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[Startups]]></category>
-		<category><![CDATA[AI search]]></category>
-		<category><![CDATA[Glean]]></category>
-		<category><![CDATA[revenue]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3127613</guid>
-
-					<description><![CDATA[The enterprise AI search startup tripled its annual revenue even as tech giants entered the category.]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>At TechCrunch Disrupt 2026: Databricks’ co-founder on what kills enterprise AI deals</title>
-		<link>https://techcrunch.com/2026/05/28/techcrunch-disrupt-2026-databricks-co-founder-on-what-kills-enterprise-ai-deals/</link>
-		
-		<dc:creator><![CDATA[TechCrunch Events]]></dc:creator>
-		<pubDate>Thu, 28 May 2026 14:30:00 +0000</pubDate>
-				<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[Startups]]></category>
-		<category><![CDATA[AI]]></category>
-		<category><![CDATA[Databricks]]></category>
-		<category><![CDATA[TechCrunch Disrupt 2026]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3126871</guid>
-
-					<description><![CDATA[Enterprise AI is entering a different phase now, one where enterprises are no longer evaluating whether AI is exciting. They are evaluating whether it is safe to deploy broadly.]]></description>
-		
-		
-		
-			</item>
-		<item>
-		<title>In more good news for Amazon, Snowflake signs $6B deal with AWS for AI CPU chips</title>
-		<link>https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/</link>
-		
-		<dc:creator><![CDATA[Julie Bort]]></dc:creator>
-		<pubDate>Wed, 27 May 2026 20:10:00 +0000</pubDate>
-				<category><![CDATA[AI]]></category>
-		<category><![CDATA[Enterprise]]></category>
-		<category><![CDATA[TC]]></category>
-		<category><![CDATA[AI chips]]></category>
-		<category><![CDATA[Amazon]]></category>
-		<category><![CDATA[AWS]]></category>
-		<category><![CDATA[Snowflake]]></category>
-		<guid isPermaLink="false">https://techcrunch.com/?p=3126638</guid>
-
-					<description><![CDATA[Snowflake has signed a new, enormous five-year deal with Amazon to secure chips for AI usage. Nvidia is once again being put on notice.]]></description>
 		
 		
 		

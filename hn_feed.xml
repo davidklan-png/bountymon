@@ -1,0 +1,106 @@
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hacker News: Front Page</title><link>https://news.ycombinator.com/</link><description>Hacker News RSS</description><docs>https://hnrss.org/</docs><generator>hnrss v2.1.1</generator><lastBuildDate>Thu, 09 Jul 2026 23:55:49 +0000</lastBuildDate><atom:link href="https://hnrss.org/frontpage" rel="self" type="application/rss+xml"></atom:link><item><title><![CDATA[Show HN: Rubiks Cube Solver]]></title><description><![CDATA[
+<p>Speedcube is an open-source platform for speedcubers featuring a Rubik's Cube solver, competition timer, algorithm library, and AI-assisted cube recognition directly in the browser.<p>Built with React, TypeScript, Rust, and Python, the project aims to become an all-in-one platform for cubers—from beginners to competitive solvers.<p><a href="http://github.com/williamisnotdefined/rubiks-cube-solver/" rel="nofollow">http://github.com/williamisnotdefined/rubiks-cube-solver/</a></p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48852403">https://news.ycombinator.com/item?id=48852403</a></p>
+<p>Points: 13</p>
+<p># Comments: 4</p>
+]]></description><pubDate>Thu, 09 Jul 2026 21:09:05 +0000</pubDate><link>https://speedcube.com.br/</link><dc:creator>wozzp</dc:creator><comments>https://news.ycombinator.com/item?id=48852403</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48852403</guid></item><item><title><![CDATA[GLM 5.2 is nearly as accurate as a human book keeper]]></title><description><![CDATA[
+<p>Article URL: <a href="https://toot-books.pages.dev/blog/glm-5-2-vat-benchmark">https://toot-books.pages.dev/blog/glm-5-2-vat-benchmark</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48850414">https://news.ycombinator.com/item?id=48850414</a></p>
+<p>Points: 164</p>
+<p># Comments: 105</p>
+]]></description><pubDate>Thu, 09 Jul 2026 18:29:41 +0000</pubDate><link>https://toot-books.pages.dev/blog/glm-5-2-vat-benchmark</link><dc:creator>adamkurkiewicz</dc:creator><comments>https://news.ycombinator.com/item?id=48850414</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48850414</guid></item><item><title><![CDATA[How to Start a Ruby Meetup]]></title><description><![CDATA[
+<p>Article URL: <a href="https://guides.rubyevents.org/meetups/">https://guides.rubyevents.org/meetups/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48850372">https://news.ycombinator.com/item?id=48850372</a></p>
+<p>Points: 58</p>
+<p># Comments: 13</p>
+]]></description><pubDate>Thu, 09 Jul 2026 18:27:06 +0000</pubDate><link>https://guides.rubyevents.org/meetups/</link><dc:creator>mooreds</dc:creator><comments>https://news.ycombinator.com/item?id=48850372</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48850372</guid></item><item><title><![CDATA[Interview with Mitchell Hashimoto about Ghostty and Zig]]></title><description><![CDATA[
+<p>Article URL: <a href="https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/">https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48849292">https://news.ycombinator.com/item?id=48849292</a></p>
+<p>Points: 72</p>
+<p># Comments: 27</p>
+]]></description><pubDate>Thu, 09 Jul 2026 17:17:16 +0000</pubDate><link>https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/</link><dc:creator>veqq</dc:creator><comments>https://news.ycombinator.com/item?id=48849292</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48849292</guid></item><item><title><![CDATA[GPT-5.6]]></title><description><![CDATA[
+<p><a href="https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdf" rel="nofollow">https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdf</a><p><a href="https://developers.openai.com/api/docs/guides/latest-model" rel="nofollow">https://developers.openai.com/api/docs/guides/latest-model</a><p><a href="https://x.com/levie/status/2075287443411222628" rel="nofollow">https://x.com/levie/status/2075287443411222628</a>, <a href="https://xcancel.com/levie/status/2075287443411222628" rel="nofollow">https://xcancel.com/levie/status/2075287443411222628</a></p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48849066">https://news.ycombinator.com/item?id=48849066</a></p>
+<p>Points: 976</p>
+<p># Comments: 730</p>
+]]></description><pubDate>Thu, 09 Jul 2026 17:04:14 +0000</pubDate><link>https://openai.com/index/gpt-5-6/</link><dc:creator>logickkk1</dc:creator><comments>https://news.ycombinator.com/item?id=48849066</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48849066</guid></item><item><title><![CDATA[ChatGPT Work]]></title><description><![CDATA[
+<p>Article URL: <a href="https://openai.com/index/chatgpt-for-your-most-ambitious-work/">https://openai.com/index/chatgpt-for-your-most-ambitious-work/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48849059">https://news.ycombinator.com/item?id=48849059</a></p>
+<p>Points: 314</p>
+<p># Comments: 156</p>
+]]></description><pubDate>Thu, 09 Jul 2026 17:03:53 +0000</pubDate><link>https://openai.com/index/chatgpt-for-your-most-ambitious-work/</link><dc:creator>Tiberium</dc:creator><comments>https://news.ycombinator.com/item?id=48849059</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48849059</guid></item><item><title><![CDATA[Wildcard (YC W25) Is Hiring a Founding Engineer]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.ycombinator.com/companies/wildcard/jobs/ZSLVaaU-founding-engineer">https://www.ycombinator.com/companies/wildcard/jobs/ZSLVaaU-founding-engineer</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48849011">https://news.ycombinator.com/item?id=48849011</a></p>
+<p>Points: 0</p>
+<p># Comments: 0</p>
+]]></description><pubDate>Thu, 09 Jul 2026 17:00:37 +0000</pubDate><link>https://www.ycombinator.com/companies/wildcard/jobs/ZSLVaaU-founding-engineer</link><dc:creator>kaushikmahorker</dc:creator><comments>https://news.ycombinator.com/item?id=48849011</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48849011</guid></item><item><title><![CDATA[AI content is everywhere on social media, especially LinkedIn]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.pangram.com/blog/ai-in-your-feed">https://www.pangram.com/blog/ai-in-your-feed</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48847940">https://news.ycombinator.com/item?id=48847940</a></p>
+<p>Points: 170</p>
+<p># Comments: 149</p>
+]]></description><pubDate>Thu, 09 Jul 2026 15:50:09 +0000</pubDate><link>https://www.pangram.com/blog/ai-in-your-feed</link><dc:creator>mukmuk</dc:creator><comments>https://news.ycombinator.com/item?id=48847940</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48847940</guid></item><item><title><![CDATA[Launch HN: Context.dev (YC S26) – API to get structured data from any website]]></title><description><![CDATA[
+<p>Hi Hacker News, I’m Yahia. I built Context.dev (<a href="https://www.context.dev/">https://www.context.dev/</a>) to make it really easy to integrate web data into your products and agents.<p>Here’s a demo video: <a href="https://www.tella.tv/video/build-faster-with-context-dev-apis-2cgl" rel="nofollow">https://www.tella.tv/video/build-faster-with-context-dev-api...</a><p>Since it’s an API, here are the docs: <a href="https://docs.context.dev/quickstart">https://docs.context.dev/quickstart</a>.<p>You can send us a URL and get back clean Markdown, rendered HTML, screenshots, extracted images, etc.. You can also send us a domain and get company or brand context: name, description, logos, colors, fonts, social links, screenshots, style information, and related metadata. For more custom use cases, you can send a URL plus a JSON Schema and ask us to extract structured data from the site into that shape. For example, you might ask for pricing plans, product categories, office locations, support links, integration partners, or anything else that is visible on the public site.<p>The goal is to give developers the output they actually want. Raw HTML is rarely the useful thing; the useful thing is usually Markdown for a model, JSON for an application, a logo for a UI, or a structured company profile for an agent.<p>Before, I worked at Amazon and Sunrun, and co-founded StockAlarm.io & essense.io, both of which were acquired. Also, I built knifegeek.io, which scraped pocket knives from across the internet and listed them easily. The project is outdated now (coming back soon) but back then it hit the frontpage of hacker news and people seemed to like it: <a href="https://news.ycombinator.com/item?id=34604281">https://news.ycombinator.com/item?id=34604281</a>.<p>Just before Context.dev, I built Brand.dev. The idea was that your software product should automatically know about your customer if they sign up with a corporate email. The API pulled brand data such as logos, backdrops, name, description, industry, and more from the public web and surfaced it to your product to integrate as part of their onboarding experience. That’s worth doing because conversion rates on onboarding improve dramatically when you go from “enter all this info” to “confirm all this info” (and there was never any privacy concern all the information is public).<p>That was a nifty niche, but the more customers used it, it became obvious that “brand data” was only one slice of a larger need. People started asking for things like screenshots, structured extraction, and LLM ready data. So I expanded to Context.dev, and applied to YC (got rejected after an interview), then kept going and re-applied at which point I got in as a solo founder.<p>People use Context.dev in more ways than I can list, but here are some: keeping context up to date on customer websites for chatbots - building beautiful brand assets/ads for customers - enrichment flows using agent harnesses like eve.dev - crawling customer websites into chatbot knowledge bases - turning GitHub repos into branded docs sites - academic journal and PDF crawling. There are a ton more examples at <a href="https://www.context.dev/customers">https://www.context.dev/customers</a>.<p>We know that many crawlers are not behaving like good citizens on the web, and the entire space has a bad reputation as a result. At the same time, customers are not usually trying to buy “scraping”. They are trying to make a support bot work, personalize onboarding, enrich CRM records, generate docs, monitor leads, or let an agent research a company. There are lots of legit use cases. We want to satisfy those while being respectful of everyone involved.<p>We maintain a caching layer and avoid hammering websites. Customers can configure the cache, but if we find we’re sending too many requests to a url in a certain amount of time, we step in and tone it down. Websites can opt out of our service, and we respect these requests and add them to our block list.<p>We focus on customers who want to build cool things for their users. Enriching onboarding is a popular use case. So is integrating context about their own websites (things like support bots), and building agents that can automatically reason about complex tasks involving the internet.<p>We only allow customers to use brand data to identify a specific customer on their software, you cannot use it in your own materials or to imply endorsement.<p>I'd love to hear your feedback about the product in the comments, thanks!</p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48847562">https://news.ycombinator.com/item?id=48847562</a></p>
+<p>Points: 67</p>
+<p># Comments: 51</p>
+]]></description><pubDate>Thu, 09 Jul 2026 15:28:39 +0000</pubDate><link>https://www.context.dev</link><dc:creator>TheYahiaBakour</dc:creator><comments>https://news.ycombinator.com/item?id=48847562</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48847562</guid></item><item><title><![CDATA[Hy3]]></title><description><![CDATA[
+<p>Article URL: <a href="https://hy.tencent.com/research/hy3">https://hy.tencent.com/research/hy3</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48847552">https://news.ycombinator.com/item?id=48847552</a></p>
+<p>Points: 354</p>
+<p># Comments: 77</p>
+]]></description><pubDate>Thu, 09 Jul 2026 15:27:48 +0000</pubDate><link>https://hy.tencent.com/research/hy3</link><dc:creator>andai</dc:creator><comments>https://news.ycombinator.com/item?id=48847552</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48847552</guid></item><item><title><![CDATA[A possible future for Damn Interesting]]></title><description><![CDATA[
+<p>Article URL: <a href="https://www.damninteresting.com/a-possible-future/">https://www.damninteresting.com/a-possible-future/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48847511">https://news.ycombinator.com/item?id=48847511</a></p>
+<p>Points: 210</p>
+<p># Comments: 24</p>
+]]></description><pubDate>Thu, 09 Jul 2026 15:25:25 +0000</pubDate><link>https://www.damninteresting.com/a-possible-future/</link><dc:creator>mzur</dc:creator><comments>https://news.ycombinator.com/item?id=48847511</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48847511</guid></item><item><title><![CDATA[Opinionated and easy Pi.dev configuration]]></title><description><![CDATA[
+<p>Article URL: <a href="https://lazypi.org/">https://lazypi.org/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48847407">https://news.ycombinator.com/item?id=48847407</a></p>
+<p>Points: 97</p>
+<p># Comments: 57</p>
+]]></description><pubDate>Thu, 09 Jul 2026 15:19:33 +0000</pubDate><link>https://lazypi.org/</link><dc:creator>lwhsiao</dc:creator><comments>https://news.ycombinator.com/item?id=48847407</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48847407</guid></item><item><title><![CDATA[TLS certificates for internal services done right]]></title><description><![CDATA[
+<p>Article URL: <a href="https://tuxnet.dev/posts/tls-for-internal-services/">https://tuxnet.dev/posts/tls-for-internal-services/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48846995">https://news.ycombinator.com/item?id=48846995</a></p>
+<p>Points: 125</p>
+<p># Comments: 87</p>
+]]></description><pubDate>Thu, 09 Jul 2026 14:57:02 +0000</pubDate><link>https://tuxnet.dev/posts/tls-for-internal-services/</link><dc:creator>mrl5</dc:creator><comments>https://news.ycombinator.com/item?id=48846995</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48846995</guid></item><item><title><![CDATA[SimPolitics: America’s quest to solve politics with computers]]></title><description><![CDATA[
+<p><a href="https://direct.mit.edu/books/oa-monograph/6166/SimPoliticsAmerica-s-Quest-to-Solve-Politics-with" rel="nofollow">https://direct.mit.edu/books/oa-monograph/6166/SimPoliticsAm...</a></p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48846332">https://news.ycombinator.com/item?id=48846332</a></p>
+<p>Points: 69</p>
+<p># Comments: 9</p>
+]]></description><pubDate>Thu, 09 Jul 2026 14:20:14 +0000</pubDate><link>https://mitpress.mit.edu/9780262053198/simpolitics/</link><dc:creator>mckelveyf</dc:creator><comments>https://news.ycombinator.com/item?id=48846332</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48846332</guid></item><item><title><![CDATA[No leap second will be introduced at the end of December 2026]]></title><description><![CDATA[
+<p>Article URL: <a href="https://datacenter.iers.org/data/latestVersion/bulletinC.txt">https://datacenter.iers.org/data/latestVersion/bulletinC.txt</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48846281">https://news.ycombinator.com/item?id=48846281</a></p>
+<p>Points: 221</p>
+<p># Comments: 173</p>
+]]></description><pubDate>Thu, 09 Jul 2026 14:16:34 +0000</pubDate><link>https://datacenter.iers.org/data/latestVersion/bulletinC.txt</link><dc:creator>ChrisArchitect</dc:creator><comments>https://news.ycombinator.com/item?id=48846281</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48846281</guid></item><item><title><![CDATA[Muse Spark 1.1]]></title><description><![CDATA[
+<p><a href="https://ai.meta.com/static-resource/muse-spark-1-1-evaluation-report" rel="nofollow">https://ai.meta.com/static-resource/muse-spark-1-1-evaluatio...</a> [pdf]<p><a href="https://developer.meta.com/ai/resources/blog/build-with-muse-spark/" rel="nofollow">https://developer.meta.com/ai/resources/blog/build-with-muse...</a><p><a href="https://www.bloomberg.com/news/articles/2026-07-09/meta-starts-charging-for-ai-with-muse-spark-1-1-agentic-model?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc4MzYxMzQ0OCwiZXhwIjoxNzg0MjE4MjQ4LCJhcnRpY2xlSWQiOiJUSFZDVENSS1YyVTYwMCIsImJjb25uZWN0SWQiOiIwRDE5ODY5MzQ1M0Y0NUMzQkQyMjQzMUQ4NjAzMDU1QSJ9.O5sxV2QajBiyISnu5AVyVUdWWGQtozl0yeCNAbc5JJQ&leadSource=uverify%20wall" rel="nofollow">https://www.bloomberg.com/news/articles/2026-07-09/meta-star...</a>, <a href="https://archive.is/3ccKa" rel="nofollow">https://archive.is/3ccKa</a></p>
+<hr>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48846184">https://news.ycombinator.com/item?id=48846184</a></p>
+<p>Points: 309</p>
+<p># Comments: 166</p>
+]]></description><pubDate>Thu, 09 Jul 2026 14:10:22 +0000</pubDate><link>https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/</link><dc:creator>ot</dc:creator><comments>https://news.ycombinator.com/item?id=48846184</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48846184</guid></item><item><title><![CDATA[The glass backbone: Why the Army's logistics will break in the next war]]></title><description><![CDATA[
+<p>Article URL: <a href="https://mwi.westpoint.edu/the-glass-backbone-why-the-armys-logistics-will-break-in-the-next-war/">https://mwi.westpoint.edu/the-glass-backbone-why-the-armys-logistics-will-break-in-the-next-war/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48845442">https://news.ycombinator.com/item?id=48845442</a></p>
+<p>Points: 262</p>
+<p># Comments: 359</p>
+]]></description><pubDate>Thu, 09 Jul 2026 13:24:43 +0000</pubDate><link>https://mwi.westpoint.edu/the-glass-backbone-why-the-armys-logistics-will-break-in-the-next-war/</link><dc:creator>baud147258</dc:creator><comments>https://news.ycombinator.com/item?id=48845442</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48845442</guid></item><item><title><![CDATA[A road to Lisp: Why Lisp]]></title><description><![CDATA[
+<p>Article URL: <a href="https://scotto.me/blog/2026-07-09-why-lisp/">https://scotto.me/blog/2026-07-09-why-lisp/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48845209">https://news.ycombinator.com/item?id=48845209</a></p>
+<p>Points: 96</p>
+<p># Comments: 92</p>
+]]></description><pubDate>Thu, 09 Jul 2026 13:06:04 +0000</pubDate><link>https://scotto.me/blog/2026-07-09-why-lisp/</link><dc:creator>silcoon</dc:creator><comments>https://news.ycombinator.com/item?id=48845209</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48845209</guid></item><item><title><![CDATA[Show HN: 18 Words]]></title><description><![CDATA[
+<p>Article URL: <a href="https://18words.com/">https://18words.com/</a></p>
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48845049">https://news.ycombinator.com/item?id=48845049</a></p>
+<p>Points: 781</p>
+<p># Comments: 279</p>
+]]></description><pubDate>Thu, 09 Jul 2026 12:48:52 +0000</pubDate><link>https://18words.com/</link><dc:creator>pompomsheep</dc:creator><comments>https://news.ycombinator.com/item?id=48845049</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48845049</guid></item><item><title><![CDATA[TrueBiz (YC S22) – Senior Software Engineer – Remote (US) – Full-Time]]></title><description><![CDATA[
+
+<p>Comments URL: <a href="https://news.ycombinator.com/item?id=48844517">https://news.ycombinator.com/item?id=48844517</a></p>
+<p>Points: 0</p>
+<p># Comments: 0</p>
+]]></description><pubDate>Thu, 09 Jul 2026 12:01:17 +0000</pubDate><link>https://news.ycombinator.com/item?id=48844517</link><dc:creator>dannyhak</dc:creator><comments>https://news.ycombinator.com/item?id=48844517</comments><guid isPermaLink="false">https://news.ycombinator.com/item?id=48844517</guid></item></channel></rss>
