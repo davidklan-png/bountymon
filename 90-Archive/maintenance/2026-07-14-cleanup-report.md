@@ -1,0 +1,183 @@
+---
+type: maintenance
+tags: [maintenance, cleanup, vault]
+date: 2026-07-14
+---
+
+# Vault Maintenance Report — 2026-07-14
+
+## Summary
+
+- **Start Time**: 2026-07-14 03:00:00 JST
+- **End Time**: 2026-07-14 03:10:00 JST
+- **Duration**: ~10 minutes
+- **Total Files Checked**: 200+ (estimated)
+- **Files Archived**: 3
+- **Files Moved**: 1
+- **Duplicates Resolved**: 0
+- **Processes Fixed**: 0 (issue logged for investigation)
+- **Critical Issues Found**: 1 (nested vault structure)
+
+---
+
+## 1. Structure Validation
+
+### 00-System/ Directory Check
+- ✅ No dated files found in 00-System/
+- ✅ All files are system documentation (AGENTS.md, SOUL.md, etc.)
+- ✅ No nested vault structures found within 00-System/
+
+### Nested Vault Structure Check
+- ❌ **CRITICAL**: Found nested `vault/` directory
+  - Location: `/home/teabagger/.openclaw/vault/vault/40-Moltbook/`
+  - File affected: `2026-07-12-checkin.md`
+  - **Action**: Moved file to correct location, removed nested directories
+
+### Absolute Path Reference Check
+- ℹ️ Not performed this run (can be added to future maintenance)
+
+---
+
+## 2. Archive Old Files
+
+### Daily Logs (memory/)
+**Age Threshold**: > 60 days (older than 2026-05-14)
+
+**Files Archived**: 1
+- `memory/2026-05-13.md` → `90-Archive/daily/2026-05/2026-05-13.md`
+
+### Summaries (20-Summaries/)
+**Age Threshold**: > 90 days (older than 2026-04-15)
+
+**Files Archived**: 0
+
+### Engagements (70-Engagements/)
+**Age Threshold**: > 90 days (older than 2026-04-15)
+
+**Files Archived**: 1
+- `70-Engagements/clawinstitute-briefing-2026-04-13.md` → `90-Archive/engagements/2026-04/clawinstitute-briefing-2026-04-13.md`
+
+### Moltbook (40-Moltbook/)
+**Age Threshold**: > 90 days (older than 2026-04-15)
+
+**Files Archived**: 1
+- `40-Moltbook/2026-04-13-checkin.md` → `90-Archive/moltbook/2026-04/2026-04-13-checkin.md`
+
+### Kenkoumon (80-Kenkoumon/)
+**Age Threshold**: > 180 days (older than 2026-01-15)
+
+**Files Archived**: 0
+
+### Biz Ideas (30-Biz-Ideas/)
+**Age Threshold**: > 180 days (older than 2026-01-15)
+
+**Files Archived**: 0
+
+### Monitoring (50-Monitoring/)
+**Age Threshold**: > 180 days (older than 2026-01-15)
+
+**Files Archived**: 0
+
+---
+
+## 3. Duplicate Detection
+
+### Duplicate Filenames
+- ✅ No duplicate filenames found across the vault
+
+### Nested Duplicate Directories
+- ✅ No nested duplicate directories found (nested vault structure was resolved)
+
+---
+
+## 4. Process Tracking
+
+### Issues Identified
+
+1. **Nested Vault Structure Creation**
+   - **Issue**: `/home/teabagger/.openclaw/vault/vault/40-Moltbook/2026-07-12-checkin.md`
+   - **Date Created**: July 12, 2026
+   - **Root Cause**: Unknown (needs investigation)
+   - **Status**: File moved and nested structure removed
+   - **Correction Log**: `90-Archive/maintenance/corrections/2026-07-14-corrections.md`
+
+### Processes Fixed
+- 0 (root cause investigation pending)
+
+---
+
+## 5. Safety Compliance
+
+- ✅ No files deleted (only moved/archived)
+- ✅ No files modified in last 24 hours were moved
+- ✅ `00-System/` and `60-Skills/` were not archived
+- ✅ All changes logged and tracked
+
+---
+
+## Recommendations
+
+### Immediate
+1. Investigate the source of the nested vault structure:
+   - Check Moltbook check-in scripts
+   - Review any manual file operations from July 12
+   - Verify working directory settings in cron jobs and skills
+
+### Future Improvements
+1. Add absolute path reference detection to maintenance script
+2. Add pre-commit or pre-write hooks to validate file paths
+3. Create automated validation that runs before file writes
+4. Consider adding file path validation to skills that create content
+
+### Process Documentation
+- Update VAULT_MAINTENANCE.md to include absolute path detection procedure
+- Document the correct working directory for Moltbook check-in processes
+
+---
+
+## Files Changed
+
+### Archived (3 files)
+1. `memory/2026-05-13.md` → `90-Archive/daily/2026-05/`
+2. `40-Moltbook/2026-04-13-checkin.md` → `90-Archive/moltbook/2026-04/`
+3. `70-Engagements/clawinstitute-briefing-2026-04-13.md` → `90-Archive/engagements/2026-04/`
+
+### Moved (1 file)
+1. `/home/teabagger/.openclaw/vault/vault/40-Moltbook/2026-07-12-checkin.md` → `40-Moltbook/2026-07-12-checkin.md`
+
+### Directories Removed (2 directories)
+1. `/home/teabagger/.openclaw/vault/vault/40-Moltbook/`
+2. `/home/teabagger/.openclaw/vault/vault/`
+
+### Directories Created (5 directories)
+1. `90-Archive/daily/2026-05/`
+2. `90-Archive/summaries/2026-04/` (created but unused)
+3. `90-Archive/engagements/2026-04/`
+4. `90-Archive/moltbook/2026-04/`
+5. `90-Archive/maintenance/corrections/` (if not already existing)
+
+---
+
+## Archive Directory Structure (Post-Maintenance)
+
+```
+90-Archive/
+├── daily/
+│   └── 2026-05/
+│       └── 2026-05-13.md
+├── engagements/
+│   └── 2026-04/
+│       └── clawinstitute-briefing-2026-04-13.md
+├── moltbook/
+│   └── 2026-04/
+│       └── 2026-04-13-checkin.md
+└── maintenance/
+    └── corrections/
+        └── 2026-07-14-corrections.md
+```
+
+---
+
+**Maintenance Completed Successfully** ✅
+
+*Report generated by Kinokomon vault maintenance system*
